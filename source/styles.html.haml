@@ -7,19 +7,23 @@
 	.container
 		.row
 			.col-lg-12
-				%h1
-					Heading one
-				%h2
-					Heading two
-				%h3
-					Heading three
-				%h4
-					Heading four
-				%h5
-					Heading five
-				%h6
-					Heading six
+				%h1.bold-font.mb-5
+					= lorem.sentences 3
+				%h2.bold-font.mb-5
+					= lorem.sentences 3
+				%h3.bold-font.mb-5
+					= lorem.sentences 3
+				%h4.bold-font.mb-5
+					= lorem.sentences 3
+				%h5.bold-font.mb-5
+					= lorem.sentences 3
+				%h6.bold-font.mb-5
+					= lorem.sentences 3
+				%p.body-small
+					= lorem.sentences 5
 				%p
+					= lorem.sentences 5
+				%p.body-large
 					= lorem.sentences 5
 				%p.light-font
 					Light font
@@ -29,8 +33,6 @@
 					Semibold font
 				%p.bold-font
 					Bold font
-				%p.extra-bold-font
-					Extra Bold font
 				%p
 					%a{:href=>"#"}
 						Linked

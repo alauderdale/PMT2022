@@ -1,7 +1,7 @@
 // color vars
 
-$primary-color: #FEBE10;
-$secondary-color: #FFE100;
+$primary-color: #083446;
+$secondary-color: #FFBC00;
 $tertiary-color: #26C164;
 
 //accents
@@ -25,13 +25,13 @@ $lightest-gray-color: #CEDAE3;
 $lighter-gray-color: #C5D0DE;
 
 //Extra light text
-$light-gray-color: #B4BBC6;
+$light-gray-color: #C5D0DC;
 
 //Light text, labels
 $gray-color: #6F767D;
 
 //Text color
-$dark-gray-color: #231F20;
+$dark-gray-color: #222325;
 
 //Dark text color
 $darker-gray-color: #393C3E;
@@ -39,15 +39,15 @@ $darker-gray-color: #393C3E;
 
 //links
 
-$link-color: #009FB7;
+$link-color: #138ABB;
 $link-hover-color:shade($link-color, 50%);
 
 
 // alerts
 
-$success-color: #26C164;
-$danger-color: #FF4E4A;
-$warning-color: #FFAA00;
+$success-color: #86C342;
+$danger-color: #961F15;
+$warning-color: #FFB30F;
 
 // text
 $extra-light-text-color: $light-gray-color;
@@ -67,12 +67,12 @@ $button-border-color: $light-gray-color;
 $baseline: 16px;
 $base-border-radius:4px;
 $base-font-size:16px;
-$body-padding-height:87px;
+$body-padding-height:142px;
 
 
 // font vars
 
-$regular-font-name: 'Lato', sans-serif;
+$regular-font-name: 'museo_sans_500regular', Helvetica, Arial, sans-serif;
 $social-font-name:"socialicoregular", "Helvetica", serif;
 $social-font-name-two:"socialico_plusregular", "Helvetica", serif;
 

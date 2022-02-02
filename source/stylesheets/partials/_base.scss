@@ -23,7 +23,7 @@ body{
   -webkit-font-smoothing: antialiased;
   zoom:1;
   font-family: $regular-font-name;
-  font-weight:400;
+  font-weight:500;
   background-color:$background-color;
   padding-top:$body-padding-height;
   @include breakpoint(md) {
@@ -76,6 +76,10 @@ img{
 
 .base-line-height{
     line-height:$baseline;
+}
+
+.one-line-height{
+    line-height:1;
 }
 
 .small-line-height{

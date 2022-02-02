@@ -53,7 +53,7 @@ set :build_dir, "tmp"
 
 activate :directory_indexes
 
-activate :livereload
+# activate :livereload
 
 # Build-specific configuration
 configure :build do

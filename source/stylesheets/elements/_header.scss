@@ -1,163 +1,108 @@
-$menu-width:200px;
-$top-menu-height:80px;
+#primary-header{
 
-
-.default-header{
-	background:white;
-}
-
-.top-header{
-	z-index: 700;
-	width:calc(100%-$menu-width);
-	background:white;
-	border-bottom:1px solid $border-color;
-	left:$menu-width;
-	padding:18px 0px;
-	@include breakpoint(md) {
-		left:0;
-	}
-	@include breakpoint(sm) {
-		padding:4px 0px;
-		.btn{
-			padding:4px 10px;
-			font-weight: 14px;
-		}
-	}
-
-	//menu button shown on mobile
-	.menu-toggle{
-		padding:10px;
-		border-radius:100px;
-		.material-icons{
-			line-height:24px;
-			font-size: 22px;
-		}
-	}
-
-}
-
-
-#dashboard-container, #mobile-nav{
-	padding-left:$menu-width; 
-	@include breakpoint(md) {
-		padding-left:0;
-	}
-}
-
-.close-x{
-	
-	padding:8px;
-	border-radius:100px;
-	border:1px solid shade($border-color,20%);
-	margin: 0;
-	color:$text-color;
-	line-height: 1;
-	.material-icons{
-		font-size: 14px;
-		line-height: 1;
-		position: relative;
-		top: 1px;
-	}
-}
-
-
-.menu-close{
-	//this positions the close button in the top right of any element
-	position: absolute;
-    top: 27px;
-    right: 13px;
-    background: white;
-    display: none;
-}
-
-.menu-open-body{
-	//class to give the body an overlay
-	&:after{
-			position:fixed;
-			top:0;
-			left: 0;
-			bottom:0;
-			right: 0;
-			background:rgba(0,0,0,.5);
-			width: 100%;
-			height:100%;
-			content: '';
-			z-index: 800;
-			display: none;
-		}
-	@include breakpoint(md) {
-		&:after{
-			display: block;
-		}
-	}
-
-}
-
-#main-nav{
-	@include breakpoint(md) {
-		left:-($menu-width);
-	}
-	&.menu-open{
-		left:0!important;
-		.menu-close{
-			display:block;
-		}
-		@include breakpoint(md) {
-			left:0!important;
-			width:240px;
-			.logo-container{
-				img{
-					margin-left:30px;
-				}
-			}
-		}
-	}
-	transition-duration: .2s;
-	position: fixed;
-	width:$menu-width;
-	top:0;
-	left: 0;
-	bottom: 0;
-	height: 100%;
-	background:white;
-	z-index: 900;
-	border-right:1px solid $border-color;
-	padding-top:18px;
-	.logo-container{
-		margin-bottom:40px; 
-	}
-	.navbar-brand{
-		padding:0;
-	}
-	.navbar{
-		align-items: start;
-		padding:0;
-		.nav-link{
-			padding:8px 30px;
-			margin:4px 0!important;
-			margin:0;
-			display: block;
-			width:100%;
+	#primary-pre-header{
+		background:white;
+		border-bottom:1px solid $light-gray-color;
+		padding: 8px 0;
+		.nav{
 			font-size: 14px;
-			font-weight: 700;
-			position:relative;
-			&.active{
-				font-weight: 900;
-				// box-shadow:inset 4px 0 0 $primary-color;
-				color:$text-color!important;
-				&:before{
-					content: "";
-					width:6px;
-					left:0;
-					top:0;
-					bottom:0;
-					height:100%;
-					background:$primary-color;
-					position:absolute;
-					border-top-right-radius:6px;
-					border-bottom-right-radius:6px;
+			a.nav-link{
+				color:$text-color;
+				&:hover{
+					color:$link-color;
 				}
 			}
 		}
 	}
+	#primary-sub-header{
+		background:#F6F9FA;
+		border-bottom: 3px solid $link-color;
+		.nav{
+			position:relative;
+			right:15px;
+			a.nav-link{
+				color:$text-color;
+				padding:16px 16px;
+			}
+
+
+		}
+
+		.dropdown:hover .nav-link {
+			color:white;
+			background:$link-color;
+		}
+
+		//dropdowns
+
+		//show on hover
+		.dropdown:hover .dropdown-menu {
+		    display: block;
+		    margin-top: 0px; // remove the gap so it doesn't close
+		 }
+
+		 .dropdown-menu{
+		 	border-top: 3px solid $link-color;
+		 	.dropdown-item{
+
+		 	}
+		 }
+	}
+
 }
+
+//primary mobile navbar
+.mobile-header-container{
+	z-index: 777;
+}
+
+
+//mobile menu that shows when clicking
+.mobile-menu-container{
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	height:100%;
+	background:white;
+	z-index: 888;
+	.dropdown{
+		display: block;
+		width:100%;
+		border-bottom:1px solid $light-gray-color;
+		padding:8px 10px;
+		.nav-link{
+			color:$text-color;
+		}
+		.dropdown-menu{
+			position:relative!important;
+			transform:initial!important;
+			box-shadow: none;
+		}
+		&.show{
+			i{
+				 transform: rotate(90deg);
+			}
+		}
+	}
+
+
+}
+
+
+//this is shared between the closed an open menu
+.mobile-pre-header{
+	background:white;
+	border-bottom:1px solid $light-gray-color;
+	padding: 8px 0;
+	.nav-link{
+		color:$text-color;
+	}
+}
+
+
+.mobile-menu-hidden{
+	display: none!important;
+}
+

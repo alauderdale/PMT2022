@@ -1,7 +1,82 @@
 // typography baselines and @font face setups
 
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900');
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'museo_sans_100regular';
+    src: url('../font/museosans-100-webfont.eot');
+    src: url('../font/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans-100-webfont.woff') format('woff'),
+         url('../font/museosans-100-webfont.ttf') format('truetype'),
+         url('../font/museosans-100-webfont.svg#museo_sans_100regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_300regular';
+    src: url('../font/museosans-300-webfont.eot');
+    src: url('../font/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans-300-webfont.woff') format('woff'),
+         url('../font/museosans-300-webfont.ttf') format('truetype'),
+         url('../font/museosans-300-webfont.svg#museo_sans_300regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo_sans_500regular';
+    src: url('../font/museosans_500-webfont.eot');
+    src: url('../font/museosans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_500-webfont.woff') format('woff'),
+         url('../font/museosans_500-webfont.ttf') format('truetype'),
+         url('../font/museosans_500-webfont.svg#museo_sans_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_sans_700regular';
+    src: url('../font/museosans_700-webfont.eot');
+    src: url('../font/museosans_700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_700-webfont.woff') format('woff'),
+         url('../font/museosans_700-webfont.ttf') format('truetype'),
+         url('../font/museosans_700-webfont.svg#museo_sans_500regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'museo_sans_900regular';
+    src: url('../font/museosans_900-webfont.eot');
+    src: url('../font/museosans_900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/museosans_900-webfont.woff') format('woff'),
+         url('../font/museosans_900-webfont.ttf') format('truetype'),
+         url('../font/museosans_900-webfont.svg#museo_sans_900regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 //text transforms
 
@@ -62,27 +137,27 @@
 
 //font families
 
-
+.light-font{
+  font-weight:100;
+  font-family: 'museo_sans_100regular';
+}
 
 .regular-font{
-    font-weight:400;
+    font-weight:500;
+    font-family: 'museo_sans_500regular';
 }
 
 .medium-font{
-    font-weight:600;
+    font-weight:700;
+    font-family: 'museo_sans_700regular';
 }
 
 .bold-font{
-    font-weight:700;
-}
-
-.extra-bold-font{
     font-weight:900;
+    font-family: 'museo_sans_900regular';
 }
 
-.light-font-name{
-  font-weight:300;
-}
+
 
 
 
@@ -109,33 +184,33 @@
 //font base
 
 h1{
-  font-size:61px;
-  line-height:64px;
+  font-size:50px;
+  line-height:1.28em;
 }
 
 h2{
   font-size:40px;
-  line-height:48px;
+  line-height:1.28em;
 }
 
 h3{
   font-size:36px;
-  line-height:40px;
+  line-height:1.28em;
 }
 
 h4{
   font-size:32px;
-  line-height:40px;
+  line-height:1.28em;
 }
 
 h5{
   font-size:24px;
-  line-height:32px;
+  line-height:1.28em;
 }
 
 h6{
   font-size:12px;
-  line-height:16px;
+  line-height:1.28em;
 }
 
 
@@ -143,11 +218,11 @@ h6{
 
 .body-small{
   font-size: 14px;
-  line-height:20px;
+  line-height:1.28em;
 }
 .body-large{
   font-size: 20px;
-  line-height:28px;
+  line-height:1.28em;
 }
 
 //lists

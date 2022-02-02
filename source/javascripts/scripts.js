@@ -1,4 +1,15 @@
  $(document).ready(function(){
+
+
+    ///toggle mobile menu
+        $('.mobile-menu-toggle').on('click', function(e) {
+        $('.mobile-menu-container').toggleClass("mobile-menu-hidden"); 
+    });
+
+
+
+
+
         $('[data-toggle="tooltip"]').tooltip(
         {container:'body', trigger: 'hover'}
         );   
