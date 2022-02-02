@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-256.000000, -615.000000)">
+            <g id="Group" transform="translate(240.000000, 604.000000)">
+                <g id="Group-3" transform="translate(17.000000, 12.000000)">
+                    <circle id="Oval" stroke="#E6ECF1" stroke-width="2" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                    <g id="roofing_black_24dp" transform="translate(5.000000, 4.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="19" height="19"></rect>
+                        <path d="M10.2916667,14.25 L8.70833333,14.25 L8.70833333,12.6666667 L10.2916667,12.6666667 L10.2916667,14.25 Z M11.875,11.0833333 L7.125,11.0833333 L7.125,15.8333333 L11.875,15.8333333 L11.875,11.0833333 L11.875,11.0833333 Z M15.0416667,7.3625 L15.0416667,7.3625 L15.0416667,3.16666667 L12.6666667,3.16666667 L12.6666667,5.225 L12.6666667,5.225 L9.5,2.375 L1.58333333,9.5 L3.95833333,9.5 L9.5,4.50458333 L15.0416667,9.5 L17.4166667,9.5 L15.0416667,7.3625 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

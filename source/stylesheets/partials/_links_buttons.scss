@@ -1,0 +1,161 @@
+a{
+	color:$link-color;
+	&:hover{
+		color: shade($link-color,20%);
+		text-decoration:none;
+	}
+}
+
+
+
+
+.btn{
+	border-radius:$base-border-radius;
+	font-weight:700;
+	font-size:14px;
+	transition: none;
+	padding:10px 20px;
+
+	.material-icons, .material-icons-outlined {
+	  vertical-align: middle;
+	  line-height: 0 !important;
+	  position: relative;
+	  top: -1px;
+	  font-size: 14px;
+	}
+
+
+	&.btn-lg{
+		padding: .65rem 2rem;
+		font-size:16px;
+	}
+	&.btn-sm{
+		padding: 4px 12px;
+		
+	}
+	&.btn-sm-text{
+		font-size:14px;
+		&.dropdown-toggle{
+			&:after{
+				vertical-align:0.10em;
+			}
+		}
+	}
+	&.btn-circle{
+		border-radius:100px;
+	}
+	//primary buttons
+	&.btn-primary{
+		background:$link-color;
+		border-color:$link-color;
+
+
+		&:hover{
+			@include button-hover($link-color);
+		}
+		&:active{
+			@include button-active($link-color);
+		}
+	}
+	&.btn-secondary{
+		background:white;
+		border-color:$lightest-gray-color;
+		color:$text-color;
+
+		&:hover{
+			@include button-hover-light-button($link-color);
+		}
+
+		&:active{
+			@include button-active-light-button($link-color);
+		}
+		&.disabled{
+			border-color:$lightest-gray-color;
+		}
+	}
+	&.btn-terciary{
+		background:tint($link-color,94%);
+		border-color:tint($link-color,94%);
+		color:$link-color;
+		&:hover{
+			background:tint($link-color,82%);
+			border-color:tint($link-color,82%);
+		}
+	}
+
+	//alert buttons
+	&.btn-danger{
+		background:$danger-color;
+		border-color:$danger-color;
+		&:hover{
+			@include button-hover($danger-color);
+		}
+	}
+	&.btn-success{
+		background:$success-color;
+		border-color:$success-color;
+		&:hover{
+			@include button-hover($success-color);
+		}
+	}
+	&.btn-warning{
+		background:$warning-color;
+		border-color:$warning-color;
+		color:white;
+		&:hover{
+			@include button-hover($warning-color);
+		}
+	}
+	//flat button
+	&.btn-flat{
+		background:transparent;
+		border-color:white;
+		color:$text-color;
+		&:hover{
+			@include button-hover-light-button($link-color);
+			border-color:white;
+		}
+		&:active{
+			@include button-active-light-button($link-color);
+		}
+	}
+	//flat wire
+	//used in the hover of project card
+	&.btn-wire{
+		background:transparent;
+		border-color:white;
+		color:white;
+		&:hover{
+			@include button-hover($link-color);
+		}
+	}
+	//link button
+	&.btn-link{
+		color:$link-color;
+		&:hover{
+			color:shade($link-color,10%);
+		}
+	}
+	//used for icon only buttons
+	&.btn-icon{
+		i,.material-icons{
+			font-size: 20px!important;
+		}
+	}
+	&:focus{
+		outline: none;
+		box-shadow: none!important;
+	}
+}
+
+.close{
+	color:$text-color;
+	opacity: .8;
+}
+
+//tooltips
+
+.tooltip{
+	margin-bottom:4px;
+	font-size:12px;
+}

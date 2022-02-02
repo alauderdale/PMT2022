@@ -1,0 +1,56 @@
+
+#main-nav
+  %a.menu-close.menu-toggle-action.close-x.d-lg-none{:href=>"#"}
+    %i.material-icons
+      clear
+  %a.logo-container.full-width.d-block{:href => "/dashboard"} 
+    %img.margin-auto.d-block{:src=>"/images/logo.svg", :width=>"115px"}
+  %nav.navbar.nav.flex-column.margin-bottom
+    %a.nav-link{:href=>"/dashboard/", :class => (current_page.data.title === "Dashboard") ? "active" : ""}
+      Dashboard
+    %a.nav-link{:href=>"/browse/", :class => (current_page.data.title === "Browse listings") ? "active" : ""}
+      Browse listings
+    %a.nav-link{:href=>"/offers/", :class => (current_page.data.title === "My offers") ? "active" : ""}
+      My offers
+    %a.nav-link{:href=>"/listings/", :class => (current_page.data.title === "My listings") ? "active" : ""}
+      My listings
+    %a.nav-link{:href=>"/browse/saved-zero", :class => (current_page.data.title === "Saved") ? "active" : ""}
+      Saved
+
+      
+
+
+
+%nav.navbar.fixed-top.top-header#page-nav
+  .container-fluid
+    .nav-group
+      %button.btn.btn-sm.btn-flat.menu-toggle.menu-toggle-action.mr-2.d-inline-block.d-lg-none{:type => "button"} 
+        %i.material-icons
+          menu
+      %a.d-inline-block.d-lg-none{:href => "/dashboard"} 
+        %img{:src=>"/images/logo.svg", :width=>"100px"}
+    .nav-group.admin-bar
+      %a.btn.btn-primary{:href=>"/listings/new"}
+        New listing
+      .dropdown.d-inline-block
+        %a.nav-link{"data-toggle" => "dropdown", :href => "#"}
+          .avatar.avatar-xs.quarter-margin-right.align-middle.d-inline-block
+            JD
+          / %p.body-small.bold-font.align-middle.no-margin.text-color.d-md-inline-block.d-none
+          /   John Doe
+          %i.material-icons.align-middle
+            expand_more
+        .dropdown-menu.dropdown-menu-top.dropdown-menu-right
+          %a.dropdown-item{:href => "/settings"} 
+            Profile
+          %a.dropdown-item{:href => "/welcome/login"} 
+            log out
+    
+
+
+
+
+
+
+
+

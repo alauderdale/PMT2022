@@ -1,0 +1,9 @@
+<!doctype html>
+%html
+	%head
+		= partial "shared/scripts"
+	%body{:class => page_classes}
+		= partial "shared/close-header"	
+		.main
+			= yield
+			

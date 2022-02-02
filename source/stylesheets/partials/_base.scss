@@ -1,0 +1,181 @@
+* {
+	// position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+      max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+body{
+  font: 100%;
+  font-size:$base-font-size;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  width:100%;
+  line-height: 1.5rem;
+  height:100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  zoom:1;
+  font-family: $regular-font-name;
+  font-weight:400;
+  background-color:$background-color;
+  padding-top:$body-padding-height;
+  @include breakpoint(md) {
+  }
+  @include breakpoint(sm) {
+    padding-top:60px;
+  }
+
+}
+
+.flex{
+  display:flex;
+}
+
+
+// Clearing
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+// Flexbox
+
+.flex {
+  display: flex;
+}
+
+.eq {
+  flex: 1;
+}
+
+
+img{
+	height:auto;
+}
+
+//backgrounds
+
+
+
+//display
+
+.base-line-height{
+    line-height:$baseline;
+}
+
+.small-line-height{
+    line-height:18px;
+}
+
+.full-width{
+    width:100%;
+}
+
+.max-width{
+    max-width:100%;
+}
+
+.display-block{
+    display:block;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.inline{
+    display:inline;
+}
+
+.jumbotron{
+  background:$off-white-dark-color;
+}
+
+//fills
+
+.primary-bg{
+  background-color:$primary-color!important;
+}
+
+
+//misc
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+//icons
+
+.helper-icon{
+  font-size: 18px;
+    position: relative;
+    top: 4px;
+    margin-left: 5px;
+}
+
+//borders
+
+.border-top, .border-bottom, .border-left, .border-right{
+  border-color:$border-color!important;
+}
+
+//attachments cards
+
+.attachment-grid{
+
+  padding-left:50px;
+}
+
+.attachment-preview{
+  position:relative;
+  margin:4px;
+  padding:8px;
+  width:120px;
+  height:75px;
+  background:$text-color;
+  display: block;
+  border-radius:$base-border-radius;
+  border:1px solid $border-color;
+  color:white;
+  &:hover{
+    background:tint($text-color,5%);
+    text-decoration: none;
+    .title{
+      color:white;
+    }
+    .remove{
+      display: block;
+    }
+  }
+  .remove{
+    position:absolute;
+    top: -10px;
+    right:-10px;
+    display: none;
+  }
+  .type{
+    position:absolute;
+    bottom:0px;
+    left:8px;
+  }
+}
+
+
+.rounded{
+  border-radius:$base-border-radius!important;
+}

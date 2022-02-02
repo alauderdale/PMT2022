@@ -1,0 +1,218 @@
+
+
+.btn-group{
+	&.show{
+		.btn.dropdown-action{
+			@include button-active-light-button($link-color);
+		}
+	}
+}
+
+.dropdown{
+	&.show{
+		.btn-secondary, .btn-flat{
+			@include button-active-light-button($link-color);
+		}
+	}
+}
+
+.dropdown-visible{
+	display: block;
+}
+
+
+//default dropdown menu styling
+.dropdown-menu{
+	box-shadow:$box-shadow-elv-three;
+	border:none;
+	border-radius:$base-border-radius;
+	
+	.dropdown-item{
+		color:$text-color;
+		transition-duration: .2s;
+		font-size: 13px;
+		font-weight: 600;
+		&:hover{
+			background:$off-white-dark-color;
+		}
+		&:active{
+			background:shade($off-white-dark-color,5%);
+			color:$text-color;
+		}
+		&.active{
+			background:$off-white-dark-color;
+			box-shadow:inset 3px 0 0 $link-color;
+			color:$dark-text-color;
+			&:hover{
+				background:$off-white-dark-color;
+			}
+		}
+		i{
+			vertical-align: middle;
+			line-height: 0 !important;
+			position: relative;
+			top: -2px;
+			font-size: 20px;
+			left:-5px;
+			}
+		.icon-left{
+			margin-right:12px;
+		}
+	}
+}
+
+.dropdown-header{
+	color:$text-color;
+	background-color: $off-white-color;
+	border-top:1px solid $off-white-darker-color;
+	border-bottom:1px solid $off-white-darker-color;
+	&.dropdown-header-white{
+		border:none;
+		background:transparent;
+	}
+}
+
+.max-height-dropdown{
+	overflow-y: scroll;
+	background: white;
+	max-height: 300px;
+}
+
+//used for key value dropdowns
+
+.dropdown-subtle{
+	.btn-secondary{
+		border:none;
+	}
+}
+
+
+
+//used for the note filter
+.checkbox-filter-item{
+	cursor: pointer;
+	position:relative;
+	&:hover{
+		background:transparent!important;
+		&:after{
+			content: "check_box";
+			color:$link-color;
+			font-family:"material Icons Outlined";
+		}
+	}
+	&:after{
+		content: "check_box_outline_blank";
+		position:absolute;
+		top:3px;
+		right:18px;
+		font-size: 20px;
+		color: $lightest-gray-color;
+		font-family:"material Icons";
+
+	}
+	&.active{
+		background:transparent!important;
+		box-shadow: none!important;
+
+		&:after{
+			content: "check_box";
+			color: $link-color;	
+			font-family:"material Icons";	
+		}
+
+
+	}
+
+}
+
+.workspace-menu-inner{
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    background: white;
+    max-height: 300px;
+    padding-bottom:50px;
+
+}
+
+
+.add-team-option{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: white;
+    width: 100%;
+    border-radius:$base-border-radius;
+    margin-bottom:8px;
+    .dropdown-divider{
+    	margin-top: 0;
+    }
+}
+
+//Workspace selection menu
+.workspace-menu{
+	min-width:280px;
+	position:absolute!important;
+	animation-duration: .15s;
+	 animation-fill-mode:both;
+	animation-name: menu-zoom;
+}
+
+.admin-menu{
+	position:absolute!important;
+	animation-duration: .15s;
+	 animation-fill-mode:both;
+	animation-name: menu-zoom;
+	top:83%;
+	bottom:44px!important;
+}
+
+
+.menu-avatar{
+	.avatar-container{
+		margin-right:12px;
+		.avatar-default{
+			padding:6px;
+			background-color:$primary-color;
+			font-size:14px;
+			font-weight:600;
+			color:white;
+			border-radius:6px;
+			line-height:1;
+			min-width:28px;
+			text-align:center;
+
+		}
+		&.invert-avatar{
+			.avatar-default{
+				background:white;
+				color:$text-color;
+				border:1px solid $border-color;
+			}
+		}
+	}
+}
+
+///menus with biuttons to the right of the text
+.menu-with-button{
+	.dropdown-item{
+		padding:12px 20px;
+		.text{
+			padding:0!important;
+		}
+		.button-container{
+			padding:0!important;
+			line-height: 1;
+			button{
+				padding:0!important;
+			}
+			i{
+				font-size:20px;
+			}
+		}
+	}
+}
+
+
+

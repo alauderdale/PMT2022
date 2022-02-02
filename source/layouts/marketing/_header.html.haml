@@ -1,0 +1,31 @@
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.marketing-header
+  .container
+    %a.navbar-brand{:href => "/"}
+      %img{:alt => "", :height => "30", :src => "/images/logo.svg", :width => "125"}
+    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item.active
+          %a.nav-link{:href => "/market/about"}
+            About
+        %li.nav-item
+          %a.nav-link{:href => "/#faq"} 
+            FAQ
+        %li.nav-item.dropdown
+          %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Made for
+          .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+            %a.dropdown-item{:href => "/market/for-buying-agents"} 
+              Buying agents
+            %a.dropdown-item{:href => "#"} 
+              Selling agents
+        %li.nav-item
+          %a.nav-link{:href => "/market/listings"} 
+            Listings
+      %form.form-inline.my-2.my-lg-0
+        .nav-item
+          %a.nav-link{:href => "/welcome/login"} 
+            Log in
+        %a.btn.btn-secondary.my-2.my-sm-0.sign-up-btn{:href => "/welcome/sign-up"} 
+          Sign up

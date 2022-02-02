@@ -1,0 +1,12 @@
+<!doctype html>
+%html.market-html
+  %head
+    = partial "shared/scripts"
+    %body.marketing{:class => page_classes, :style=>"padding:0;"}
+      = partial "layouts/marketing/header"
+      /end menu
+      .main
+        = yield
+      /end main content
+      =partial('market/footer')
+      

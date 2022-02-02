@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-check</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-553.000000, -2295.000000)">
+            <g id="icon-check" transform="translate(555.000000, 2297.000000)">
+                <circle id="Oval" stroke="#FFDA00" stroke-width="4" fill-opacity="0" fill="#D8D8D8" cx="19.5" cy="19.5" r="19.5"></circle>
+                <polyline id="Path-2" stroke="#222325" stroke-width="5" points="11 20.5163538 18.4459619 27 30 12"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

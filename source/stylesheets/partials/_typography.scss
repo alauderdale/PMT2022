@@ -1,0 +1,244 @@
+// typography baselines and @font face setups
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900');
+
+//text transforms
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+//text colors
+
+.extra-light-text-color{
+  color:$extra-light-text-color!important;
+}
+
+.light-text-color{
+  color:$light-text-color!important;
+}
+
+.text-color{
+  color:$text-color!important;
+}
+
+.success-text-color{
+  color:$success-color!important;
+}
+
+.dark-text-color{
+  color:$dark-text-color!important;
+}
+
+.primary-text-color{
+  color:$primary-color!important;
+}
+
+
+
+//alerts
+
+.text-success{
+  color:$success-color;
+}
+
+.text-warning{
+  color:$warning-color;
+}
+
+.text-danger{
+  color:$danger-color;
+}
+
+//links
+
+.link-color{
+  color:$link-color;
+}
+
+
+
+
+//font families
+
+
+
+.regular-font{
+    font-weight:400;
+}
+
+.medium-font{
+    font-weight:600;
+}
+
+.bold-font{
+    font-weight:700;
+}
+
+.extra-bold-font{
+    font-weight:900;
+}
+
+.light-font-name{
+  font-weight:300;
+}
+
+
+
+
+//font color
+
+.primary-text-color{
+  color:$primary-color!important;
+}
+
+.secondary-text-color{
+  color:$secondary-color!important;
+}
+
+
+
+//font size
+
+.micro-text{
+  font-size:0.7rem;
+}
+
+
+//font base
+
+h1{
+  font-size:61px;
+  line-height:64px;
+}
+
+h2{
+  font-size:40px;
+  line-height:48px;
+}
+
+h3{
+  font-size:36px;
+  line-height:40px;
+}
+
+h4{
+  font-size:32px;
+  line-height:40px;
+}
+
+h5{
+  font-size:24px;
+  line-height:32px;
+}
+
+h6{
+  font-size:12px;
+  line-height:16px;
+}
+
+
+
+
+.body-small{
+  font-size: 14px;
+  line-height:20px;
+}
+.body-large{
+  font-size: 20px;
+  line-height:28px;
+}
+
+//lists
+
+
+ul.check-list{
+    list-style: none;
+    padding: 0;
+    li{
+      font-size: 16px;
+      padding-left: 1.3em;
+      margin-bottom:5px;
+      &:before{
+        content: "check"; /* FontAwesome Unicode */
+        font-family: Material Icons;
+        margin-left: -1.3em; /* same as padding-left set on li */
+        width: 1.3em; /* same as padding-left set on li */
+        position:relative;
+        top:4px;
+        font-size:20px;
+        color:font-color;
+      }
+    }
+  }
+
+
+ul.icon-list{
+  li{
+    font-size: 14px;
+    line-height: 20px;
+    i{
+      font-size: 14px;
+      position:relative;
+      top:3px;
+      margin-right: 5px;
+    }
+  }
+}
+
+ul.icon-list-better{
+  li{
+    line-height: 1.3rem;
+    position:relative;
+    &:before{
+      font-family: 'material icons';
+      content: 'check';
+      color: $primary-color;
+    }
+    &.no-deal{
+      color:$light-text-color;
+      &:before{
+        color:$light-text-color;
+        content: 'clear';
+      }
+    }
+  }
+}
+
+
+.line-through{
+  text-decoration: line-through;
+}
+
+hr{
+  border-color:$border-color;
+}
+
+//truncate
+
+.truncate-text{
+  webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    white-space: nowrap!important;
+    width: 100%!important;
+}
+
+
+//mobile
+
+  @include breakpoint(md) {
+
+
+  }
+
+
+  @include breakpoint(sm) {
+
+    .text-center-sm{
+      text-align:center!important;
+    }
+  }
