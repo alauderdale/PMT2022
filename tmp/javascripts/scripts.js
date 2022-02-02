@@ -1,4 +1,15 @@
  $(document).ready(function(){
+
+
+    ///toggle mobile menu
+        $('.mobile-menu-toggle').on('click', function(e) {
+        $('.mobile-menu-container').toggleClass("mobile-menu-hidden"); 
+    });
+
+
+
+
+
         $('[data-toggle="tooltip"]').tooltip(
         {container:'body', trigger: 'hover'}
         );   
@@ -54,21 +65,7 @@ $('#myModal').on('hide.bs.modal', function (e) {
 
 
 
-//nested dropdown support
 
-
-// PREVENT INSIDE CLICK DROPDOWN 
-  $('.prevent-dd-close-on-click').on("click.bs.dropdown", function (e) { 
-    e.stopPropagation();                 
-    e.preventDefault();                             
-  });
-
-
-//for filter menu
-
-  $('.checkbox-filter-item').on('click', function(e) {
-    $(this).toggleClass("active"); 
-  });
 
 
 

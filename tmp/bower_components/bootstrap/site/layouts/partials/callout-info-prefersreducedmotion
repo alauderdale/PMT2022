@@ -1,0 +1,1 @@
+<p>The animation effect of this component is dependent on the <code>prefers-reduced-motion</code> media query. See the <a href="/docs/{{%20.Site.Params.docs_version%20}}/getting-started/accessibility/#reduced-motion">reduced motion section of our accessibility documentation</a>.</p>

@@ -19,8 +19,9 @@ restrictions:</p>
 
 <ul>
   <li>
-    <p>Please <strong>do not</strong> use the issue tracker for personal support requests.  Stack
-Overflow (<a href="https://stackoverflow.com/questions/tagged/bootstrap-4"><code>bootstrap-4</code></a> tag), <a href="https://bootstrap-slack.herokuapp.com/">Slack</a> or <a href="README.md#community">IRC</a> are better places to get help.</p>
+    <p>Please <strong>do not</strong> use the issue tracker for personal support requests. Stack
+Overflow (<a href="https://stackoverflow.com/questions/tagged/bootstrap-4"><code>bootstrap-4</code></a> tag),
+<a href="https://bootstrap-slack.herokuapp.com/">Slack</a> or <a href="/README.md#community">IRC</a> are better places to get help.</p>
   </li>
   <li>
     <p>Please <strong>do not</strong> derail or troll issues. Keep the discussion on topic and
@@ -65,8 +66,7 @@ Good bug reports are extremely helpful, so thanks!</p>
 
 <ol>
   <li>
-    <p><strong>Validate and lint your code</strong> — <a href="https://html5.validator.nu/">validate your HTML</a>
-and <a href="https://github.com/twbs/bootlint">lint your HTML</a> to ensure your
+    <p><strong><a href="https://html5.validator.nu/">validate your HTML</a></strong> to ensure your
 problem isn't caused by a simple error in your own code.</p>
   </li>
   <li>
@@ -75,7 +75,7 @@ reported.</p>
   </li>
   <li>
     <p><strong>Check if the issue has been fixed</strong> — try to reproduce it using the
-latest <code>master</code> or development branch in the repository.</p>
+latest <code>master</code> or <code>v4-dev</code> branch in the repository.</p>
   </li>
   <li>
     <p><strong>Isolate the problem</strong> — ideally create a <a href="https://css-tricks.com/reduced-test-cases/">reduced test
@@ -140,7 +140,7 @@ When feasible, we aim to report such upstream bugs to the relevant browser vendo
       <td>Apple</td>
       <td>Safari</td>
       <td>WebKit</td>
-      <td>https://bugs.webkit.org/enter_bug.cgi?product=WebKit <br /> https://bugreport.apple.com/</td>
+      <td>https://bugs.webkit.org/enter_bug.cgi?product=WebKit</td>
       <td>In Apple's bug reporter, choose "Safari" as the product.</td>
     </tr>
     <tr>
@@ -153,16 +153,12 @@ When feasible, we aim to report such upstream bugs to the relevant browser vendo
     <tr>
       <td>Microsoft</td>
       <td>Edge</td>
-      <td>EdgeHTML</td>
-      <td>https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/</td>
-      <td> </td>
+      <td>Blink</td>
+      <td>https://developer.microsoft.com/en-us/microsoft-edge/</td>
+      <td>Go to "Help &gt; Send Feedback" from the browser</td>
     </tr>
   </tbody>
 </table>
-
-<h3 id="issues-bots">Issues bots</h3>
-
-<p><a href="https://github.com/twbs-lmvtfy">@twbs-lmvtfy</a> is a Bootstrap bot that hangs out in our GitHub issue tracker and automatically checks for HTML validation errors in live examples (e.g. jsFiddles, JS Bins, Bootplys, Plunks, CodePens, etc.) posted in issue comments. If it finds any errors, it will post a follow-up comment on the issue and point out the errors. If this happens with an example you've posted, please fix the errors and post an updated live example. If you opened a bug report, please check whether the bug still occurs with your revised, valid live example. If the bug no longer occurs, it was probably due to your invalid HTML rather than something in Bootstrap and we'd appreciate it if you could close out the GitHub issue.</p>
 
 <h2 id="feature-requests">Feature requests</h2>
 
@@ -177,23 +173,25 @@ provide as much detail and context as possible.</p>
 help. They should remain focused in scope and avoid containing unrelated
 commits.</p>
 
-<p><strong>Please ask first</strong> before embarking on any significant pull request (e.g.
+<p><strong>Please ask first</strong> before embarking on any <strong>significant</strong> pull request (e.g.
 implementing features, refactoring code, porting to a different language),
 otherwise you risk spending a lot of time working on something that the
-project's developers might not want to merge into the project.</p>
+project's developers might not want to merge into the project. For trivial
+things, or things that don't require a lot of your time, you can go ahead and
+make a PR.</p>
 
 <p>Please adhere to the <a href="#code-guidelines">coding guidelines</a> used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).</p>
 
-<p><strong>Do not edit <code>bootstrap.css</code>, or <code>bootstrap.js</code>
-directly!</strong> Those files are automatically generated. You should edit the
-source files in <a href="https://github.com/twbs/bootstrap/tree/master/scss"><code>/bootstrap/scss/</code></a>
-and/or <a href="https://github.com/twbs/bootstrap/tree/master/js"><code>/bootstrap/js/</code></a> instead.</p>
+<p><strong>Do not edit <code>bootstrap.css</code> or <code>bootstrap.js</code>, and do not commit
+any dist files (<code>dist/</code> or <code>js/dist</code>).</strong> Those files are automatically generated by our build tools. You should
+edit the source files in <a href="https://github.com/twbs/bootstrap/tree/v4-dev/scss"><code>/bootstrap/scss/</code></a>
+and/or <a href="https://github.com/twbs/bootstrap/tree/v4-dev/js/src"><code>/bootstrap/js/src/</code></a> instead.</p>
 
 <p>Similarly, when contributing to Bootstrap's documentation, you should edit the
 documentation source files in
-<a href="https://github.com/twbs/bootstrap/tree/master/docs">the <code>/bootstrap/docs/</code> directory of the <code>master</code> branch</a>.
+<a href="https://github.com/twbs/bootstrap/tree/v4-dev/site/content/docs">the <code>/bootstrap/site/content/docs/</code> directory of the <code>v4-dev</code> branch</a>.
 <strong>Do not edit the <code>gh-pages</code> branch.</strong> That branch is generated from the
 documentation source files and is managed separately by the Bootstrap Core Team.</p>
 
@@ -218,8 +216,8 @@ git remote add upstream https://github.com/twbs/bootstrap.git
     <p>If you cloned a while ago, get the latest changes from upstream:</p>
 
     <p><code>bash
-git checkout master
-git pull upstream master
+git checkout v4-dev
+git pull upstream v4-dev
 </code></p>
   </li>
   <li>
@@ -241,7 +239,7 @@ feature to tidy up your commits before making them public.</p>
     <p>Locally merge (or rebase) the upstream development branch into your topic branch:</p>
 
     <p><code>bash
-git pull [--rebase] upstream master
+git pull [--rebase] upstream v4-dev
 </code></p>
   </li>
   <li>
@@ -253,21 +251,21 @@ git push origin &lt;topic-branch-name&gt;
   </li>
   <li>
     <p><a href="https://help.github.com/articles/about-pull-requests/">Open a Pull Request</a>
- with a clear title and description against the <code>master</code> branch.</p>
+ with a clear title and description against the <code>v4-dev</code> branch.</p>
   </li>
 </ol>
 
 <p><strong>IMPORTANT</strong>: By submitting a patch, you agree to allow the project owners to
-license your work under the terms of the <a href="LICENSE">MIT License</a> (if it
+license your work under the terms of the <a href="/bower_components/bootstrap/LICENSE">MIT License</a> (if it
 includes code changes) and under the terms of the
-<a href="docs/LICENSE">Creative Commons Attribution 3.0 Unported License</a>
+<a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>
 (if it includes documentation changes).</p>
 
 <h2 id="code-guidelines">Code guidelines</h2>
 
 <h3 id="html">HTML</h3>
 
-<p><a href="http://codeguide.co/#html">Adhere to the Code Guide.</a></p>
+<p><a href="https://codeguide.co/#html">Adhere to the Code Guide.</a></p>
 
 <ul>
   <li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags).</li>
@@ -277,11 +275,11 @@ includes code changes) and under the terms of the
 
 <h3 id="css">CSS</h3>
 
-<p><a href="http://codeguide.co/#css">Adhere to the Code Guide.</a></p>
+<p><a href="https://codeguide.co/#css">Adhere to the Code Guide.</a></p>
 
 <ul>
   <li>When feasible, default color palettes should comply with <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG color contrast guidelines</a>.</li>
-  <li>Except in rare cases, don't remove default <code>:focus</code> styles (via e.g. <code>outline: none;</code>) without providing alternative styles. See <a href="https://a11yproject.com/posts/never-remove-css-outlines/">this A11Y Project post</a> for more details.</li>
+  <li>Except in rare cases, don't remove default <code>:focus</code> styles (via e.g. <code>outline: none;</code>) without providing alternative styles. See <a href="https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/">this A11Y Project post</a> for more details.</li>
 </ul>
 
 <h3 id="js">JS</h3>
@@ -300,7 +298,7 @@ includes code changes) and under the terms of the
 
 <h2 id="license">License</h2>
 
-<p>By contributing your code, you agree to license your contribution under the <a href="LICENSE">MIT License</a>.
-By contributing to the documentation, you agree to license your contribution under the <a href="docs/LICENSE">Creative Commons Attribution 3.0 Unported License</a>.</p>
+<p>By contributing your code, you agree to license your contribution under the <a href="/bower_components/bootstrap/LICENSE">MIT License</a>.
+By contributing to the documentation, you agree to license your contribution under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
 
 <p>Prior to v3.1.0, Bootstrap's code was released under the Apache License v2.0.</p>

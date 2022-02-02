@@ -15,103 +15,317 @@ TruHome Value | Tagline goes here"
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons+Outlined' rel='stylesheet'>
 <link href="../stylesheets/style.css" rel="stylesheet" />
 <link href='../images/favicon.ico' rel='shortcut icon'>
-<script src="../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
 </head>
 <body class='styles styles_index'>
 <div id='dashboard-container'>
-<div id='main-nav'>
-<a class='menu-close menu-toggle-action close-x d-lg-none' href='#'>
+<div class='mobile-header-container fixed-top d-block d-lg-none'>
+<div class='mobile-header'>
+<div class='mobile-pre-header'>
+<div class='container-fluid'>
+<div class='row align-items-center'>
+<div class='col'>
+<div class='d-flex justify-content-between align-items-center'>
+<a class='nav-link one-line-height' href='#'>
+<i class='material-icons'>
+shopping_cart
+</i>
+</a>
+<a href='/'>
+<img alt='' src='../images/logo-no-tag.svg' width='118'>
+</a>
+<a class='nav-link one-line-height mobile-menu-toggle' href='#'>
+<i class='material-icons'>
+menu
+</i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='mobile-menu-container d-block d-lg-none mobile-menu-hidden'>
+<div class='mobile-menu fixed-top'>
+<div class='mobile-pre-header'>
+<div class='container-fluid'>
+<div class='row align-items-center'>
+<div class='col'>
+<div class='d-flex justify-content-between align-items-center'>
+<a class='nav-link one-line-height' href='#'>
+<i class='material-icons'>
+n
+</i>
+</a>
+<a href='/'>
+<img alt='' src='../images/logo-no-tag.svg' width='118'>
+</a>
+<a class='nav-link one-line-height mobile-menu-toggle' href='#'>
 <i class='material-icons'>
 clear
 </i>
 </a>
-<a class='logo-container full-width d-block' href='/dashboard'>
-<img class='margin-auto d-block' src='../images/logo.svg' width='115px'>
-</a>
-<nav class='navbar nav flex-column margin-bottom'>
-<a class='nav-link' href='/dashboard/'>
-Dashboard
-</a>
-<a class='nav-link' href='/browse/'>
-Browse listings
-</a>
-<a class='nav-link' href='/offers/'>
-My offers
-</a>
-<a class='nav-link' href='/listings/'>
-My listings
-</a>
-<a class='nav-link' href='/browse/saved-zero'>
-Saved
-</a>
-</nav>
 </div>
-<nav class='navbar fixed-top top-header' id='page-nav'>
-<div class='container-fluid'>
-<div class='nav-group'>
-<button class='btn btn-sm btn-flat menu-toggle menu-toggle-action mr-2 d-inline-block d-lg-none' type='button'>
+</div>
+</div>
+</div>
+</div>
+<div class='nav flex-colum'>
+<div class='dropdown'>
+<a aria-expanded='false' class='nav-link dropdown-toggle d-flex align-items-center justify-content-between' data-toggle='dropdown' href='#'>
+<span class='text'>
+Real practice exams
+</span>
 <i class='material-icons'>
-menu
-</i>
-</button>
-<a class='d-inline-block d-lg-none' href='/dashboard'>
-<img src='../images/logo.svg' width='100px'>
-</a>
-</div>
-<div class='nav-group admin-bar'>
-<a class='btn btn-primary' href='/listings/new'>
-New listing
-</a>
-<div class='dropdown d-inline-block'>
-<a class='nav-link' data-toggle='dropdown' href='#'>
-<div class='avatar avatar-xs quarter-margin-right align-middle d-inline-block'>
-JD
-</div>
-<!-- %p.body-small.bold-font.align-middle.no-margin.text-color.d-md-inline-block.d-none -->
-<!-- John Doe -->
-<i class='material-icons align-middle'>
-expand_more
+chevron_right
 </i>
 </a>
-<div class='dropdown-menu dropdown-menu-top dropdown-menu-right'>
-<a class='dropdown-item' href='/settings'>
-Profile
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
 </a>
-<a class='dropdown-item' href='/welcome/login'>
-log out
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+<div class='dropdown'>
+<a aria-expanded='false' class='nav-link dropdown-toggle d-flex align-items-center justify-content-between' data-toggle='dropdown' href='#'>
+<span class='text'>
+Real practice exams
+</span>
+<i class='material-icons'>
+chevron_right
+</i>
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+<div class='dropdown'>
+<a aria-expanded='false' class='nav-link dropdown-toggle d-flex align-items-center justify-content-between' data-toggle='dropdown' href='#'>
+<span class='text'>
+Real practice exams
+</span>
+<i class='material-icons'>
+chevron_right
+</i>
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+<div class='dropdown'>
+<a aria-expanded='false' class='nav-link dropdown-toggle d-flex align-items-center justify-content-between' data-toggle='dropdown' href='#'>
+<span class='text'>
+Real practice exams
+</span>
+<i class='material-icons'>
+chevron_right
+</i>
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
 </a>
 </div>
 </div>
 </div>
 </div>
-</nav>
+</div>
+<div class='fixed-top d-none d-lg-block' id='primary-header'>
+<div id='primary-pre-header'>
+<div class='container'>
+<div class='row align-items-center'>
+<div class='col-3'>
+<div class='d-flex justify-content-start'>
+<a href='/'>
+<img alt='' src='../images/logo.svg' width='318'>
+</a>
+</div>
+</div>
+<div class='col'>
+<div class='nav justify-content-end align-items-center'>
+<a class='nav-link' href='#'>
+PMP® Exam Updates
+</a>
+<a class='nav-link' href='#'>
+Support
+</a>
+<a class='nav-link' href='#'>
+<img alt='' src='../images/pmi-badge-sm.png' width='40'>
+</a>
+<a class='nav-link one-line-height' href='#'>
+<i class='material-icons'>
+shopping_cart
+</i>
+</a>
+<a class='nav-link' href='#'>
+Support
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='primary-sub-header'>
+<div class='container'>
+<div class='row align-items-center'>
+<div class='col'>
+<div class='nav justify-content-start align-items-center'>
+<div class='dropdown'>
+<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
+Real practice exams
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+<div class='dropdown'>
+<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
+Real practice exams
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+<div class='dropdown'>
+<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
+Real practice exams
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+<div class='dropdown'>
+<a class='nav-link dropdown-toggle' data-toggle='dropdown' href='#'>
+Real practice exams
+</a>
+<div aria-labelledby='navbarDropdown' class='dropdown-menu'>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+<a class='dropdown-item' href='/market/for-buying-agents'>
+License and Brand our Courseware
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class='main'>
 <section>
 <div class='container'>
 <div class='row'>
 <div class='col-lg-12'>
-<h1>
-Heading one
+<h1 class='bold-font mb-5'>
+Dolores laborum cumque iusto deleniti mollitia earum cum iusto quisquam impedit qui aut rerum. Ut consectetur cupiditate commodi dolorum hic et qui exercitationem sint aliquam voluptatem provident quia dignissimos. Dolore soluta pariatur placeat minus aut voluptas ratione aut et commodi aut
 </h1>
-<h2>
-Heading two
+<h2 class='bold-font mb-5'>
+Amet quasi quae mollitia similique enim repudiandae ea. Nesciunt consectetur consequuntur nihil velit laboriosam dignissimos fuga rem illo. At earum quo soluta doloribus non vitae voluptatem
 </h2>
-<h3>
-Heading three
+<h3 class='bold-font mb-5'>
+Commodi saepe praesentium adipisci quibusdam ipsa et eaque ipsa nulla corrupti ullam occaecati itaque. Est quibusdam accusantium alias ratione maiores beatae. Perspiciatis architecto a corrupti dolorem tempora officia nisi optio est
 </h3>
-<h4>
-Heading four
+<h4 class='bold-font mb-5'>
+Expedita sit voluptas dicta temporibus corrupti delectus iste molestiae minus. Praesentium perferendis nobis eum ratione nisi totam qui a suscipit sequi corrupti. Deleniti porro praesentium dicta magni similique error adipisci est voluptatibus voluptatibus odit distinctio placeat
 </h4>
-<h5>
-Heading five
+<h5 class='bold-font mb-5'>
+Perferendis incidunt accusantium iure minus ipsa quas repudiandae voluptate distinctio. Facilis voluptas quo quisquam et praesentium officia. Nobis rerum non facere est debitis dignissimos ex laudantium excepturi
 </h5>
-<h6>
-Heading six
+<h6 class='bold-font mb-5'>
+Assumenda quas quia et voluptate eaque sed earum qui. Sunt quae delectus fuga non dolorem molestias distinctio quod id. Id quia dolore ullam magni nobis est voluptas quis est nulla qui vitae est architecto
 </h6>
+<p class='body-small'>
+Accusantium incidunt numquam officia vitae nisi ipsa sunt omnis qui maxime id pariatur voluptas. Velit vero hic delectus fuga culpa aut ut voluptatem. Eius aut earum accusantium labore quia saepe error consequatur aliquam est eius expedita dicta quas. Et eaque et pariatur nam dicta earum et quidem similique. Sunt sit illo in est qui earum voluptate voluptatem praesentium laborum necessitatibus placeat
+</p>
 <p>
-Quibusdam sit quos sit aut laborum dolorem qui sapiente eligendi in vel quia magni ex. Nemo itaque ipsa et possimus aut earum in. Distinctio nihil sed distinctio nam deleniti sint dicta rem iusto ut explicabo quasi tempore ipsa. Et iure fugiat non. Maxime sunt numquam doloremque voluptates molestiae aspernatur non laborum vero enim voluptas voluptatem aut
+In omnis sapiente deserunt ullam. Cumque quod voluptatem odit sint voluptatem aut occaecati. Praesentium necessitatibus nulla aut. Repellat sit omnis consequatur quisquam. Dolorem consequatur laudantium repellat eum
+</p>
+<p class='body-large'>
+Ducimus voluptatem nemo eos et. Voluptatibus error laudantium sit dolorum. Voluptatum molestiae occaecati qui est in veritatis aut aut dicta qui provident consequatur quam odio. Dolore velit praesentium aut vel omnis quia velit dicta temporibus illo et et. Est aliquam et dolor perferendis dolor voluptate non
 </p>
 <p class='light-font'>
 Light font
@@ -124,9 +338,6 @@ Semibold font
 </p>
 <p class='bold-font'>
 Bold font
-</p>
-<p class='extra-bold-font'>
-Extra Bold font
 </p>
 <p>
 <a href='#'>
