@@ -28,7 +28,7 @@ body{
   padding-top:$body-padding-height;
   @include breakpoint(md) {
   }
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
     padding-top:60px;
   }
 
