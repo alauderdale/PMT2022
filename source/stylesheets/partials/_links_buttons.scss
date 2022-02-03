@@ -11,8 +11,8 @@ a{
 
 .btn{
 	border-radius:$base-border-radius;
-	font-weight:700;
-	font-size:14px;
+	font-family:$bold-font-name;
+	font-size:16px;
 	transition: none;
 	padding:10px 20px;
 
@@ -46,15 +46,16 @@ a{
 	}
 	//primary buttons
 	&.btn-primary{
-		background:$link-color;
-		border-color:$link-color;
-
+		background:$secondary-color;
+		border-color:$secondary-color;
+		color:$text-color!important;
 
 		&:hover{
-			@include button-hover($link-color);
+			@include button-hover($secondary-color);
 		}
 		&:active{
-			@include button-active($link-color);
+			@include button-active($secondary-color);
+			color:$text-color;
 		}
 	}
 	&.btn-secondary{
@@ -74,12 +75,14 @@ a{
 		}
 	}
 	&.btn-terciary{
-		background:tint($link-color,94%);
-		border-color:tint($link-color,94%);
-		color:$link-color;
+		background:$link-color;
+		border-color:$link-color;
+		color: white;
 		&:hover{
-			background:tint($link-color,82%);
-			border-color:tint($link-color,82%);
+			@include button-hover($link-color);
+		}
+		&:active{
+			@include button-active($link-color);
 		}
 	}
 

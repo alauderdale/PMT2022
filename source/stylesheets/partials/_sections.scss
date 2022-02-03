@@ -14,3 +14,13 @@ section{
   }
 
 }
+
+
+section.banner{
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+    @include breakpoint(lg) {
+      background-image:none!important;
+    }
+}
