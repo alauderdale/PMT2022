@@ -2,8 +2,11 @@
 //sections
 section{
   padding:$baseline*2 0;
+  &.section-lg{
+    padding:$baseline*4 0;
+  }
   &.inverse-section{
-  	background-color:$link-color;
+  	background-color:shade($link-color,50%);
   	@extend %white_text;
   }
   &.off-white-bg{
