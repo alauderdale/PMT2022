@@ -19,10 +19,13 @@
 		border-bottom: 3px solid $link-color;
 		.nav{
 			position:relative;
-			right:15px;
+			right:20px;
 			a.nav-link{
 				color:$text-color;
-				padding:16px 16px;
+				padding:16px 24px;
+				@include breakpoint(lg) {
+					padding:16px 12px;
+				}
 			}
 
 
