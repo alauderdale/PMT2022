@@ -138,6 +138,18 @@ img{
   border-color:$border-color!important;
 }
 
+.no-border-md{
+  @include breakpoint(md) {
+    border:none!important;
+  }
+}
+
+.no-border-sm{
+  @include breakpoint(sm) {
+    border:none!important;
+  }
+}
+
 //attachments cards
 
 .attachment-grid{

@@ -11,6 +11,15 @@ section{
   &.inverse-section{
   	background-color:shade($link-color,50%);
   	@extend %white_text;
+    .success-text-color{
+      color:tint($success-color,50%)!important;
+    }
+    a{
+      color:tint($link-color,50%);
+      &:hover{
+        color:tint($link-color,70%);
+      }
+    }
   }
   &.off-white-bg{
   	background-color:$off-white-dark-color;
@@ -23,7 +32,7 @@ section.banner{
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
-    @include breakpoint(lg) {
+    @include breakpoint(md) {
       background-image:none!important;
     }
 }
