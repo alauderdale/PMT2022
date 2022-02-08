@@ -6,10 +6,7 @@
 %section.inverse-section.section-lg.banner{:style=>"background-image:url(../images/home/home-banner.jpg);"}
 	.container
 		.row.align-items-center
-			
-			.col-xl-6.col-lg-4.order-md-2
-
-			.col-xl-6.col-lg-8.order-md-1
+			.col-xl-6.col-lg-7
 				%h1.bold-font.mb-4
 					Live PMP® Classes Taught Online by Veteran Instructors
 				%p.body-small.mb-2
@@ -28,8 +25,12 @@
 					%span.bold-font
 						Less than half the cost 
 					of comparable classroom courses
-				%a.btn-primary.btn{:href=>"/welcome/sign-up"}
-					Schedule and pricing
+				.text-center.text-md-left
+					%a.btn-primary.btn{:href=>"/welcome/sign-up"}
+						Schedule and pricing
+
+			.col-xl-6.col-lg-5
+				%img.max-width.d-block.d-xl-none.home-mobile-hero-image.margin-auto{:src=>"../images/home/home-banner-mobile.png", :width=>"518px"}
 
 %section
 	.container

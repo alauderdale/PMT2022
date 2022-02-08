@@ -1,0 +1,8 @@
+img.home-mobile-hero-image{
+	@include breakpoint(md) {
+		width:400px;
+	}
+	@include breakpoint(sm) {
+		width:300px;
+	}
+}
