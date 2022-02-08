@@ -4,6 +4,9 @@ section{
   padding:$baseline*2 0;
   &.section-lg{
     padding:$baseline*4 0;
+    @include breakpoint(sm) {
+      padding:$baseline*2 0;
+    }
   }
   &.inverse-section{
   	background-color:shade($link-color,50%);

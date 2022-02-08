@@ -1,0 +1,19 @@
+.primary-footer{
+	padding:$baseline*4 0;
+	background-color:#F7F8FA;
+	border-top:4px solid $link-color;
+	ul.social-menu{
+		li{
+			font-size: 30px;
+		}
+	}
+	ul{
+		li{
+			a{
+				&:hover{
+					color:$link-color!important;
+				}
+			}
+		}
+	}
+}

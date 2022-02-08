@@ -31,6 +31,96 @@
 				%a.btn-primary.btn{:href=>"/welcome/sign-up"}
 					Schedule and pricing
 
+%section
+	.container
+		.row
+			.col
+				%p.body-small.text-center.light-text-color
+					Trusted by the smartest teams in the world
+				%img.text-center.full-width.d-none.d-md-block{:src=>"../images/home/logos.png"}
+				%img.text-center.full-width.d-block.d-md-none.mt-5{:src=>"../images/home/logos-mobile.png"}
+
+
+%section.off-white-bg.section-lg
+	.container
+		.row.align-items-center
+			.col-lg-6.col-md-4
+				%img.full-width{:src=>"../images/home/podcast.png"}
+			.col-lg-6.col-md-8
+				.p-4
+					%img.mb-4{:src=>"../images/home/new-podcast.svg"}
+					%p.body-large.bold-font
+						Hear how Atkins Global leveraged PMTraining for their organization
+					%p.light-text-color
+						Featured on PMI's "Projectified" podcast, hear how PMTraining helps companies standardize their team performance with certification training.
+					%a.btn-terciary.btn{:href=>"/welcome/sign-up"}
+						Play now
+%section.section-lg
+	.container
+		.row
+			.col
+				.mb-5
+					%p.body-large.bold-font
+						Awards and Accolades
+		.row
+			-4.times do
+				.col-6.col-lg-3
+					.text-center
+						%img.mb-4{:src=>"../images/home/award.png", :width=>"158px"}
+						%p.body-small.bold-font
+							\#1 Live Online PMP Class of 2021
+						%p.body-small.light-text-color
+							\By Project Management Institute
+
+%section.off-white-bg.section-lg
+	.container
+		.row.align-items-center
+			.col
+				%p.light-text-color.text-center
+					TrustPoilet Widget	  
+
+
+%section.section-lg.pb-0
+	.container
+		.row.align-items-center
+			.col-lg-6
+				.p-lg-5
+					%h3
+						Live Community
+						%br 
+						%span.bold-font
+							Performance PMP Exam 
+					%p.body-large.light-text-color.mb-4
+						Live calculation of the top 5 PMP process areas based on 670,516 PMP practice exams taken by PMTraining exam prep students.
+					%p.bold-font
+						%a{:href=>"#"}
+							Register for PMP Practice Exams
+							%i.material-icons.align-middle
+								east
+			.col-lg-6
+				=partial'/home/preformance-table'
+
+
+
+%section.section-lg
+	.container
+		.row.align-items-center
+			.col-lg-6.order-lg-2
+				.p-lg-5
+					%h3
+						Community Performance 
+						%br 
+						%span.bold-font
+							By Subject Area
+					%p.body-large.light-text-color.mb-4
+						Live calculation of PMP Test Simulation Questions maybe some additional text explaining
+					%p.bold-font
+						%a{:href=>"#"}
+							Register Now for PMP Practice Exams
+							%i.material-icons.align-middle
+								east
+			.col-lg-6.order-lg-1
+				=partial'/home/preformance-table-2'
 
 
 

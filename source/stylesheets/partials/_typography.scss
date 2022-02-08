@@ -158,6 +158,12 @@
 }
 
 
+.social-font{
+    font-weight: normal;
+    font-family: 'socialicoregular';
+}
+
+
 
 
 
@@ -187,30 +193,58 @@ h1{
   font-size:50px;
   line-height:1.1em;
   font-weight: normal;
+  @include breakpoint(md) {
+    font-size:44px;
+  }
+  @include breakpoint(sm) {
+    font-size:34px;
+  }
 }
 
 h2{
   font-size:40px;
   line-height:1.28em;
   font-weight: normal;
+  @include breakpoint(md) {
+    font-size:36px;
+  }
+  @include breakpoint(md) {
+    font-size:32px;
+  }
 }
 
 h3{
   font-size:36px;
   line-height:1.28em;
   font-weight: normal;
+  @include breakpoint(md) {
+    font-size:32px;
+  }
+  @include breakpoint(md) {
+    font-size:28px;
+  }
 }
 
 h4{
   font-size:32px;
   line-height:1.28em;
   font-weight: normal;
+  @include breakpoint(md) {
+    font-size:28px;
+  }
+  @include breakpoint(sm) {
+    font-size:24px;
+  }
 }
 
 h5{
   font-size:24px;
   line-height:1.28em;
   font-weight: normal;
+  @include breakpoint(md) {
+    font-size:18px;
+  }
+
 }
 
 h6{
@@ -219,7 +253,11 @@ h6{
   font-weight: normal;
 }
 
-
+p{
+    @include breakpoint(md) {
+    font-size:14px;
+  }
+}
 
 
 .body-small{
@@ -228,7 +266,13 @@ h6{
 }
 .body-large{
   font-size: 20px;
-  line-height:1.28em;
+  line-height:1.4em;
+  @include breakpoint(md) {
+    font-size:18px;
+  }
+  @include breakpoint(sm) {
+    font-size:16px;
+  }
 }
 
 //lists
