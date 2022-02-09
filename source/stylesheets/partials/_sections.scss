@@ -32,7 +32,18 @@ section.banner{
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
+    @include breakpoint(lg) {
+      // background-image:none!important;
+      .content{
+        padding:30px;
+        padding-left:0;
+        background-color: rgba(10,69,94,.9);
+      }
+    }
     @include breakpoint(md) {
-      background-image:none!important;
+      // background-image:none!important;
+      .content{
+        padding:30px;
+      }
     }
 }
