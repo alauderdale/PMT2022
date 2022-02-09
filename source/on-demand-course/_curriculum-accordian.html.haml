@@ -4,7 +4,7 @@
   -4.times do
     - i = i + 1
     .card
-      .card-header.collapsed{"aria-controls" => "collapse-#{i}", "aria-expanded" => "true", "data-target" => "#collapse-#{i}", "data-toggle" => "collapse", :type => "button"}
+      .card-header.collapsed{"aria-controls" => "collapse-#{i}", "aria-expanded" => "true", "data-target" => "#collapse-#{i}", "data-toggle" => "collapse"}
         .d-flex.align-items-center
           %img.mr-3{:src=>"../images/on-demand-course/milestone-thumb.png", :width=>"125"}
           %p.mb-0.bold-font
@@ -15,7 +15,7 @@
             -3.times do
               - b = b + 1
               .card
-                .card-header.collapsed{"aria-controls" => "collapseInner-#{b}", "aria-expanded" => "true", "data-target" => "#collapseInner-#{b}", "data-toggle" => "collapse", :type => "button"}
+                .card-header.collapsed{"aria-controls" => "collapseInner-#{b}", "aria-expanded" => "true", "data-target" => "#collapseInner-#{b}", "data-toggle" => "collapse"}
                   .d-flex.align-items-center
                     %p.mb-0
                       Milestone 1 - Introducing the Agile Process
