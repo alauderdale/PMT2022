@@ -148,7 +148,7 @@
 						%a.btn-primary.btn.btn-block{:href=>"/welcome/sign-up"}
 							Register now
 
-%section.section-lg
+%section.section-lg.pb-5
 	.container
 		.row
 			.col
@@ -168,4 +168,54 @@
 									%p.body-small.light-text-color
 										Each course milestone contains interactive training lessons designed for On-Demand learning and busy schedules. Complete the entire curriculum in order, or re-visit training lessons as many times as you like.
 
+%section
+	.container
+		.row
+			.col
+				.mb-3
+					%p.text-center
+						Access intensive course lessons without limitation.
+				%p.text-center
+					%a.btn-primary.btn.mr-2{:href=>"/welcome/sign-up"}
+						Register now
+					%a.btn-terciary.btn{:href=>"/welcome/sign-up"}
+						Course demo
+
+		.row.justify-content-center
+			.col-md-10
+				.mt-5
+					.row
+						.col-9
+							.media
+								%img.mr-4{:src=>"../images/quote.svg"}
+								.media-body
+									%h4.medium-font
+										Great class, the exam prep portal was an amazing component in addition to the excellent class... A great combination.
+									%p.body-large.bold-font.mb-0
+										Bernard Gonzales
+									%p.body-small.light-text-color
+										(MBA, PMP)
+						.col-3
+							%img.max-width{:src=>"../images/quote-avatar-1.png", :width=>"229"}
+		.row
+			.col
+				.mt-4.mb-4
+					%p.light-text-color.text-center
+						TrustPoilet Widget	
+
+%section.section-lg
+	.container
+		.row
+			.col-md-8
+				.mb-5
+					%h5.bold-font
+						Course Curriculum
+				.mb-5
+					%p.bold-font
+						Comprehensive PMI-ACP Curriculum included with this On Demand Certification Course
+					%p.body-small.light-text-color
+						Below is the detailed curriculum covered by this PMI Agile Certified Practitioner (PMI-ACP) certification course. Students will come away with a thorough understanding of the most popular Agile methodologies with Agile bootcamp training, and will be prepared to pass the PMI-ACP exam.
+		.row
+			.col
+				=partial"/on-demand-course/curriculum-accordian"
 

@@ -1,0 +1,62 @@
+
+
+
+//base curriculum accordian
+
+.curriculum-accordian{
+	border:none;
+	.card{
+		border:none;
+		margin:10px;
+		.card-header{
+			background:$off-white-dark-color;
+			border:none;
+			padding: 20px;
+			padding-left:60px;
+			position:relative;
+			&:before{
+				content:"remove";
+				position:absolute;
+				top:calc(50% - 10px);
+				left:25px;
+				font-family: 'Material Icons';
+				color:$link-color;
+
+			}
+			&.collapsed{
+				&:before{
+					content:"add";
+					color:$light-text-color;
+					
+				}
+			}
+		}
+		.card-body{
+			background:$off-white-dark-color;
+			padding-left:65px;
+			padding-top:0;
+			padding-bottom:30px;
+		}
+	}
+	.curriculum-accordian-inner{
+		.card{
+			margin:0;
+			.card-header{
+				padding:10px;
+				padding-left:30px;
+				font-family:$bold-font-name;
+				&:before{
+					left:0px;
+					top:calc(50% - 12px);
+				}
+				&.collapsed{
+					font-family:$regular-font-name;
+				}
+			}
+			.card-body{
+				padding-bottom:10px;
+				padding-left:30px;
+			}
+		}
+	}
+}
