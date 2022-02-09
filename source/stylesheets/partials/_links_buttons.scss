@@ -79,6 +79,7 @@ a{
 		color: white;
 		&:hover{
 			@include button-hover($link-color);
+			color: white;
 		}
 		&:active{
 			@include button-active($link-color);
