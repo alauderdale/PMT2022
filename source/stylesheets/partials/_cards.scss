@@ -2,6 +2,11 @@
 	border-color:$border-color;
 }
 
+.border-bottom-card{
+	box-shadow:$box-shadow-elv-one;
+	border-bottom:4px solid $link-color;
+}
+
 .shadow-elevation-1{
 	box-shadow:$box-shadow-elv-one;
 }

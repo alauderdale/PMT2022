@@ -1,0 +1,22 @@
+/ Swiper
+.swiper.testimonial-slider
+  .swiper-wrapper
+    -10.times do
+      .swiper-slide 
+        .card.border-bottom-card
+          .card-body
+            .p-4
+              .media.mb-4.align-items-center
+                %img.mr-4.align-self-center{:src=>"../images/testimonial-avatar.png", :width=>"50"}
+                .media-body
+                  .d-flex.align-items-center
+                    %p.body-small.bold-font.d-inline.mr-3.mb-0
+                      Bernard Gonzales
+                    %h6.body-small.light-text-color.d-inline.mb-0
+                      (MBA, PMP)
+                  .d-flex
+                    %img.mr-4.align-self-center{:src=>"../images/5-star.svg"}
+              %p
+                =lorem.paragraph
+  .swiper-button-next
+  .swiper-button-prev
