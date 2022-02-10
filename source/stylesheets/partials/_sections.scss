@@ -56,3 +56,27 @@ section.banner{
       }
     }
 }
+
+
+
+.diag-banner-bg{
+  background-image: linear-gradient(90deg, #0B7099 0%, #138ABB 71%);
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(50% - 68px);
+  right: 0;
+  background-size: cover;
+  clip-path: polygon(100% 313%, 100% 0%, 0% 0%);
+}
+
+.hero-video-container{
+  .play-video{
+    img{
+      @include breakpoint(sm) {
+        width:300px;
+      }
+    }
+  }
+}

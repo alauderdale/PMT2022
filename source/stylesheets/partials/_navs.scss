@@ -83,17 +83,78 @@
 
 //base page nav
 
+
+
+
 .page-nav-wrapper-outer{
 	position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 2;
-    display: block;
-    clear: both;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 2;
+	display: block;
+	clear: both;
+	@include breakpoint(md) {
+		top:59px;
+	}
+	.page-nav-wrapper{
+		background:white;
+	    display: inline-block;
+	    width: 100%;
+	    box-shadow:$box-shadow-elv-two;
+	    top: 0;
+	    z-index: 2;
+	    transition: all .3s ease;
+	    position:relative;
+
+			.page-nav{
+				@include breakpoint(md) {
+					overflow: auto;
+					white-space: nowrap;
+					width:100%;
+					display: block;
+				}
+				a.nav-link{
+					font-size: 14px;
+					padding:25px 20px;
+					color:$text-color;
+					@include breakpoint(md) {
+						display: inline-block;
+						padding:15px 10px;
+						font-size: 12px;
+					}
+					&.active{
+						font-family: $bold-font-name;
+						color:$link-color;
+					}
+					&:hover{
+						color:$link-color;
+					}
+					&:first-of-type{
+						margin-left:0;
+					}
+				}
+				&.tabbed{
+					a.nav-link{
+						&.active{
+							border-bottom:3px solid $link-color;
+						}
+					}
+				}
+			}
+
+	}
+
 
     .action-container{
     	opacity: 0;
     	transition-duration: .3s;
+    	.btn{
+    		@include breakpoint(md) {
+				font-size: 12px;
+				padding: 8px;
+				width: 136px;
+    		}
+    	}
     }
     &.show-actions{
     	.action-container{
@@ -104,34 +165,6 @@
 
 }
 
-.page-nav-wrapper{
-	background:white;
-    display: inline-block;
-    width: 100%;
-    box-shadow:$box-shadow-elv-two;
-    top: 0;
-    z-index: 2;
-    transition: all .3s ease;
-    @include breakpoint(md) {
-    	display: none;
-    }
-}
 
-.page-nav{
 
-	a.nav-link{
-		font-size: 14px;
-		padding:25px 20px;
-		color:$text-color;
-		&.active{
-			font-family: $bold-font-name;
-			color:$link-color;
-		}
-		&:hover{
-			color:$link-color;
-		}
-		&:first-of-type{
-			padding-left:0;
-		}
-	}
-}
+

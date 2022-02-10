@@ -1,26 +1,18 @@
-%section.inverse-section.section-lg.banner{:style=>"background-image:url(../images/on-demand-course/banner-1.jpg);"}
+%section.inverse-section.section-lg.position-relative
 	.container
+		%span.diag-banner-bg
 		.row.align-items-center
-			.col-xl-6.col-lg-7
+			.col-xl-6.col-md-7
 				.content
+					%p.bold-font
+						Overview
 					%h3.bold-font.mb-4
-						PMP Foundation Course
-					%p.d-inline.bold-font.line-through.mr-2
-						Originally $348 USD
-					%p.d-inline.success-text-color.bold-font
-						Save $150 Instantly
+						Project Management Professional (PMP)® Live Classes Online
+					
 					.mt-4.mb-4
 						%p
 							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"/cart"}
-								Register now
-							%a.btn-terciary.btn.btn-sm-block{:href=>"/cart"}
-								Course demo
-					%p.bold-font
-						%u
-							%a{:href=>"#"}
-								%i.material-icons.align-middle
-									add
-								Add PMI-ACP Practice Exams and Save an Extra $49
+								View schedule and pricing
 					.mt-4
 						.media.align-items-center
 							%img.align-self-center.mr-3{:src=>"../images/pmi-badge-circle.png", :width=>"80", :height=>"80" }
@@ -29,30 +21,31 @@
 									Premier Authorized Training Partner (ATP) 
 									%br
 									of the Project Management Institute®
-.page-nav-wrapper-outer.d-none.d-lg-block
+			.col-xl-6.col-md-5
+				.hero-video-container.mt-4.mt-lg-0.text-center
+					%a.play-video{:href=>"#"}
+						%img.max-width{:src=>"../images/live-virtual-classes/video-thumb.png", :width=>"500px"}
+.page-nav-wrapper-outer
 	.page-nav-wrapper
 		.container
 			.row
 				.col
 					.d-flex.justify-content-between.align-items-center
-						.nav.page-nav
-							%a.nav-link{:href=>"#overview"}
+						.nav.page-nav.tabbed
+							%a.nav-link.active{:href=>"#"}
 								Overview
-							%a.nav-link{:href=>"#included-with-class"}
-								Included with courses
-							%a.nav-link{:href=>"#curriculum"}
-								Course curriculum
-							%a.nav-link{:href=>"#testimonials"}
+							%a.nav-link{:href=>"#"}
+								Schedule and pricing
+							%a.nav-link{:href=>"#"}
+								Included with class
+							%a.nav-link{:href=>"#"}
+								Guarantee
+							%a.nav-link{:href=>"#"}
 								Testimonials
-						.action-container
+						.action-container.d-none.d-md-block
 							.d-flex.align-items-center
-								.promo.d-inline.mr-3
-									%p.line-through.body-small.mb-1
-										Originally $348 USD
-									%h6.success-text-color.medium-font.mb-0
-										Save $150 Instantly
 								%a.btn.btn-primary{:href=>"/cart"}
-									Register now
+									Schedule & pricing
 							
 #reached
 
