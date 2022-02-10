@@ -7,15 +7,15 @@
           .card-body
             .p-4
               .media.mb-4.align-items-center
-                %img.mr-4.align-self-center{:src=>"../images/testimonial-avatar.png", :width=>"50"}
+                %img.mr-4{:src=>"../images/testimonial-avatar.png", :width=>"50"}
                 .media-body
-                  .d-flex.align-items-center
-                    %p.body-small.bold-font.d-inline.mr-3.mb-0
+                  .d-md-flex.align-items-center
+                    %p.body-small.bold-font.mr-1.mb-md-0.mb-1
                       Bernard Gonzales
-                    %h6.body-small.light-text-color.d-inline.mb-0
+                    %h6.light-text-color.mb-0
                       (MBA, PMP)
-                  .d-flex
-                    %img.mr-4.align-self-center{:src=>"../images/5-star.svg"}
+                  .rating
+                    %img{:src=>"../images/5-star.svg"}
               %p
                 =lorem.words(40)
   .swiper-button-next

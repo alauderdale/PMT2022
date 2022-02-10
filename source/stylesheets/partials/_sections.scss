@@ -24,6 +24,9 @@ section{
   &.off-white-bg{
   	background-color:$off-white-dark-color;
   }
+  &.gradient-bg{
+    background-image: linear-gradient(0deg, #FFFFFF 0%, #F9FCFD 100%);
+  }
 
 }
 

@@ -1,0 +1,174 @@
+%section
+	.container
+		.row
+			.col-xl-8
+				%h4.bold-font.mb-5
+					Complete Checkout and Register
+				.order-details.mb-4
+					%h5.bold-font
+						Order details
+				.alert.alert-success.mt-4
+					.d-flex.align-items-center
+						%img.mr-2{:src => "/images/check-circle-sm.svg"}
+						%span.text-color.body-small.mb-0
+							Free Exam Tip Guide included with purchase
+				.order-table-container
+					%table.table.table-borderless
+						.tbody
+							-3.times do
+								%tr.border-bottom
+									%td.align-middle{:style=>"width:25%;"}
+										%img.max-width{:src => "/images/tmp/product-ticket.png", :width => "130"}
+									%td.align-middle{:style=>"width:60%;"}
+										%p.body-small.bold-font.mb-1
+											On-Demand PMP Foundation Course
+										%h6.light-text-color.mb-0
+											PMP Foundation course focuses on the highlights of the PMP certification, PMP Domains and Exam Content Outline (ECO)…
+									%td.align-middle
+										%a.body-small.light-text-color{:href=>"#"}
+											Remove
+									%td.align-middle
+										%p.bold-font.body-small.text-right.mb-0
+											$348
+							%tr
+								%td
+									%a.body-small{:href=>"#"}
+										+ See more
+								%td
+								%td
+								%td
+				.row
+					.col
+					.col-sm-6.col-md-5.col-lg-4.col-xl-4
+						.cost-breakdown
+							%table.table.table-borderless
+								.tbody
+									%tr.border-bottom
+										%td.align-middle.p-1
+											%span.body-small
+												Subtotal
+										%td.align-middle.p-1.text-right
+											%span.body-small
+												$1,498 USD
+									%tr.border-bottom
+										%td.align-middle.p-1
+											%span.body-small.text-danger
+												Discount
+										%td.align-middle.p-1.text-right
+											%span.body-small.text-danger
+												\-$577 USD
+									%tr
+										%td.align-middle.p-1
+											%span.body-large.bold-font
+												Total
+										%td.align-middle.p-1.text-right
+											%span.body-large.bold-font
+												$998 USD
+				.row
+					.col
+						%a{:href=>"#"}
+							.d-flex.align-items-center.justify-content-end
+								%h6.mb-0.mr-2.mt-1.text-color
+									Starting at $18/mo with
+								%img.align-self-center.mr-2{:src=>"../images/affirm-logo-sm.png", :width=>"50"}
+								%h6.mb-0.light-text-color.ml-1.mt-1
+									Learn more
+				.row
+					.col
+						.complete-checkout.mb-4.mt-5
+							%h5.bold-font.mb-4
+								Complete checkout below
+							.card.checkout-card.mb-4
+								.card-header
+									.pt-1.pb-1
+										%p.mb-0.body-small
+											Following checkout, your account will be activated and an email receipt will be dispatched.
+								.card-body
+									%form
+										.form-group.row
+											%label.col-sm-3.col-form-label.body-small.medium-font
+												Student email
+											.col-sm-9
+												%input.form-control.input-sm{:type=>"text", :placeholder=>"john@doe.com"}
+										.form-group.row
+											%label.col-sm-3.col-form-label.body-small.medium-font
+												Confirm email
+											.col-sm-9
+												%input.form-control.input-sm{:type=>"text", :placeholder=>"john@doe.com"}
+										.form-group.row.mb-0
+											%label.col-sm-3.col-form-label.body-small.medium-font
+												Student name
+											.col-sm-9
+												.row
+													.col-6
+														%input.form-control.input-sm{:type=>"text", :placeholder=>"First name"}
+													.col-6
+														%input.form-control.input-sm{:type=>"text", :placeholder=>"Last name"}
+
+							.card.checkout-card.mb-4
+								.card-header
+									.pt-1.pb-1
+										%p.mb-0.body-small
+											Pay Securely with Your Credit Card
+								.card-body.position-relative
+									%form.position-relative
+										.form-group.row
+											%label.col-sm-3.col-form-label.body-small.medium-font
+												Card number
+											.col-sm-9
+												.row
+													.col-md-6
+														%input.form-control.input-sm{:type=>"text", :placeholder=>"4444 4444 4444 4444"}
+										.form-group.row
+											%label.col-sm-3.col-form-label.body-small.medium-font
+												Expiration
+											.col-sm-9
+												.row
+													.col-md-6
+														%input.form-control.input-sm{:type=>"text", :placeholder=>"MM/YY"}
+										.form-group.row
+											%label.col-sm-3.col-form-label.body-small.medium-font
+												Security code
+											.col-sm-9
+												.row
+													.col-md-6
+														%input.form-control.input-sm{:type=>"text", :placeholder=>"123"}
+										.card-info
+											%img{:src=>"../images/card-info.png", :width=>"270"}
+										.form-group.row.mt-4.mb-0
+											.col
+												%a.btn.btn-primary.btn-block{:href=>"#"}
+													Complete registration
+												.d-flex.align-items-center.justify-content-center.mt-3
+													%i.material-icons-outlined
+														lock
+													%p.text-center.mb-0.body-small
+														Your information is 
+														%a.text-color{:href=>"#"}
+															%u
+																private and secure
+
+
+
+							.card.checkout-card.mb-4
+								.card-header
+									.pt-1.pb-1
+										%p.mb-0.body-small
+											Pay Securely with Express Checkout
+								.card-body.position-relative
+
+							.card.checkout-card.mb-4
+								.card-header
+									.pt-1.pb-1
+										%p.mb-0.body-small
+											Pay Later with Affirm
+								.card-body.position-relative
+									
+													
+
+
+
+			.col-xl-4
+				.text-right.d-none.d-xl-block
+					%img.max-width{:src => "/images/testimonial-cart.png", :width=>"340"}
+

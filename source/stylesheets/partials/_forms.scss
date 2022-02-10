@@ -1,38 +1,7 @@
-.simple-prepend{
-  .input-group-prepend, .form-control, .input-group-text {
-    background-color:transparent;
-    border:none;
-  }
-  .input-group-text{
-    padding-right:0;
-    padding-left:0;
-    border:none;
-  }
-}
-
-
-.input-group-prepend, .form-control, .input-group-text{
-  background:white;
-  border-color:$border-color;
-}
-
-
-label{
-  font-size:14px;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-}
-
 
 .form-control{
   border-radius: $base-border-radius;
   border-color:$border-color;
-  height: calc(1.5em + .75rem + 7px);
-	&.form-control-lg{
-		font-size:16px;
-		padding-top:.65rem;
-		padding-bottom:.65rem;
-	}
 	&:focus{
 		box-shadow:none;
 		border-color:$link-color;
@@ -55,289 +24,35 @@ label{
 }
 
 
-//chips
+//checkout form
 
-.chip {
-  display: inline-block;
-  padding: 0 16px;
-  height: 32px;
-  font-size: 16px;
-  line-height: 32px;
-  border-radius: 25px;
-  background-color: tint($link-color,90%);
-  color: $link-color;
-  .close{
-  	position:relative;
-  	left:8px;
-  	i{
-	  	line-height: 32px;
-	  	font-size: 24px;
-	  	color: $link-color;
-  	}
+.card-info{
+  position:absolute;
+  top:0px;
+  right:0px;
+
+  img{
+    width:250px;
   }
-  &.promo-code-chip{
-    border:1px solid $link-color;
-    background:white;
-    color:$text-color;
-    height:44px;
-    line-height: 40px;
-    border-radius: 100px;
-    .close{
-      line-height: 40px;
-      i{
-
-      }
+  @include breakpoint(lg) {
+    top:20px;
+    right:20px;
+  }
+  @include breakpoint(md) {
+    top:20px;
+    right:20px;
+    img{
+      width:200px;
     }
   }
-}
-
-//appends
-
-.input-group{
-   .input-group-append{ 
-      .input-group-text{
-        background-color: white; 
-      }
-    }
-}
-
-
-
-//special checkboxes and radios
-
-.custom-radio{
-
-  [type="radio"]:checked,
-  [type="radio"]:not(:checked) {
-      position: absolute;
-      left: -9999px;
+  @include breakpoint(sm) {
+    position:relative;
+    top:5px;
+    right:0;
+    img{
+          width:275px;
+          margin:0 auto;
+          text-align: center;
+        }
   }
-  [type="radio"]:checked + label,
-  [type="radio"]:not(:checked) + label
-  {
-      position: relative;
-      padding-left: 28px;
-      cursor: pointer;
-      line-height: 20px;
-      display: inline-block;
-  }
-  [type="radio"]:checked + label:before,
-  [type="radio"]:not(:checked) + label:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 20px;
-      height: 20px;
-      border: 2px solid $text-color;
-      border-radius: 100%;
-      background: #fff;
-  }
-  [type="radio"]:checked + label:after,
-  [type="radio"]:not(:checked) + label:after {
-      content: '';
-      width: 12px;
-      height: 12px;
-      background: $link-color;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      border-radius: 100%;
-      -webkit-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-  }
-  [type="radio"]:not(:checked) + label:after {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-  }
-  [type="radio"]:checked + label:after {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-  }
-
-
-}
-
-
-
-.custom-checkbox{
-
-  [type="checkbox"]:checked,
-  [type="checkbox"]:not(:checked) {
-      position: absolute;
-      left: -9999px;
-  }
-  [type="checkbox"]:checked + label,
-  [type="checkbox"]:not(:checked) + label
-  {
-      position: relative;
-      padding-left: 28px;
-      cursor: pointer;
-      line-height: 20px;
-      display: inline-block;
-  }
-  [type="checkbox"]:checked + label:before,
-  [type="checkbox"]:not(:checked) + label:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 20px;
-      height: 20px;
-      border: 2px solid $text-color;
-      border-radius: 4px;
-      background: #fff;
-  }
-  [type="checkbox"]:checked + label:after,
-  [type="checkbox"]:not(:checked) + label:after {
-    width: 16px;
-    height: 16px;
-    background: #0042FF;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 1px;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold;
-    line-height: 16px;
-    font-family: 'Material Icons';
-    content: 'check';
-    color: white;
-
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-
-
-  }
-  [type="checkbox"]:not(:checked) + label:after {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
-  }
-  [type="checkbox"]:checked + label:after {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-  }
-
-
-}
-
-
-//switches
-
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: $success-color;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-
-// password indicator
-
-.password-requirement{
-  font-size: 10pt;
-  &:before{
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-right: 10px;
-    border-radius: 8px;
-    background: shade($primary-color,10%);
-  }
-  &.completed{
-    color:$light-gray-color;
-    &:before{
-      background:$light-gray-color;
-    }
-  }
-}
-
-
-/// icons in forms
-
-form.search-form{
-  position:relative;
-  input{
-    padding-left:35px;
-  }
-  .search-icon{
-    position:absolute;
-    top: 12px;
-    left: 10px;
-    font-size: 20px;
-  }
-  
 }

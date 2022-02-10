@@ -16,3 +16,16 @@
 .shadow-elevation-3{
 	box-shadow:$box-shadow-elv-three;
 }
+
+.checkout-card{
+	border-color:#C5D0DC!important;
+	.card-header, .card-body{
+		border-color:#C5D0DC!important;
+	}
+	.card-header{
+		background-color:#F0F7FF;
+	}
+	.card-body{
+		background-color:#FBFDFF;
+	}
+}

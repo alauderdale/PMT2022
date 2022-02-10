@@ -2,7 +2,7 @@ ul.timeline-list{
 	li{
 		padding-left:20px;
 		position:relative;
-		&:before{
+		&:after{
 			position:absolute;
 			content: "";
 			width:7px;
@@ -11,6 +11,20 @@ ul.timeline-list{
 			background:$link-color;
 			left:0;
 			top:7px;
+		}
+		&:before{
+			position:absolute;
+			content: "";
+			width: 2px;
+			height: 34px;
+			background:tint($link-color,80%);
+			left:2.5px;
+			top:7px;
+		}
+		&:last-of-type{
+			&:before{
+				display: none;
+			}
 		}
 	}
 }

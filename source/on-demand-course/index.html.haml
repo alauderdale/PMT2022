@@ -45,8 +45,15 @@
 							%a.nav-link{:href=>"#testimonials"}
 								Testimonials
 						.action-container
-							%a.btn.btn-primary{:href=>"/welcome/sign-up"}
-								Register now
+							.d-flex.align-items-center
+								.promo.d-inline.mr-3
+									%p.line-through.body-small.mb-1
+										Originally $348 USD
+									%h6.success-text-color.medium-font.mb-0
+										Save $150 Instantly
+								%a.btn.btn-primary{:href=>"/welcome/sign-up"}
+									Register now
+							
 #reached
 
 
@@ -120,7 +127,7 @@
 				%p
 					The material in the online PMP Boot Camp course is designed to be used as an overview of the PMP certification; complementary to live class instruction; or as a refresher course for existing credential holders. This is not an exam prep course.
 
-%section.off-white-bg.section-lg
+%section.gradient-bg.section-lg
 	.container
 		.row
 			.col
@@ -190,7 +197,7 @@
 										L24x7 Access to Interactive Course Lessons
 									%p.body-small.light-text-color
 										Each course milestone contains interactive training lessons designed for On-Demand learning and busy schedules. Complete the entire curriculum in order, or re-visit training lessons as many times as you like.
-}
+
 
 %section
 	.container
@@ -200,9 +207,9 @@
 					%p.text-center
 						Access intensive course lessons without limitation.
 				%p.text-center
-					%a.btn-primary.btn.mr-2{:href=>"/welcome/sign-up"}
+					%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"#"}
 						Register now
-					%a.btn-terciary.btn{:href=>"/welcome/sign-up"}
+					%a.btn-terciary.btn.btn-sm-block{:href=>"#"}
 						Course demo
 
 		.row.justify-content-center
@@ -245,7 +252,7 @@
 
 
 #testimonials.anchor
-%section.off-white-bg.section-lg
+%section.gradient-bg.section-lg
 	.container
 		.row
 			.col
@@ -271,9 +278,9 @@
 						Access this PMI-ACP On-Demand course from any connected device
 					.mt-4.mb-4
 						%p
-							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"/welcome/sign-up"}
+							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"#"}
 								Register now
-							%a.btn-terciary.btn.btn-sm-block{:href=>"/welcome/sign-up"}
+							%a.btn-terciary.btn.btn-sm-block{:href=>"#"}
 								Course demo
 			.col-lg-6.col-md-5
 				%img.align-self-center.full-width{:src=>"../images/responsive-suite.png", :width=>"544" }
