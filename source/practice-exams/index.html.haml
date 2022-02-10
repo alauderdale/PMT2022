@@ -1,0 +1,175 @@
+%section.inverse-section.section-lg.banner{:style=>"background-image:url(../images/on-demand-course/banner-1.jpg);"}
+	.container
+		.row.align-items-center
+			.col-xl-6.col-lg-7
+				.content
+					%h3.bold-font.mb-4
+						Professional PMI-PBA Practice Exams
+					%p.d-inline.bold-font.mr-2
+						Access Instantly - 
+						%span.line-through
+							Was $348 USD
+					%p.d-inline.success-text-color.bold-font
+						Now $68 USD
+					.mt-4.mb-4
+						%p
+							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"/cart"}
+								Register now
+							%a.btn-terciary.btn.btn-sm-block{:href=>"/cart"}
+								Course demo
+					%p.bold-font
+						%u
+							%a{:href=>"#"}
+								%i.material-icons.align-middle
+									add
+								Add PMI-ACP Practice Exams and Save an Extra $49
+					.mt-4
+						.media.align-items-center
+							%img.align-self-center.mr-3{:src=>"../images/pmi-badge-circle.png", :width=>"80", :height=>"80" }
+							.media-body
+								%h6.mt-0.mb-0.bold-font
+									Premier Authorized Training Partner (ATP) 
+									%br
+									of the Project Management Institute®
+.page-nav-wrapper-outer
+	.page-nav-wrapper
+		.container
+			.row
+				.col
+					.d-flex.justify-content-between.align-items-center
+						.nav.page-nav
+							%a.nav-link{:href=>"#overview"}
+								Overview
+							%a.nav-link{:href=>"#included-with-class"}
+								Included with courses
+							%a.nav-link{:href=>"#curriculum"}
+								Course curriculum
+							%a.nav-link{:href=>"#testimonials"}
+								Testimonials
+						.action-container
+							.d-flex.align-items-center
+								.promo.d-inline.mr-3
+									%p.body-small.mb-1.line-through
+										Was $348 USD
+									%h6.success-text-color.medium-font.mb-0
+										Now $68 USD
+								%a.btn.btn-primary{:href=>"/cart"}
+									Register now
+							
+#reached
+
+
+%section.off-white-bg
+	.container
+		.row
+			.col-md-4.border-right.no-border-sm
+				.d-flex.justify-content-md-center
+					.media.align-items-center.mb-2.mt-2
+						%img.align-self-center.mr-3{:src=>"../images/badge-access-anywhere.png", :width=>"80"}
+						.media-body
+							%p.body-small.mt-0.mb-0.bold-font
+								Desktop & mobile optimized
+			.col-md-4.border-right.no-border-sm
+				.d-flex.justify-content-md-center
+					.media.align-items-center.mb-2.mt-2
+						%img.align-self-center.mr-3{:src=>"../images/badge-trustpilot.png", :width=>"100" }
+						.media-body
+							%p.body-small.mt-0.mb-0.bold-font
+								Excellent rating
+			.col-md-4
+				.d-flex.justify-content-md-center
+					.media.align-items-center.mb-2.mt-2
+						%img.align-self-center.mr-3{:src=>"../images/pmi-badge-circle.png", :width=>"80" }
+						.media-body
+							%p.body-small.mt-0.mb-0.bold-font
+								Authorized Training Partner
+#overview.anchor
+%section.section-lg
+	.container
+		.row.align-items-center
+			.col-lg-7
+				%h5.primary-text-color.bold-font.mb-4
+					Are You Prepared? 
+					%br
+					Professional PMI-PBA Practice Exams
+				%p.body-small
+					Instant access from any web browser, with nothing to download:
+				.mt-5
+					-4.times do
+						.row
+							-2.times do
+								.col-md-6
+									.media.mb-3
+										%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+										.media-body
+											%p.body-small
+												Access to 15 concise PMI-PBA practice examinations and 5 Domain Area practice tests that are based on the current PMI-PBA exam format
+			.col-lg-5
+				.text-center
+					%img.max-width.mb-5.mb-md-1{:src=>"../images/practice-exams/practice-exam-ui-hero.png", :width=>"315"}
+					%h6.light-text-color
+						Questions updated January 3, 2022
+
+
+#included-with-class.anchor
+%section.gradient-bg.section-lg
+	.container
+		.row
+			.col
+				%h5.bold-font.mb-5
+					PMTraining ITIL Exams in Action
+		.row
+			-2.times do
+				.col-md-6
+					%img.max-width.mb-2{:src=>"../images/practice-exams/video-illustration.png", :width=>"430"}
+					%p.bold-font
+						Taking a Test
+%section.section-lg
+	.container
+		.row
+			.col
+				%h5.bold-font.mb-5
+					Realistic PMI-PBA Practice Exams Created by Experts
+		-4.times do
+			.row
+				-2.times do
+					.col-md-6
+						%img.max-width.mb-2{:src=>"../images/practice-exams/web-illustration.png", :width=>"248"}
+						%p.bold-font
+							Access Realistic Exams or Create Your Own
+						%p.light-text-color.body-small
+							Rely on PMI-PBA practice tests created by experts, with the ability to track your performance. Plus, easily create your own custom PMI-PBA practice exams using our database of over 1,000 professionally authored questions.
+
+
+
+
+=partial"shared/quote-with-actions"
+
+#curriculum.anchor
+%section.section-lg
+	.container
+		.row
+			.col-md-8
+				.mb-5
+					%h5.bold-font
+						Course Curriculum
+				.mb-5
+					%p.bold-font
+						Comprehensive PMI-ACP Curriculum included with this On Demand Certification Course
+					%p.body-small.light-text-color
+						Below is the detailed curriculum covered by this PMI Agile Certified Practitioner (PMI-ACP) certification course. Students will come away with a thorough understanding of the most popular Agile methodologies with Agile bootcamp training, and will be prepared to pass the PMI-ACP exam.
+		.row
+			.col
+				=partial"/on-demand-course/curriculum-accordian"
+
+
+=partial"shared/testimonials"
+=partial"shared/sub-footer-promo-1"
+
+
+%section.section-lg
+	.container
+		.row
+			.col
+				%p.text-center.light-text-color
+					TrustPiolot Widget
