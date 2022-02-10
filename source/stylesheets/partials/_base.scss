@@ -5,9 +5,10 @@
 }
 
 html {
-      max-width: 100%;
-    overflow-x: hidden;
-    
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 body{
@@ -25,6 +26,7 @@ body{
   font-family: $regular-font-name;
   font-weight:500;
   background-color:$background-color;
+  position:relative;
   // padding-top:$body-padding-height;
   @include breakpoint(md) {
   }

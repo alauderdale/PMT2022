@@ -46,4 +46,10 @@ section.banner{
         padding:30px;
       }
     }
+    @include breakpoint(sm) {
+      background-image:none!important;
+      .content{
+        padding:0;
+      }
+    }
 }

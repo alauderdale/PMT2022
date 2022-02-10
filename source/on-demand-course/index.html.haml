@@ -11,9 +11,9 @@
 						Save $150 Instantly
 					.mt-4.mb-4
 						%p
-							%a.btn-primary.btn.mr-2{:href=>"/welcome/sign-up"}
+							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"/welcome/sign-up"}
 								Register now
-							%a.btn-terciary.btn{:href=>"/welcome/sign-up"}
+							%a.btn-terciary.btn.btn-sm-block{:href=>"/welcome/sign-up"}
 								Course demo
 					%p.bold-font
 						%u
@@ -29,6 +29,25 @@
 									Premier Authorized Training Partner (ATP) 
 									%br
 									of the Project Management Institute®
+.page-nav-wrapper-outer
+	.page-nav-wrapper
+		.container
+			.row
+				.col
+					.d-flex.justify-content-between.align-items-center
+						.nav.page-nav
+							%a.nav-link{:href=>"#overview"}
+								Overview
+							%a.nav-link{:href=>"#included-with-class"}
+								Included with courses
+							%a.nav-link{:href=>"#curriculum"}
+								Course curriculum
+							%a.nav-link{:href=>"#testimonials"}
+								Testimonials
+						.action-container
+							%a.btn.btn-primary{:href=>"/welcome/sign-up"}
+								Register now
+#reached
 
 
 %section.off-white-bg
@@ -55,6 +74,7 @@
 						.media-body
 							%p.body-small.mt-0.mb-0.bold-font
 								Authorized Training Partner
+#overview.anchor
 %section
 	.container
 		.row
@@ -149,6 +169,8 @@
 						%a.btn-primary.btn.btn-block{:href=>"/welcome/sign-up"}
 							Register now
 
+
+#included-with-class.anchor
 %section.section-lg.pb-5
 	.container
 		.row
@@ -168,6 +190,7 @@
 										L24x7 Access to Interactive Course Lessons
 									%p.body-small.light-text-color
 										Each course milestone contains interactive training lessons designed for On-Demand learning and busy schedules. Complete the entire curriculum in order, or re-visit training lessons as many times as you like.
+}
 
 %section
 	.container
@@ -203,7 +226,7 @@
 				.mt-4.mb-4
 					%p.light-text-color.text-center
 						TrustPoilet Widget	
-
+#curriculum.anchor
 %section.section-lg
 	.container
 		.row
@@ -221,6 +244,7 @@
 				=partial"/on-demand-course/curriculum-accordian"
 
 
+#testimonials.anchor
 %section.off-white-bg.section-lg
 	.container
 		.row
@@ -239,7 +263,7 @@
 %section.inverse-section.section-lg
 	.container
 		.row.align-items-center
-			.col-md-6
+			.col-lg-6.col-md-7
 				.text-md-left.text-center
 					%h4.bold-font.mb-2
 						At Your Desk or In Your Pocket
@@ -247,9 +271,9 @@
 						Access this PMI-ACP On-Demand course from any connected device
 					.mt-4.mb-4
 						%p
-							%a.btn-primary.btn.mr-2{:href=>"/welcome/sign-up"}
+							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"/welcome/sign-up"}
 								Register now
-							%a.btn-terciary.btn{:href=>"/welcome/sign-up"}
+							%a.btn-terciary.btn.btn-sm-block{:href=>"/welcome/sign-up"}
 								Course demo
-			.col-md-6
+			.col-lg-6.col-md-5
 				%img.align-self-center.full-width{:src=>"../images/responsive-suite.png", :width=>"544" }

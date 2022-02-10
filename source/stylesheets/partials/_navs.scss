@@ -1,4 +1,11 @@
 
+//fixes scroll position on the sticky scroll
+
+.anchor{
+	padding-top:50px;
+	margin-top:-50px;
+}
+
 
 
 //base curriculum accordian
@@ -68,6 +75,63 @@
 				padding-bottom:10px;
 				padding-left:30px;
 			}
+		}
+	}
+}
+
+
+
+//base page nav
+
+.page-nav-wrapper-outer{
+	position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    display: block;
+    clear: both;
+
+    .action-container{
+    	opacity: 0;
+    	transition-duration: .3s;
+    }
+    &.show-actions{
+    	.action-container{
+    		opacity: 1;
+    	}
+    }
+
+
+}
+
+.page-nav-wrapper{
+	background:white;
+    display: inline-block;
+    width: 100%;
+    box-shadow:$box-shadow-elv-two;
+    top: 0;
+    z-index: 2;
+    transition: all .3s ease;
+    @include breakpoint(md) {
+    	display: none;
+    }
+}
+
+.page-nav{
+
+	a.nav-link{
+		font-size: 14px;
+		padding:25px 20px;
+		color:$text-color;
+		&.active{
+			font-family: $bold-font-name;
+			color:$link-color;
+		}
+		&:hover{
+			color:$link-color;
+		}
+		&:first-of-type{
+			padding-left:0;
 		}
 	}
 }
