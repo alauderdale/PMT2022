@@ -1,6 +1,39 @@
 - i = 1;
 - b = 1;
 #curriculumAccordian.accordion.curriculum-accordian
+  .card
+    .card-header{"aria-controls" => "collapse-a", "aria-expanded" => "true", "data-target" => "#collapse-a", "data-toggle" => "collapse"}
+      .d-flex.align-items-center
+        %img.mr-3{:src=>"../images/on-demand-course/milestone-thumb.png", :width=>"125"}
+        %p.mb-0.bold-font
+          Course Milestones 1 - 7
+    .collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#curriculumAccordian", :id=>"collapse-a"}
+      .card-body
+        .curriculum-accordian-inner{:id=>"curriculumAccordianInner-a"}
+          .card
+            .card-header{"aria-controls" => "collapseInner-b", "aria-expanded" => "true", "data-target" => "#collapseInner-b", "data-toggle" => "collapse"}
+              .d-flex.align-items-center
+                %p.mb-0
+                  Milestone 1 - Introducing the Agile Process
+            .collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#curriculumAccordianInner-a", :id=>"collapseInner-b"}
+              .card-body
+                %ul.list-unstyled.timeline-list.pt-2
+                  -5.times do
+                    %li.body-small.mb-3
+                      Lesson 1 - Introduction & Overview
+          -3.times do
+            - b = b + 1
+            .card
+              .card-header.collapsed{"aria-controls" => "collapseInner-#{b}", "aria-expanded" => "true", "data-target" => "#collapseInner-#{b}", "data-toggle" => "collapse"}
+                .d-flex.align-items-center
+                  %p.mb-0
+                    Milestone 1 - Introducing the Agile Process
+              .collapse{"aria-labelledby" => "headingOne", "data-parent" => "#curriculumAccordianInner-a", :id=>"collapseInner-#{b}"}
+                .card-body
+                  %ul.list-unstyled.timeline-list.pt-2
+                    -5.times do
+                      %li.body-small.mb-3
+                        Lesson 1 - Introduction & Overview
   -4.times do
     - i = i + 1
     .card
