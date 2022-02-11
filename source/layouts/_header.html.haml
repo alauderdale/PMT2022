@@ -113,6 +113,23 @@
             Get Our Newsletter
           %a.dropdown-item{:href => "#"} 
             Contact Us
+      .dropdown
+        %a.nav-link.dropdown-toggle.d-flex.align-items-center.justify-content-between{"data-toggle" => "dropdown", :href => "#", "aria-expanded"=>"false"}
+          %span.text
+            More
+          %i.material-icons
+            chevron_right
+        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+          %a.dropdown-item{:href => "#"} 
+            Support
+          %a.dropdown-item{:href => "#"} 
+            PMP® Exam Updates
+      .dropdown
+        %a.nav-link.dropdown-toggle.d-flex.align-items-center.justify-content-between{"data-toggle" => "dropdown", :href => "/welcome/login", "aria-expanded"=>"false"}
+          %span.text.link-color
+            Student Log In 
+
+
 
 
 
@@ -139,8 +156,8 @@
             %a.nav-link.one-line-height{:href=>"/cart"}
               %i.material-icons-outlined
                 shopping_cart
-            %a.nav-link{:href=>"#"}
-              Support
+            %a.nav-link{:href=>"/welcome/login"}
+              Log in
   #primary-sub-header
     .container
       .row.align-items-center

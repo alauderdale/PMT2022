@@ -1,0 +1,38 @@
+%section.off-white-bg.section-lg
+	.container
+		.row.justify-content-center
+			.col
+				.card.login-form.base-border-radius.margin-auto
+					.card-body.shadow-elevation-1
+						.p-3.p-sm-4
+							%h5.text-center
+								Welcome back
+							%form
+								.form-group
+									%label.medium-font.body-small
+										Email
+									%input.form-control{:type => "email"}
+								.form-group
+									%label.medium-font.body-small
+										Password
+									%input.form-control{:type => "email"}
+									.mt-1
+										%a.body-micro{:href=>"#"}
+											forgot password?
+								.mt-4
+									%a.btn.btn-terciary.btn-block{:href=>"#"}
+										Login
+							.mt-4
+								%hr
+							.mt-4
+								%p.body-small.text-center
+									Not yet a student? Browse our 
+									%a{:href=>"#"}
+										%u
+											PMP practice exams 
+									and 
+									%a{:href=>"#"}
+										%u
+											PMP Bootcamp course.
+
+							
