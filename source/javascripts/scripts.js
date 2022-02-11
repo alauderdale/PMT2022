@@ -32,7 +32,7 @@
       );   
 
 
-    //slider
+    //sliders
 
     var swiper = new Swiper(".testimonial-slider", {
         slidesPerView: 1,
@@ -50,6 +50,27 @@
       });
 
 
+    var swiper = new Swiper(".instructor-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          576: {
+              slidesPerView: 2
+            },
+          992: {
+              slidesPerView: 4
+            },
+        }
+      });
+
+
+    ///responsive tables!!!
+    $('table').footable();
 
 
   });

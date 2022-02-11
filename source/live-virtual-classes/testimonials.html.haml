@@ -1,0 +1,61 @@
+;;;
+
+"title": "Testimonials"
+
+;;;
+
+
+=partial"/live-virtual-classes/hero"
+.page-nav-wrapper-outer
+	.page-nav-wrapper
+		.container
+			.row
+				.col
+					.d-flex.justify-content-between.align-items-center
+						.nav.page-nav.tabbed
+							%a.nav-link{:href=>"/live-virtual-classes"}
+								Overview
+							%a.nav-link{:href=>"/live-virtual-classes/schedule"}
+								Schedule and pricing
+							%a.nav-link{:href=>"/live-virtual-classes/included"}
+								Included with class
+							%a.nav-link{:href=>"/live-virtual-classes/guarantee"}
+								Guarantee
+							%a.nav-link.active{:href=>"/live-virtual-classes/testimonials"}
+								Testimonials
+						.action-container.d-none.d-md-block
+							.d-flex.align-items-center
+								%a.btn.btn-primary{:href=>"/live-virtual-classes/schedule"}
+									Schedule & pricing
+#reached
+
+
+
+%section.section-lg.pb-2
+	.container
+		.row
+			.col
+				%h5.primary-text-color.bold-font.mb-md-3.mb-3
+					What Students are Saying: PMP Certification Reviews
+		.row.align-items-center
+			.col-md-4.col-lg-4.col-xl-6.order-md-2
+				.text-center
+					%img.max-width.mb-3.mb-md-0{:src=>"../images/badge-money-back-trust.png", :width=>"408"}
+
+			.col-md-8.col-lg-8.col-xl-6.order-md-1
+				%p.bold-font
+					So Effective, We Guarantee You Will Pass the PMP Exam.
+				%p.body-small.light-text-color
+					Our PMP Virtual Classes deliver the same content and materials as the classroom, with a live instructor, in real time, via the Internet. Read our online training reviews below.
+
+
+
+%section.gradient-bg.section-lg
+	.container
+		.row
+			.col
+				=partial"/shared/testimonial-slider"
+
+
+=partial"shared/quote-with-actions-2"
+

@@ -28,3 +28,20 @@ ul.timeline-list{
 		}
 	}
 }
+
+ul.default-list{
+	li{
+		padding-left:40px;
+		position:relative;
+		&:after{
+			position:absolute;
+			content: "";
+			width:7px;
+			height:7px;
+			border-radius:7px;
+			background:$link-color;
+			left:0;
+			top:7px;
+		}
+	}
+}

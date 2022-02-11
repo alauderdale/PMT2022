@@ -1,0 +1,25 @@
+- i = 1;
+- b = 1;
+#curriculumAccordian.accordion.curriculum-accordian.off-white-bg.pt-4.pb-4.base-border-radius
+  .row.no-gutters
+    -2.times do
+      .col-md-6
+        -4.times do
+          - i = i + 1
+          .card.m-0
+            .card-header.collapsed.pt-3.pb-3{"aria-controls" => "collapse-#{i}", "aria-expanded" => "true", "data-target" => "#collapse-#{i}", "data-toggle" => "collapse"}
+              .d-flex.align-items-center
+                %p.mb-0.body-small
+                  Intro Module: Introduction and PMP Exam overview
+            .collapse{"aria-labelledby" => "headingOne", "data-parent" => "#curriculumAccordian", :id=>"collapse-#{i}"}
+              .card-body
+                .curriculum-accordian-inner{:id=>"curriculumAccordianInner-#{i}"}
+                  %ul.list-unstyled.timeline-list.pt-3
+                    -5.times do
+                      %li.body-small.mb-3
+                        Details about the class format and structure
+
+
+          
+
+

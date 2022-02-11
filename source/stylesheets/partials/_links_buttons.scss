@@ -6,6 +6,11 @@ a{
 	}
 }
 
+a.link-underline{
+	border-bottom:1px solid $link-color;
+	padding-bottom:5px;
+}
+
 
 
 
@@ -143,8 +148,10 @@ a{
 	}
 	//used for icon only buttons
 	&.btn-icon{
+		padding-left:20px;
+		padding-right:5px;
 		i,.material-icons{
-			font-size: 20px!important;
+			font-size: 30px!important;
 		}
 	}
 	&:focus{

@@ -1,0 +1,108 @@
+.pm-table-wrapper
+  %table.table.table-striped.mid-align.table-bordered.bold-table
+    %thead
+      %tr
+        %th
+          Class Info
+        %th{"data-hide"=>"phone"} 
+          Date
+        %th{"data-hide"=>"phone"} 
+          Schedule
+        %th{"data-hide"=>"phone"} 
+          Time
+        %th{"data-hide"=>"phone"} 
+          Price
+        %th
+
+    %tbody
+      %tr
+        %td
+          %a.bold-font.link-underline{:href=>"#"}
+            View Class Details
+        %td.bold-font
+          Mon, Nov 29, 2021
+        %td
+          Sat / Sun Bootcamp
+          %br
+          (2 weeks)
+        %td
+          8AM to 3PM
+          %br
+          (America/Denver)
+        %td.flash-sale
+          %span.flash-title
+            FLASH SALE
+          %br
+          %span.body-large.bold-font
+            $1,148 USD
+          %br
+          %span.bold-font.text-uppercase
+            SAVE $500
+          %br
+          %span.body-micro.line-through
+            $1,548 USD
+
+          %br
+          %span.flash-counter.body-micro
+            Ends NOV 29
+        %td.text-center
+          %a.btn.btn-success.btn-icon{:href=>"/cart"}
+            Enroll Now
+            %i.material-icons
+              chevron_right
+      -4.times do
+        %tr
+          %td
+            %a.bold-font.link-underline{"data-toggle"=>"modal", :href=>"/public/classes/show", "data-target"=>"#showClassModal"}
+              View Class Details
+          %td.bold-font
+            Mon, Nov 29, 2021
+          %td
+            Sat / Sun Bootcamp
+            %br
+            (2 weeks)
+          %td
+            8AM to 3PM
+            %br
+            (America/Denver)
+          %td
+            %span.bold-font
+              $1,148 USD
+            %h6.text-danger.bold-font.text-uppercase.mb-0
+              Save $405 Now 
+            %span.light-text-color.line-through
+              $1,548 USD
+            %td.text-center
+              %a.btn.btn-success.btn-icon{:href=>"/cart"}
+                Enroll Now
+                %i.material-icons
+                  chevron_right
+      %tr
+        %td
+          %span.bold-font.extra-light-text-color{:disabled=>"disabled"}
+            View Class Details
+        %td.bold-font
+          Mon, Nov 29, 2021
+        %td 
+          Sat / Sun Bootcamp
+          %br
+          (2 weeks)
+        %td 
+          8AM to 3PM
+          %br
+          (America/Denver)
+        %td 
+          %span.bold-font
+            $1,148 USD
+          %h6.text-danger.bold-font.text-uppercase.mb-0
+            Save $405 Now 
+          %span.light-text-color.line-through
+            $1,548 USD
+        %td.text-center
+          .tooltip-up{"data-toggle"=>"tooltip" , :title=>"Due to the popularity of this class, we have reached capacity and can no longer accept new enrollments."}
+            %a.btn.btn-warning.disabled{:href=>"/cart", :disabled=>"disabled"}
+              Sold Out
+
+
+
+	

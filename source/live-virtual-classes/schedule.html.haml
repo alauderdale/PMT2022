@@ -1,0 +1,83 @@
+;;;
+
+"title": "Schedule and pricing"
+
+;;;
+
+
+=partial"/live-virtual-classes/hero"
+.page-nav-wrapper-outer
+	.page-nav-wrapper
+		.container
+			.row
+				.col
+					.d-flex.justify-content-between.align-items-center
+						.nav.page-nav.tabbed
+							%a.nav-link{:href=>"/live-virtual-classes"}
+								Overview
+							%a.nav-link.active{:href=>"/live-virtual-classes/schedule"}
+								Schedule and pricing
+							%a.nav-link{:href=>"/live-virtual-classes/included"}
+								Included with class
+							%a.nav-link{:href=>"/live-virtual-classes/guarantee"}
+								Guarantee
+							%a.nav-link{:href=>"/live-virtual-classes/testimonials"}
+								Testimonials
+#reached
+
+
+
+%section.section-lg.pb-4
+	.container
+		.row
+			.col
+				%h5.primary-text-color.bold-font.mb-md-5.mb-3
+					Live Virtual PMP Class Schedule and Pricing
+		.row.align-items-center
+			.col-md-4.col-lg-4.col-xl-6.order-md-2
+				.text-center
+					%img.max-width.mb-3.mb-md-0{:src=>"../images/badge-money-back-trust.png", :width=>"408"}
+
+			.col-md-8.col-lg-8.col-xl-6.order-md-1
+				-2.times do
+					.row
+						-2.times do
+							.col-6
+								.p-0
+									.media.mb-2
+										%img.mr-4{:src=>"../images/icons/icon-24.svg"}
+										.media-body
+											%p.bold-font.mb-1
+												Money back guarantee 
+											%p
+												included with all classes
+
+
+
+%section.gradient-bg.section-lg
+	.container
+		.row
+			.col
+				.mb-4
+					.d-block.d-md-flex.align-items-center.justify-content-between
+						.timezone
+							%form
+								.form-group.row
+									%label.col-sm-3.col-form-label.body-small.medium-font
+										Timezone
+									.col-sm-9
+										%select.form-control
+											%option
+												(GMT+00:00) Africa/Abidjan
+						.request
+							%a.bold-font.body-small{:href=>"#"}
+								Request a private class for your team
+				.schedule-table-container
+					=partial"shared/schedule-table"
+
+%section.section-lg
+	.container
+		.row
+			.col
+				%p.text-center.light-text-color
+					TrustPiolot Widget

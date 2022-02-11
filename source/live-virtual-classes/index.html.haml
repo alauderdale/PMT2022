@@ -1,30 +1,12 @@
-%section.inverse-section.section-lg.position-relative
-	.container
-		%span.diag-banner-bg
-		.row.align-items-center
-			.col-xl-6.col-md-7
-				.content
-					%p.bold-font
-						Overview
-					%h3.bold-font.mb-4
-						Project Management Professional (PMP)® Live Classes Online
-					
-					.mt-4.mb-4
-						%p
-							%a.btn-primary.btn.mr-2.btn-sm-block.mb-3.mb-md-0{:href=>"/cart"}
-								View schedule and pricing
-					.mt-4
-						.media.align-items-center
-							%img.align-self-center.mr-3{:src=>"../images/pmi-badge-circle.png", :width=>"80", :height=>"80" }
-							.media-body
-								%h6.mt-0.mb-0.bold-font
-									Premier Authorized Training Partner (ATP) 
-									%br
-									of the Project Management Institute®
-			.col-xl-6.col-md-5
-				.hero-video-container.mt-4.mt-lg-0.text-center
-					%a.play-video{:href=>"#"}
-						%img.max-width{:src=>"../images/live-virtual-classes/video-thumb.png", :width=>"500px"}
+;;;
+
+"title": "Overview"
+
+;;;
+
+
+
+=partial"/live-virtual-classes/hero"
 .page-nav-wrapper-outer
 	.page-nav-wrapper
 		.container
@@ -32,19 +14,19 @@
 				.col
 					.d-flex.justify-content-between.align-items-center
 						.nav.page-nav.tabbed
-							%a.nav-link.active{:href=>"#"}
+							%a.nav-link.active{:href=>"/live-virtual-classes"}
 								Overview
-							%a.nav-link{:href=>"#"}
+							%a.nav-link{:href=>"/live-virtual-classes/schedule"}
 								Schedule and pricing
-							%a.nav-link{:href=>"#"}
+							%a.nav-link{:href=>"/live-virtual-classes/included"}
 								Included with class
-							%a.nav-link{:href=>"#"}
+							%a.nav-link{:href=>"/live-virtual-classes/guarantee"}
 								Guarantee
-							%a.nav-link{:href=>"#"}
+							%a.nav-link{:href=>"/live-virtual-classes/testimonials"}
 								Testimonials
 						.action-container.d-none.d-md-block
 							.d-flex.align-items-center
-								%a.btn.btn-primary{:href=>"/cart"}
+								%a.btn.btn-primary{:href=>"/live-virtual-classes/schedule"}
 									Schedule & pricing
 							
 #reached
@@ -74,145 +56,192 @@
 						.media-body
 							%p.body-small.mt-0.mb-0.bold-font
 								Authorized Training Partner
-#overview.anchor
-%section
-	.container
-		.row
-			.col
-				%p.text-center.body-small
-					For the PMP® Exam (latest version)
-		.row
-			.col
-				.card.shadow-elevation-2.mt-4
-					.card-body.p-5
-						.row
-							.col-md-4.border-right.no-border-sm
-								.text-center.mb-3.mb-md-0
-									%p.mb-2.body-small
-										Contact Hours
-									%p.mb-0.bold-font
-										35 PMI Contact Hours
-							.col-md-4.border-right.no-border-sm
-								.text-center.mb-3.mb-md-0
-									%p.mb-2.body-small
-										PDUs
-									%p.mb-0.bold-font
-										35 PDUs
-							.col-md-4
-								.text-center
-									%p.mb-2.body-small
-										Course access
-									%p.mb-0.bold-font
-										24 x 7 Online access
+
 %section.section-lg
 	.container
 		.row.align-items-center
-			.col-md-5.order-md-2
+			.col-md-6.order-md-2
 				.text-center
-					%img.max-width.mb-5.mb-md-0{:src=>"../images/on-demand-course/foundation-on-demand-dude.png", :width=>"315"}
-			.col-md-7.order-md-1
+					%img.max-width.mb-5.mb-md-0{:src=>"../images/live-virtual-classes/hero-image.png", :width=>"380"}
+			.col-md-6.order-md-1
 				%h5.primary-text-color.bold-font.mb-4
-					On-Demand Course Available 24x7
+					Attend Live PMP Certification Courses and Classes Online
 				%p
-					Flexible PMP Boot Camp online access.  Any time, anywhere, any device. 
+					Work smarter and earn more with the world's leading project management certification. As a Project Management Professional (PMP)® you will understand how to apply predictive, agile, and hybrid approaches across industries, using the global language of PMI standards.
 				%p
-					Our PMP Foundation course focuses on the highlights of the PMP certification, as well as summary level subject matter and key points pertaining to the PMP Domains and Knowledge Areas.
-				%p
-					The material in the online PMP Boot Camp course is designed to be used as an overview of the PMP certification; complementary to live class instruction; or as a refresher course for existing credential holders. This is not an exam prep course.
+					Our Live Virtual PMP classes are taught by expert certified PMP training instructors who bring their real-world and relevant experience to the students. PMTraining now offers evening and weekend classes to accomodate all schedules.
+				%a.btn.btn-primary.mt-3{:href=>"/live-virtual-classes/schedule"}
+					View schedule and pricing
 
-%section.gradient-bg.section-lg
+%section.section-lg.pt-2
 	.container
 		.row
-			.col
-				%p.bold-font.mb-5
-					Registration cost
-		.row
-			.col
-				.card{:style=>"max-width:360px;"}
-					.card-body.shadow-elevation-2
+			.col-lg-7
+				.mb-4.m-lg-0
+					.mb-5
+						%p.bold-font
+							Why Get PMP Certified?
+					-2.times do
 						.row
-							.col.border-right
-								.block
-									.top
-										%h5.mb-0.d-inline.mr-2.align-middle
-											$198
-										%p.mb-0.d-inline.line-through.light-text-color.align-middle
-											$348
-									.bottom
-										%p.mb-0.text-danger
-											Save $150 instantly
-							.col
-								.block
-									.top.mt-2.text-center
-										%h6.mb-0
-											Starting at $18/mo with
-									.d-flex.justify-content-center
-										%a{:href=>"#"}
-											.media.align-items-center.mb-2.mt-1
-												%img.align-self-center.mr-2{:src=>"../images/affirm-logo-sm.png", :width=>"50"}
-												.media-body
-													%h6.mb-0.mt-2.light-text-color
-														Learn more
-						%ul.list-unstyled.mt-4.mb-4
-							%li.body-small.light-text-color.mb-2
-								%i.material-icons.align-middle.mr-2
-									check
-								90 day access
-							%li.body-small.light-text-color.mb-2
-								%i.material-icons.align-middle.mr-2
-									check
-								24x7 support
-							%li.body-small.light-text-color
-								%i.material-icons.align-middle.mr-2
-									check
-								Another value item
-						%a.btn-primary.btn.btn-block{:href=>"/cart"}
-							Register now
+							-2.times do
+								.col-md-6
+									.media.mb-3
+										%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+										.media-body
+											%p.body-small
+												Through 2027 there will be 2.2 million new jobs annually that require project-oriented roles, creating high demand for PMPs.
+			.col-lg-1
+			.col-lg-4
+				.mb-5
+					%p.bold-font
+						What You Will Learn
+				%ul.list-unstyled.default-list
+					-3.times do
+						%li.body-small.mb-3
+							People, Process, and Business milestones that reflect soft skills, technical approaches, and organizational strategy of project management.
+					
+				
 
-
-#included-with-class.anchor
-%section.section-lg.pb-5
+%section.section-lg.pb-5.gradient-bg
 	.container
 		.row
 			.col
 				.mb-5
 					%h5.bold-font
 						Included with every course
-		-3.times do
-			.row
-				-2.times do
-					.col-md-6
-						.p-4
-							.media
-								%img.mr-4{:src=>"../images/icons/icon-24.svg"}
-								.media-body
-									%p.bold-font
-										L24x7 Access to Interactive Course Lessons
-									%p.body-small.light-text-color
-										Each course milestone contains interactive training lessons designed for On-Demand learning and busy schedules. Complete the entire curriculum in order, or re-visit training lessons as many times as you like.
+
+				=partial"live-virtual-classes/included"
 
 
-=partial"shared/quote-with-actions"
 
-#curriculum.anchor
+=partial"shared/quote-with-actions-2"
+
+
+
+%section.gradient-bg.section-lg
+	.container
+		.row
+			.col
+				.mb-5
+					%h5.bold-font
+						Meet your instructors
+					%p.body-small
+						Learn from the best. PMTraining instructors average 20 years of project management experience.
+
+		.row
+			.col
+				=partial"/shared/instructor-slider"
+
+
 %section.section-lg
 	.container
 		.row
 			.col-md-8
 				.mb-5
 					%h5.bold-font
-						Course Curriculum
+						A PMP Curriculum Focused on Exam Success
 				.mb-5
-					%p.bold-font
-						Comprehensive PMI-ACP Curriculum included with this On Demand Certification Course
 					%p.body-small.light-text-color
-						Below is the detailed curriculum covered by this PMI Agile Certified Practitioner (PMI-ACP) certification course. Students will come away with a thorough understanding of the most popular Agile methodologies with Agile bootcamp training, and will be prepared to pass the PMI-ACP exam.
+						Built around accelerated training techniques and carefully designed learning materials, this intense, focused PMP training delivers a passing PMP® Exam score on your very first try. You will be prepared to take the PMP exam, following our carefully designed class curriculum.
 		.row
 			.col
-				=partial"/on-demand-course/curriculum-accordian"
+				=partial"/live-virtual-classes/curriculum-accordian"
 
 
-=partial"shared/testimonials"
+%section.section-lg.pt-3
+	.container
+		.row
+			.col-md-7
+				.mb-4
+					.media.align-items-center
+						%img.align-self-center.mr-3{:src=>"../images/badge-money-back.svg"}
+						.media-body
+							%h5.bold-font
+								Money Back Guarantee
+							%p
+								%span.bold-font
+									94% 
+								of students recommend PMTraining
+				.mb-5
+					%p.bold-font
+						We Guarantee Your PMP Success
+					%p.body-small.light-text-color
+						Enroll in any of our live PMP classes and enjoy our 100% money back guarantee. Unlike other providers, online classes offered by PMTraining combine experienced instructors and proven curricula, with cutting edge online tools designed to help you pass the certification training. We are so confident, we guarantee you will become a PMP after completing one of our classes.
+				.mb-5
+					%p.bold-font
+						Our Commitment to You
+					%p.body-small.light-text-color
+						All classes offered by PMTraining rely on approved and authorized materials from the Project Management Institute (PMI). Content offered to students, both in-class and via our online systems, undergo continuous reviews and quality assessments.
+				%a.btn-secondary.btn{:href=>"#"}
+					Read Full Terms & Conditions
+			.col-md-5
+				.p-4.mt-4.mt-md-0
+					%img.max-width{:src=>"../images/live-virtual-classes/pmt-girl-laptop.png", :width=>"465"}
+					.media.mt-4
+						%img.mr-3{:src=>"../images/data-check.svg"}
+						.media-body
+							%h6.light-text-color
+								Satisfaction rate based on post-class survey data from Aug 2019 - Sep 2020. Data collected using standardized survey, sent to 1274 students, asking if student would recommend their class to a friend.
+					.mt-4
+						%p.light-text-color
+							Trustpilot widget
+
+
+#testimonials.anchor
+%section.gradient-bg.section-lg
+	.container
+		.row
+			.col
+				.mb-5
+					.d-block.d-md-flex.align-items-center.justify-content-between
+						.text
+							%h5.bold-font
+								PMP certification reviews
+							%p.body-small
+								So Effective, We Guarantee You Will Pass the PMP Exam.
+						%h6
+							Trustpiolt badge
+		.row
+			.col
+				=partial"/shared/testimonial-slider"
+
+
+
+
+%section.section-lg
+	.container
+		.row
+			.col
+				%h5.text-center.bold-font
+					Enroll online or by phone
+		.row
+			.col-md-4
+				.text-center
+					%img.max-width.mb-4{:src=>"../images/live-virtual-classes/enroll-online.png", :width=>"286"}
+					%p.body-large
+						Enroll in an Online PMP Class
+			.col-md-4
+				.text-center
+					%img.max-width.mb-4{:src=>"../images/live-virtual-classes/enroll-live.png", :width=>"286"}
+					%p.body-large
+						Attend Live Classes
+			.col-md-4
+				.text-center
+					%img.max-width.mb-4{:src=>"../images/live-virtual-classes/enroll-pass.png", :width=>"286"}
+					%p.body-large
+						Pass the PMP Exam, Guaranteed
+		.row
+			.col
+				.text-center.mt-5
+					%a.btn-primary.btn.btn-sm-block.mb-3{:href=>"#"}
+						Get started now
+					%p.bold-font
+						Or call 
+						%span.link-color
+							1-800-581-9819
+
+
+
 =partial"shared/sub-footer-promo-1"
 
 

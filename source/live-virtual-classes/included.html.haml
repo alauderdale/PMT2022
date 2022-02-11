@@ -1,0 +1,56 @@
+;;;
+
+"title": "Included with class"
+
+;;;
+
+=partial"/live-virtual-classes/hero"
+.page-nav-wrapper-outer
+	.page-nav-wrapper
+		.container
+			.row
+				.col
+					.d-flex.justify-content-between.align-items-center
+						.nav.page-nav.tabbed
+							%a.nav-link{:href=>"/live-virtual-classes"}
+								Overview
+							%a.nav-link{:href=>"/live-virtual-classes/schedule"}
+								Schedule and pricing
+							%a.nav-link.active{:href=>"/live-virtual-classes/included"}
+								Included with class
+							%a.nav-link{:href=>"/live-virtual-classes/guarantee"}
+								Guarantee
+							%a.nav-link{:href=>"/live-virtual-classes/testimonials"}
+								Testimonials
+						.action-container.d-none.d-md-block
+							.d-flex.align-items-center
+								%a.btn.btn-primary{:href=>"/live-virtual-classes/schedule"}
+									Schedule & pricing
+#reached
+
+
+
+%section.section-lg.pb-1
+	.container
+		.row
+			.col
+				%h5.primary-text-color.bold-font.mb-md-3.mb-3
+					Included with Your PMP Class Enrollment
+		.row.align-items-center
+			.col-md-4.col-lg-4.col-xl-6.order-md-2
+				.text-center
+					%img.max-width.mb-3.mb-md-0{:src=>"../images/badge-money-back-trust.png", :width=>"408"}
+
+			.col-md-8.col-lg-8.col-xl-6.order-md-1
+				%p.bold-font
+					%em
+						"Whenever I come across something that had a positive impact on my success, I let people know about it. Thank you for offering PMTraining, I am sure to recommend it to others." - H. Hartung PMP, USA"
+
+%section.section-lg.pt-0
+	.container
+		.row
+			.col
+				=partial"live-virtual-classes/included"
+
+=partial"shared/quote-with-actions-2"
+

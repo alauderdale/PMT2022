@@ -22,6 +22,7 @@
 			padding: 20px;
 			padding-left:60px;
 			position:relative;
+			font-family: $bold-font-name;
 			&:before{
 				content:"remove";
 				position:absolute;
@@ -42,10 +43,10 @@
 
 			}
 			&.collapsed{
+				font-family: $regular-font-name;
 				&:before{
 					content:"add";
 					color:$light-text-color;
-					
 				}
 			}
 		}

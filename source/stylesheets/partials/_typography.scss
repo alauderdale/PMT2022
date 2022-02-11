@@ -261,13 +261,21 @@ p{
 }
 
 
+.body-micro{
+  font-size:12px;
+  line-height:1.28em;
+  font-weight: normal;
+}
+
 .body-small{
   font-size: 14px;
   line-height:1.28em;
+  font-weight: normal;
 }
 .body-large{
   font-size: 20px;
   line-height:1.4em;
+  font-weight: normal;
   @include breakpoint(md) {
     font-size:18px;
   }
