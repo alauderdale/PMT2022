@@ -1,0 +1,47 @@
+.course-detail-modal{
+	.modal-dialog{
+		max-width: 950px;
+		.modal-content{
+			border-radius:10px;
+			overflow: hidden;
+		}
+		.close-button{
+			padding: 10px;
+			border-radius: 100px;
+			line-height: 1;
+			position:absolute;
+			right:15px;
+			top:15px;
+			border:1px solid white;
+			background: rgba(0,0,0,.3);
+			color:white;
+
+		}
+		.details-header{
+			background-color:shade($link-color,50%);
+			@extend %white_text;
+			.success-text-color{
+				color:tint($success-color,50%)!important;
+			}
+			a{
+				color:tint($link-color,50%);
+				&:hover{
+					color:tint($link-color,70%);
+				}
+			}
+			@include breakpoint(sm) {
+				padding-bottom:100px;
+			}
+		}
+		.details-lower{
+
+		}
+		.price-card{
+			margin-top:-300px;
+			margin-bottom:0;
+			@include breakpoint(sm) {
+				margin-top: -120px;
+			}
+		}
+	}
+}

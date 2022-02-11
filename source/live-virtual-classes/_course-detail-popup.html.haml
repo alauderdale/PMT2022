@@ -1,0 +1,132 @@
+#courseDetailsModal.modal.course-detail-modal.fade{:tabindex => "-1"}
+	.modal-dialog
+		.modal-content
+			.modal-body.p-0.position-relative
+				%button.close-button{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%i.material-icons.align-middle
+						clear
+				.details-header
+					.p-3.p-md-5
+						.row
+							.col-md-7
+								%h4.bold-font.mb-4
+									Live Online PMP Class 
+									%br
+									(Tues / Thurs Mornings)
+								%p.body-small.bold-font
+									Delivered over six weeks, two days a week (Tues / Thurs Mornings) for two hours per session! Guaranteed to pass, this PMP class includes everything you need to get certified. 
+								%p.body-small
+									Delivered over six weeks, two days a week (Tues / Thurs Mornings) for two hours per session! Guaranteed to pass, this PMP class includes everything you need to get certified. 
+							.col-md-5
+				.details-lower
+					.p-3.p-md-5
+						.row
+							.col-md-5.order-md-2
+								.card.shadow-elevation-1.price-card
+									.card-body
+										.text-center
+											%img.max-width{:src=>"../images/course-detail-badges.png", :width=>"281"}
+										%table.table.table-borderless
+											.tbody
+												%tr.border-bottom
+													%td.align-middle.p-1
+														%span.body-small
+															Original Class Price
+													%td.align-middle.p-1.text-right
+														%span.body-small
+															$1,498 USD
+												%tr.border-bottom
+													%td.align-middle.p-1
+														%span.body-small
+															On-Demand Course
+													%td.align-middle.p-1.text-right
+														%span.body-small
+															Free
+														%br
+														%span.body-micro.line-through
+															$348 USD
+												%tr.border-bottom
+													%td.align-middle.p-1
+														%span.body-small.text-danger
+															Discount
+													%td.align-middle.p-1.text-right
+														%span.body-small.text-danger
+															\-$1498 USD
+														%br
+														%span.body-micro
+															$500 off
+												%tr
+													%td.align-middle.p-1
+														%span.body-large.bold-font
+															Total
+													%td.align-middle.p-1.text-right
+														%span.body-large.bold-font
+															$998 USD
+										%a{:href=>"#"}
+											.d-flex.align-items-center.justify-content-end
+												%h6.mb-0.mr-2.mt-1.text-color
+													Starting at $18/mo with
+												%img.align-self-center.mr-2{:src=>"../images/affirm-logo-sm.png", :width=>"50"}
+												%h6.mb-0.light-text-color.ml-1.mt-1
+													Learn more
+										.mt-3
+											%a.btn-success.btn.btn-block.mb-3.mb-md-0{:href=>"/cart"}
+												Enroll now
+								.mt-4
+									%p.bold-font.text-center.body-small
+										Questions? Chat now or call 
+										%span.link-color
+											1-800-581-9819
+							.col-md-7.order-md-1
+								.mb-3.mt-3.mt-md-0
+									%p.bold-font
+										Class Details
+								%dl.row
+									%dt.col-sm-5.body-small.bold-font
+										Time
+									%dd.col-sm-7.body-small
+										6PM to 8PM (America/Denver)
+
+									%dt.col-sm-5.body-small.bold-font
+										Days
+									%dd.col-sm-7.body-small
+										Mon / Weds Evenings
+
+									%dt.col-sm-5.body-small.bold-font
+										Dates
+									%dd.col-sm-7.body-small
+										Mon, Nov 29 - Weds, Jan 12
+
+									%dt.col-sm-5.body-small.bold-font
+										Exam Pass Guarantee
+									%dd.col-sm-7.body-small
+										Yes
+
+									%dt.col-sm-5.body-small.bold-font
+										Instructor
+									%dd.col-sm-7.body-small
+										Mike Ikona PMP
+
+									%dt.col-sm-5.body-small.bold-font
+										System Requirements
+									%dd.col-sm-7.body-small
+										Desktop or mobile web browser
+						.row
+							.col
+								%hr
+						.row
+							.col
+								.mb-5.mt-4
+									%p.bold-font
+										Included with your live class enrollment
+						.row
+							-2.times do
+								.col-md-6
+									-4.times do
+										.media.mb-4.align-items-center
+											%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+											.media-body
+												%p.body-small.mb-0
+													Extensive online class materials included
+
+											  

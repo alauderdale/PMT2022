@@ -17,7 +17,7 @@
     %tbody
       %tr
         %td
-          %a.bold-font.link-underline{:href=>"#"}
+          %a.bold-font.link-underline{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#courseDetailsModal"}
             View Class Details
         %td.bold-font
           Mon, Nov 29, 2021
@@ -53,7 +53,7 @@
       -4.times do
         %tr
           %td
-            %a.bold-font.link-underline{"data-toggle"=>"modal", :href=>"/public/classes/show", "data-target"=>"#showClassModal"}
+            %a.bold-font.link-underline{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#courseDetailsModal"}
               View Class Details
           %td.bold-font
             Mon, Nov 29, 2021
@@ -105,4 +105,3 @@
 
 
 
-	
