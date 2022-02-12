@@ -1,0 +1,78 @@
+%section.off-white-bg.section-lg.banner.banner-light{:style=>"background-image:url(../images/corporate-training/banner-corporate-discounts.jpg);"}
+	.container
+		.row.align-items-center
+			.col-xl-6.col-lg-7
+				.content
+					%h3.bold-font.mb-4
+						Corporate Discounts
+					%p.body-large
+						Easily Register Multiple Students for a PMTraining Course Product
+					.mt-4
+						.media.align-items-center
+							%img.align-self-center.mr-3{:src=>"../images/pmi-badge-circle.png", :width=>"80", :height=>"80" }
+							.media-body
+								%h6.mt-0.mb-0.bold-font
+									Premier Authorized Training Partner (ATP) 
+									%br
+									of the Project Management Institute®
+
+
+%section.section-lg
+	.container
+		.row
+			.col-lg-7
+				.mb-4.m-lg-0
+					.mb-4
+						%p.bold-font
+							The fastest way to register multiple students
+					.mb-5
+						%p
+							Follow the steps below to quickly and securely enroll multiple students in classes, courseware, and practice exams for:
+					-4.times do
+						.media.mb-3
+							%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+							.media-body
+								%p.body-small
+									Project Management Professional (PMP)®
+			.col-lg-1
+			.col-lg-4
+				.mb-4
+					%p.bold-font
+						Other Payment and Order Options
+				%ul.list-unstyled.default-list
+					-2.times do
+						%li.body-small.mb-3
+							Download our 
+							%a{:href=>"#"}
+								%u
+									PDF order form 
+							and submit via email or postal mail
+%section.section-lg.gradient-bg
+	.container
+		.row
+			.col-md-4
+				.p-0.p-md-3
+					%img.mb-4{:src=>"../images/icons/icon-lg-mouse.svg"}
+					%p.body-large.bold-font
+						Step 1
+					%p.light-text-color
+						For each course product below, enter the number of students to register. Enter the name and email address of each student when prompted
+			.col-md-4
+				.p-0.p-md-3
+					%img.mb-4{:src=>"../images/icons/icon-lg-card.svg"}
+					%p.body-large.bold-font
+						Step 2
+					%p.light-text-color
+						Securely pay for your order using the online payment form
+			.col-md-4
+				.p-0.p-md-3
+					%img.mb-4{:src=>"../images/icons/icon-lg-email.svg"}
+					%p.body-large.bold-font
+						Step 3
+					%p.light-text-color
+						Your students will be notified with access instructions via email. You will be sent a confirmation email and itemized PDF payment receipt.
+%section.section-lg.pt-2
+	.container
+		.row
+			.col
+				=partial"shared/enroll-multiple-table"

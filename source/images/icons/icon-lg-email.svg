@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="128px" viewBox="0 0 125 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-lg-email</title>
+    <g id="icon-lg-email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(20.000000, 9.000000)">
+            <ellipse id="Oval" fill-opacity="0.171465253" fill="#00B6FF" cx="43" cy="42.7201493" rx="43" ry="42.7201493"></ellipse>
+            <g id="Group-323" transform="translate(0.803738, 15.171642)">
+                <path d="M7.97629907,83.7583905 L38.8961121,62.380674 C40.8451776,61.0375504 43.4251776,61.0335411 45.3782617,62.3766647 L76.4186355,83.7583905" id="Stroke-1978" stroke="#265A6E" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M72.3284112,28.3326912 L82.6001869,37.9711065 C83.745514,39.0456054 84.3925234,40.5410833 84.3925234,42.1127384 L84.3925234,86.1471458 C84.3925234,89.2864467 81.8446729,91.8283582 78.6980374,91.8283582 L5.69850467,91.8283582 C2.55186916,91.8283582 0,89.2864467 0,86.1471458 L0,42.1047197 C0,40.5410833 0.647009346,39.0456054 1.78831776,37.9711065 L12.0480374,28.3166539" id="Stroke-1979" stroke="#265A6E" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Stroke-1980" stroke="#265A6E" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" points="25.5010093 15.6564109 42.1343738 0 58.8280187 15.6644296"></polyline>
+                <polyline id="Stroke-1981" stroke="#265A6E" stroke-width="4.8" fill="#FFBC00" stroke-linecap="round" stroke-linejoin="round" points="12.0500467 50.8398343 12.0500467 15.6580147 72.3304206 15.6580147 72.3304206 50.7997411"></polyline>
+                <text id="e" font-family="MuseoSans-900, Museo Sans" font-size="36.8" font-weight="bold" fill="#265A6E">
+                    <tspan x="31.4351925" y="43.7416045">e</tspan>
+                </text>
+                <line x1="58.2786636" y1="61.7187346" x2="76.3547383" y2="47.674072" id="Stroke-1982" stroke="#265A6E" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="8.03899065" y1="47.6724682" x2="26.0105794" y2="61.7251495" id="Stroke-1983" stroke="#265A6E" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

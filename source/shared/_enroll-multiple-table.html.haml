@@ -1,0 +1,41 @@
+.pm-table-wrapper
+  %table.table.table-striped.mid-align.table-bordered.bold-table
+    %thead
+      %tr
+        %th
+          Item
+        %th{"data-hide"=>"phone"} 
+          Description
+        %th{"data-hide"=>"phone"} 
+          List price
+        %th{"data-hide"=>"phone"} 
+          Volume price
+        %th
+        %th{"data-hide"=>"phone"} 
+          Qty
+
+    %tbody
+      -4.times do
+        %tr
+          %td.bold-font
+            %img.max-width.mb-2{:src => "/images/tmp/product-ticket.png", :width => "77"}
+            %br
+            PMP Practice Exams
+          %td{:style=>"width:30%;"}
+            Unlimited 90-day access to exceptionally realistic PMP practice exams; 1,000+ realistic exam questions with detailed explanations, including 21 condensed PMP mock exams; 10 Knowledge Area tests; personal performance reports, progress tracking, and more
+          %td.bold-font
+            $1,148 USD
+          %td.bold-font
+            $1,148 USD
+            %br
+            %span.success-text-color.text-uppercase.body-small.bold-font
+              38% Discount
+          %td.text-center
+            %a.btn.btn-terciary{:href=>"/cart"}
+              Register
+          %td{:style=>"width:8%;"}
+            %input.form-control{:type=>"text"}
+
+
+
+

@@ -55,6 +55,13 @@ section.banner{
         padding:0;
       }
     }
+    &.banner-light{
+      @include breakpoint(lg) {
+        .content{
+          background-color: rgba(247,251,252,.9);
+        }       
+      }
+    }
 }
 
 

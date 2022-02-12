@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="128px" viewBox="0 0 125 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-lg-mouse</title>
+    <g id="icon-lg-mouse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(10.000000, 12.000000)">
+            <ellipse id="Oval" fill-opacity="0.171465253" fill="#00B6FF" cx="57.0189994" cy="42.6801304" rx="42.6351885" ry="42.6801304"></ellipse>
+            <g id="thin-0340_mouse" transform="translate(0.000000, 5.779687)" stroke="#265A6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.8">
+                <g id="Group">
+                    <path d="M-4.2114494e-14,-6.52458967e-15 L4.92049921,10.1773098 C4.92049921,10.1773098 11.1776979,21.9580894 27.6258755,11.406923 C36.5185398,5.70233134 41.6106423,15.7205147 41.6106423,15.7205147" id="Shape"></path>
+                    <path d="M97.602997,68.377797 C102.66123,79.6798412 99.8442266,92.3471178 87.9096677,99.0240985 L87.9096677,99.0240985 C75.9746573,105.699723 63.4923226,101.352679 56.7600537,91.2250957 L35.1560998,55.3131565 C29.2303664,44.6968929 34.1020942,30.6820145 46.0330403,24.0045818 L46.0330403,24.0045818 C57.9680507,17.3285052 72.4450481,20.5223352 78.3730394,31.1390508 L97.602997,68.377797 L97.602997,68.377797 Z" id="Shape" fill="#FFBC00"></path>
+                    <line x1="52.6140274" y1="35.7898821" x2="60.16367" y2="49.3147234" id="Shape"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
