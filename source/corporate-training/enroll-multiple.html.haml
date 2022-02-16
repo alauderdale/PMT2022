@@ -3,7 +3,7 @@
 		.row.align-items-center
 			.col-xl-6.col-lg-7
 				.content
-					%h3.bold-font.mb-4
+					%h1.bold-font.mb-4
 						Corporate Discounts
 					%p.body-large
 						Easily Register Multiple Students for a PMTraining Course Product
@@ -28,25 +28,44 @@
 					.mb-5
 						%p
 							Follow the steps below to quickly and securely enroll multiple students in classes, courseware, and practice exams for:
-					-4.times do
-						.media.mb-3
-							%img.mr-4{:src=>"../images/check-circle-sm.svg"}
-							.media-body
-								%p.body-small
-									Project Management Professional (PMP)®
+					.media.mb-2
+						%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+						.media-body
+							%p.body-small
+								Project Management Professional (PMP)®
+					.media.mb-2
+						%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+						.media-body
+							%p.body-small
+								Certified Associate in Project Management (CAPM)®
+					.media.mb-2
+						%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+						.media-body
+							%p.body-small
+								PMI's Agile Certified Practitioner (ACP)®
+					.media.mb-2
+						%img.mr-4{:src=>"../images/check-circle-sm.svg"}
+						.media-body
+							%p.body-small
+								PMI's Professional in Business Analysis (PBA)®
 			.col-lg-1
 			.col-lg-4
 				.mb-4
 					%p.bold-font
 						Other Payment and Order Options
 				%ul.list-unstyled.default-list
-					-2.times do
-						%li.body-small.mb-3
-							Download our 
-							%a{:href=>"#"}
-								%u
-									PDF order form 
-							and submit via email or postal mail
+					%li.body-small.mb-3
+						Download our 
+						%a{:href=>"#"}
+							%u
+								PDF order form 
+						and submit via email or postal mail
+					%li.body-small.mb-3
+						Call
+						%a{:href=>"#"}
+							%u
+								1-800-581-9819
+						to Register by Phone
 %section.section-lg.gradient-bg
 	.container
 		.row
@@ -72,7 +91,7 @@
 					%p.light-text-color
 						Your students will be notified with access instructions via email. You will be sent a confirmation email and itemized PDF payment receipt.
 %section.section-lg.pt-2
-	.container
+	.container-fluid
 		.row
 			.col
 				=partial"shared/enroll-multiple-table"

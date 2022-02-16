@@ -1,0 +1,248 @@
+%section.off-white-bg.section-lg.banner.banner-light{:style=>"background-image:url(../images/corporate-training/banner-corporate-discounts.jpg);"}
+  .container
+    .row.align-items-center
+      .col-xl-6.col-lg-7
+        .content
+          %h1.bold-font.mb-4
+            Private, Branded Training Portal
+          %p.body-large
+            Prepare Your Students to Pass Our Certification Tools, Your Private Portal
+          .mt-4
+            .media.align-items-center
+              %img.align-self-center.mr-3{:src=>"../images/pmi-badge-circle.png", :width=>"80", :height=>"80" }
+              .media-body
+                %h6.mt-0.mb-0.bold-font
+                  Premier Authorized Training Partner (ATP) 
+                  %br
+                  of the Project Management Institute®
+
+
+%section.section-lg
+  .container
+    .row.align-items-center
+      .col-lg-6
+        .mb-4.m-lg-0
+          .mb-3
+            %h4.bold-font
+              Relied on by 112 Project Management Institute (PMI)® Chapters and Training Organizations
+          .mb-3
+            %p
+              A hosted, branded version of our popular practice exam tools and on-demand courses for your students. Receive your own corporate branded exam prep site – hosted and supported by us, and driven by our industry-leading exam prep content database.
+      .col-lg-6
+        .text-center
+          %a.play-video{:href=>"#"}
+            %img.max-width{:src=>"../images/corporate-training/video-thumb.png", :width=>"475"}
+    .row.mt-5
+      .col
+        .mb-4
+          %p.bold-font
+            Included with private classes by PMTraining:
+    .row
+      -2.times do
+        .col-md-6
+          .mb-0.mb-md-5
+            %ul.list-unstyled.default-list
+              -6.times do
+                %li.body-small.mb-3.light-text-color
+                  Proven certification curriculum based on PMI global standards
+        
+
+%section.section-lg.off-white-bg
+  .container
+    .row
+      .col
+        %h5.bold-font
+          Clear and Simple Pricing
+        %p.body-small
+          Automated billing, charged monthly.
+    .row
+      .col
+        .mt-5
+          %table.table
+            %thead
+              %tr.table-primary.link-color.text-uppercase.bold-font
+                %th.no-border-top
+                  Monthly pricing
+                %th.no-border-top
+                  
+            %tbody
+              %tr
+                %td.bold-font.body-small
+                  Certifications Supported
+                %td.body-small
+                  %ul.list-unstyled.default-list
+                    -4.times do
+                      %li
+                        Proven certification curriculum based on PMI global standards
+              %tr
+                %td.bold-font.body-small
+                  Cost Per Student Registration
+                %td.body-small
+                  %span.bold-font
+                    $53.00 
+                  for 90 Day Access to practice exam system, detailed student reports and instructor tools
+                  %br
+                  %span.bold-font
+                    Optional: 
+                  Accredited On-Demand courses available for each certification
+                  %br
+                  ($249 each, a 43% discount)
+              %tr
+                %td.bold-font.body-small
+                  Cost Per Student Registration
+                %td.body-small
+                  %span.bold-font
+                    $99.00
+                  Waived with registration of 2 or more students per month
+              %tr
+                %td.bold-font.body-small
+                  Portal Setup Fee  
+                %td.body-small
+                  %span.bold-font.line-through
+                    $199.00
+                  Setup Fee Waived
+
+
+%section.section-lg.gradient-bg
+  .container
+    .row
+      .col
+        .mb-5
+          %h5.bold-font
+            How to Register
+    .row
+      .col-md-4
+        .p-0.p-md-3
+          %img.mb-4{:src=>"../images/icons/icon-lg-mouse.svg"}
+          %p.body-large.bold-font
+            Step 1
+          %p.light-text-color
+            Complete the registration form below, for your organization. You may also download a 
+            %a{:href=>"#"}
+              PDF version here
+      .col-md-4
+        .p-0.p-md-3
+          %img.mb-4{:src=>"../images/icons/icon-lg-card.svg"}
+          %p.body-large.bold-font
+            Step 2
+          %p.light-text-color
+            Our team will set up your private PMP exam prep site in 2 business days or less
+      .col-md-4
+        .p-0.p-md-3
+          %img.mb-4{:src=>"../images/icons/icon-lg-email.svg"}
+          %p.body-large.bold-font
+            Step 3
+          %p.light-text-color
+            Our team will notify you with instructions when your website is ready to enroll students
+
+
+
+%section.section-lg.gradient-bg
+  .container
+    .row
+      .col-xl-8.col-lg-10
+        .complete-checkout.mb-4.mt-5
+          %h5.bold-font.mb-4
+            Complete checkout below
+          .card.checkout-card.mb-4
+            .card-header
+              .pt-1.pb-1
+                %p.mb-0.body-small
+                  Following checkout, your account will be activated and an email receipt will be dispatched.
+            .card-body
+              %form
+                .form-group.row
+                  %label.col-sm-3.col-form-label.body-small.medium-font
+                    Student email
+                  .col-sm-9
+                    %input.form-control.input-sm{:type=>"text", :placeholder=>"john@doe.com"}
+                .form-group.row
+                  %label.col-sm-3.col-form-label.body-small.medium-font
+                    Confirm email
+                  .col-sm-9
+                    %input.form-control.input-sm{:type=>"text", :placeholder=>"john@doe.com"}
+                .form-group.row.mb-0
+                  %label.col-sm-3.col-form-label.body-small.medium-font
+                    Student name
+                  .col-sm-9
+                    .row
+                      .col-6
+                        %input.form-control.input-sm{:type=>"text", :placeholder=>"First name"}
+                      .col-6
+                        %input.form-control.input-sm{:type=>"text", :placeholder=>"Last name"}
+
+          .card.checkout-card.mb-4
+            .card-header
+              .pt-1.pb-1
+                %p.mb-0.body-small
+                  Pay Securely with Your Credit Card
+            .card-body.position-relative
+              %form.position-relative
+                .form-group.row
+                  %label.col-sm-3.col-form-label.body-small.medium-font
+                    Card number
+                  .col-sm-9
+                    .row
+                      .col-md-6
+                        %input.form-control.input-sm{:type=>"text", :placeholder=>"4444 4444 4444 4444"}
+                .form-group.row
+                  %label.col-sm-3.col-form-label.body-small.medium-font
+                    Expiration
+                  .col-sm-9
+                    .row
+                      .col-md-6
+                        %input.form-control.input-sm{:type=>"text", :placeholder=>"MM/YY"}
+                .form-group.row
+                  %label.col-sm-3.col-form-label.body-small.medium-font
+                    Security code
+                  .col-sm-9
+                    .row
+                      .col-md-6
+                        %input.form-control.input-sm{:type=>"text", :placeholder=>"123"}
+                .card-info
+                  %img{:src=>"../images/card-info.png", :width=>"270"}
+                .form-group.row.mt-4.mb-0
+                  .col
+                    %a.btn.btn-primary.btn-block{:href=>"#"}
+                      Complete registration
+                    .d-flex.align-items-center.justify-content-center.mt-3
+                      %i.material-icons-outlined
+                        lock
+                      %p.text-center.mb-0.body-small
+                        Your information is 
+                        %a.text-color{:href=>"#"}
+                          %u
+                            private and secure
+                
+
+%section.section-lg.off-white-bg
+  .container
+    .row
+      .col
+        %h5.bold-font
+          PMTraining Enterprise Program Terms
+        %p.body-small
+          No hidden fees. Cancel any time.
+    .row
+      .col
+        .mt-5
+          %table.table
+            %thead
+              %tr.table-primary.link-color.text-uppercase.bold-font
+                %th.no-border-top
+                  PM Training program terms
+                %th.no-border-top
+                  
+            %tbody
+              -5.times do
+                %tr
+                  %td.bold-font.body-small
+                    Exam Preparation Products
+                  %td.body-small  
+                    %p.bold-font.mb-2
+                      PMTraining exam preparation products are delivered as Software as a Service (SaaS). Unless otherwise stated:
+                    %ul.list-unstyled.default-list
+                      -4.times do
+                        %li.body-small
+                          Students will have unlimited access to all product features and tools, described in depth in this agreement.
+            

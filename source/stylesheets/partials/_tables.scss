@@ -181,3 +181,9 @@ td.flash-sale{
 }
 
 
+
+//row coloring
+
+.table-primary, .table-primary th{
+	background-color:tint($link-color,90%);
+}

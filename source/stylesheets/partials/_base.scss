@@ -152,6 +152,18 @@ img{
   }
 }
 
+.border-link{
+  border-color:$link-color!important;
+}
+
+.border-success{
+  border-color:$success-color!important;
+}
+
+.border-warning{
+  border-color:$warning-color!important;
+}
+
 //attachments cards
 
 .attachment-grid{
