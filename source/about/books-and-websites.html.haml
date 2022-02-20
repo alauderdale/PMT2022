@@ -24,7 +24,10 @@
 			.col-lg-6
 				-10.times do
 					.row.mb-4
-						.col-md-8
+						.col-md-4.order-lg-2
+							.text-left.text-md-center.mb-4
+								%img.max-width{:src=>"../images/tmp/book.png", :width=>"130"}
+						.col-md-8.order-lg-1
 							%h5.bold-font
 								%a{:href=>"#"}
 									PMP® Exam Prep Questions, Answers, & Explanations
@@ -32,9 +35,7 @@
 								Based on the 2018 PMP Exam and A Guide to Project Management Body of Knowledge (PMBOK® Guide) - Sixth Edition, the practice tests in our Project Management Professional® (PMP) exam prep book are designed to help students adjust to the pace, subject matter, and difficulty of the real PMP exam. Geared towards anyone preparing for the exam, all PMP books and practice tests include clear solutions to help you understand core concepts.
 							%a.btn.btn-primary{:href=>"#"}
 								Purchase on Amazon
-						.col-md-4
-							.text-center
-								%img.max-width{:src=>"../images/tmp/book.png", :width=>"130"}
+						
 					.row.mb-4
 						.col
 							%hr
