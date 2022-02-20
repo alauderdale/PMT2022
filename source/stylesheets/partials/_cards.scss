@@ -29,3 +29,32 @@
 		background-color:#FBFDFF;
 	}
 }
+
+//primary knockout card
+
+.primary-knockout-card{
+	background: $link-color;
+	border-radius:15px;
+	.card-body{
+		padding:50px;
+	}
+	@extend %white_text;
+	.trusted-by-text{
+		opacity: .7;
+		letter-spacing: 1px;
+	}
+}
+
+
+//icon top right card
+
+.icon-tr-card{
+	.card-body{
+		position:relative;
+		.icon{
+			position:absolute;
+			top:0;
+			right:0;
+		}
+	}
+}

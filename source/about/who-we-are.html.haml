@@ -1,4 +1,4 @@
-%section.section-lg
+%section
 	.container
 		.row
 			.col
@@ -6,29 +6,29 @@
 					%h4.bold-font
 						About PM Training
 		.row
-			.col-md-2
+			.col-lg-2
 				.mb-5
 					%nav.flex-column.bold-font.nav-horz-tabbed
-						%a.nav-link.active{:href=>"#"}
+						%a.nav-link.active{:href=>"/about/who-we-are"}
 							Who we are
 						%a.nav-link{:href=>"#"}
 							Our courseware
 						%a.nav-link{:href=>"#"}
 							Our customers
-						%a.nav-link{:href=>"#"}
+						%a.nav-link{:href=>"/about/books-and-websites"}
 							More PM Training products
 						%a.nav-link{:href=>"#"}
 							About the PMP certification
 
 
-			.col-md-6
+			.col-lg-6
 				%p.body-large.bold-font
 					Since 2004, PMTraining has provided students with professional, high-quality methods of preparing for popular career certifications, including the (PMP)®.
 				-9.times do
 					%p
 						=lorem.paragraph
-			.col-md-4
-				.p-md-4.p-0.pt-5.pt-md-0
+			.col-lg-4
+				.p-0.p-md-4
 					%p.text-center
 						TrustPilot widget
 					%hr

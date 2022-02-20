@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="56px" viewBox="0 0 54 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Our-Books-and-Websites" transform="translate(-1217.000000, -288.000000)">
+            <g id="Group-7" transform="translate(1218.590000, 288.000000)">
+                <g id="Group-21" transform="translate(5.718371, 0.000000)" fill="#00B6FF" fill-opacity="0.171465253">
+                    <ellipse id="Oval" cx="23.3458143" cy="23.2454196" rx="23.3458143" ry="23.2454196"></ellipse>
+                </g>
+                <g id="Group" transform="translate(0.000000, 9.649600)">
+                    <path d="M30.2916,16.0428881 L38.7552,7.0864 C44.1873694,13.4602378 46.2075027,19.1195937 44.8156,24.0644677 C42.7277459,31.4817786 39.9834358,37.7282 39.3693179,37.7282 C38.959906,37.7282 35.934,34.9069333 30.2916,29.2644 C32.831074,24.7617793 33.6862073,21.7801666 32.857,20.3195619 C32.0277927,18.8589571 31.1726593,17.5624177 30.2916,16.4299435" id="Path" fill="#FFBC00"></path>
+                    <path d="M0.2916,16.0428881 L8.7552,7.0864 C14.1873694,13.4602378 16.2075027,19.1195937 14.8156,24.0644677 C12.7277459,31.4817786 9.98343577,37.7282 9.36931789,37.7282 C8.95990596,37.7282 5.934,34.9069333 0.2916,29.2644 C2.83107399,24.7617793 3.68620732,21.7801666 2.857,20.3195619 C2.02779268,18.8589571 1.17265935,17.5624177 0.2916,16.4299435" id="Path" fill="#FFBC00" transform="translate(7.766529, 22.407300) scale(-1, 1) translate(-7.766529, -22.407300) "></path>
+                    <circle id="Oval" stroke="#265A6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" cx="22.4078" cy="22.4078" r="22.4078"></circle>
+                    <circle id="Oval" stroke="#265A6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" cx="22.4078" cy="22.4078" r="10.4492"></circle>
+                    <line x1="30.2916" y1="15.5522" x2="38.7562" y2="7.0864" id="Shape" stroke="#265A6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="7.0864" y1="38.7578" x2="15.5528" y2="30.291" id="Shape" stroke="#265A6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="30.2916" y1="29.2644" x2="38.7552" y2="37.7282" id="Shape" stroke="#265A6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="7.0864" y1="6.0592" x2="15.554" y2="14.5264" id="Shape" stroke="#265A6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

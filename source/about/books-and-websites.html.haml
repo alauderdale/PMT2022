@@ -1,0 +1,69 @@
+%section
+	.container
+		.row
+			.col
+				.mb-5
+					%h4.bold-font
+						Our Books and Websites
+		.row
+			.col-lg-2
+				.mb-5
+					%nav.flex-column.bold-font.nav-horz-tabbed
+						%a.nav-link{:href=>"/about/who-we-are"}
+							Who we are
+						%a.nav-link{:href=>"#"}
+							Our courseware
+						%a.nav-link{:href=>"#"}
+							Our customers
+						%a.nav-link.active{:href=>"/about/books-and-websites"}
+							More PM Training products
+						%a.nav-link{:href=>"#"}
+							About the PMP certification
+
+
+			.col-lg-6
+				-10.times do
+					.row.mb-4
+						.col-md-8
+							%h5.bold-font
+								%a{:href=>"#"}
+									PMP® Exam Prep Questions, Answers, & Explanations
+							%p.body-small
+								Based on the 2018 PMP Exam and A Guide to Project Management Body of Knowledge (PMBOK® Guide) - Sixth Edition, the practice tests in our Project Management Professional® (PMP) exam prep book are designed to help students adjust to the pace, subject matter, and difficulty of the real PMP exam. Geared towards anyone preparing for the exam, all PMP books and practice tests include clear solutions to help you understand core concepts.
+							%a.btn.btn-primary{:href=>"#"}
+								Purchase on Amazon
+						.col-md-4
+							.text-center
+								%img.max-width{:src=>"../images/tmp/book.png", :width=>"130"}
+					.row.mb-4
+						.col
+							%hr
+
+				  
+			.col-lg-4
+				.p-0.p-md-4
+					%p.text-center
+						TrustPilot widget
+					%hr
+					.mt-5
+						.text-center
+							%p.bold-font.body-small.mb-4
+								Trusted By
+							%img.max-width{:src=>"../images/logos-sm-grid.png", :width=>"289"}
+					.mt-4
+						.text-center
+							%p.bold-font.body-small
+								What our students say
+					.mt-4
+						-4.times do
+							.media
+								%img.mr-4{:src=>"../images/quote.svg", :width=>"20"}
+								.media-body
+									%h6.mb-2
+										Great class, the exam prep portal was an amazing component in addition to the excellent instructor... A great combination.
+									%h6.bold-font.mb-0
+										Bernard Gonzales
+									%h6.light-text-color
+										(MBA, PMP)
+							%hr
+

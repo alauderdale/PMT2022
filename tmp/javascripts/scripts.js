@@ -1,74 +1,76 @@
  $(document).ready(function(){
 
 
-    ///toggle mobile menu
-        $('.mobile-menu-toggle').on('click', function(e) {
-        $('.mobile-menu-container').toggleClass("mobile-menu-hidden"); 
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+      var os = $('#reached').offset().top; // pixels to the top of div1
+      var ht = $('#reached').height(); // height of div1 in pixels
+      // if you've scrolled further than the top of div1 plus it's height
+      // change the color. either by adding a class or setting a css property
+      if(scroll > os + ht){
+          $('.page-nav-wrapper-outer').addClass('show-actions');
+      }
+      if(scroll < os + ht){
+          $('.page-nav-wrapper-outer').removeClass('show-actions');
+      }
     });
 
 
 
 
-
-        $('[data-toggle="tooltip"]').tooltip(
-        {container:'body', trigger: 'hover'}
-        );   
-
- $(".new-comment-field").focus(function(){
-   $(this).parent().addClass("focused");
-
-  }).blur(function(){
-       $(this).parent().removeClass("focused");
-  })
-
-
-	$('.show-notes-toggle').on('click', function(e) {
-		$('.notes-list-container').toggleClass("notes-bar-open"); 
-	});
-
-	$('.show-comment-toggle').on('click', function(e) {
-		$('.comments-container').toggleClass("comments-bar-open"); 
-	});
-
-
-  // Gets the video src from the data-src on each button
-
-var $videoSrc;  
-$('.video-btn').click(function() {
-    $videoSrc = $(this).data( "src" );
-});
-console.log($videoSrc);
-
-  
-  
-// when the modal is opened autoplay it  
-$('#myModal').on('shown.bs.modal', function (e) {
-    
-// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
-})
-  
-
-
-// stop playing the youtube video when I close the modal
-$('#myModal').on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#video").attr('src',$videoSrc); 
-}) 
-    
-//toggle mobile menu
-  $('.menu-toggle-action').on('click', function(e) {
-    $('#main-nav').toggleClass("menu-open"); 
-    $('body').toggleClass("menu-open-body"); 
-  });
+    ///toggle mobile menu
+    $('.mobile-menu-toggle').on('click', function(e) {
+      $('.mobile-menu-container').toggleClass("mobile-menu-hidden"); 
+    });
 
 
 
+    //tooltips
+
+    $('[data-toggle="tooltip"]').tooltip(
+      {container:'body', trigger: 'hover'}
+      );   
 
 
+    //sliders
+
+    var swiper = new Swiper(".testimonial-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          992: {
+              slidesPerView: 2
+            },
+        }
+      });
 
 
+    var swiper = new Swiper(".instructor-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          576: {
+              slidesPerView: 2
+            },
+          992: {
+              slidesPerView: 4
+            },
+        }
+      });
 
+
+    ///responsive tables!!!
+    $('table').footable();
 
 
   });
