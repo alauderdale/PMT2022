@@ -4,7 +4,7 @@
   .card
     .card-header{"aria-controls" => "collapse-a", "aria-expanded" => "true", "data-target" => "#collapse-a", "data-toggle" => "collapse"}
       .d-flex.align-items-center
-        %img.mr-3{:src=>"../images/on-demand-course/milestone-thumb.png", :width=>"125"}
+        %img.mr-3{:src=>"/images/on-demand-course/milestone-thumb.png", :width=>"125"}
         %p.mb-0.bold-font
           Course Milestones 1 - 7
     .collapse.show{"aria-labelledby" => "headingOne", "data-parent" => "#curriculumAccordian", :id=>"collapse-a"}
@@ -39,7 +39,7 @@
     .card
       .card-header.collapsed{"aria-controls" => "collapse-#{i}", "aria-expanded" => "true", "data-target" => "#collapse-#{i}", "data-toggle" => "collapse"}
         .d-flex.align-items-center
-          %img.mr-3{:src=>"../images/on-demand-course/milestone-thumb.png", :width=>"125"}
+          %img.mr-3{:src=>"/images/on-demand-course/milestone-thumb.png", :width=>"125"}
           %p.mb-0.bold-font
             Course Milestones 1 - 7
       .collapse{"aria-labelledby" => "headingOne", "data-parent" => "#curriculumAccordian", :id=>"collapse-#{i}"}
