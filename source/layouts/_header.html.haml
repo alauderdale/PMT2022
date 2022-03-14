@@ -5,10 +5,47 @@
         .row.align-items-center
           .col
             .d-flex.justify-content-between.align-items-center
-              %a.nav-link.one-line-height{:href=>"/cart"}
-                %i.material-icons-outlined
-                  shopping_cart
-              %a{:href=>"/"}
+              .d-flex
+                %a.nav-link.one-line-height.pr-3{:href=>"/cart"}
+                  %i.material-icons-outlined
+                    shopping_cart
+                .dropdown
+                  %a.nav-link.dropdown-toggle.pl-0{"data-toggle" => "dropdown", :href => "#"}
+                    USD
+                    %i.material-icons-outlined.micro-text
+                      expand_more
+                  .dropdown-menu.p-2{"aria-labelledby" => "navbarDropdown"}
+                    .dropdown-item
+                      %input#currencyRadios1.form-check-input.cursor-pointer{ :name => "currencyRadios", :type => "radio", :value => "option1"}/
+                      %label.form-check-label.cursor-pointer{:for => "currencyRadios1"}
+                        %span.medium-font
+                          AUS $
+                        Australlian Dollar
+                    .dropdown-item 
+                      %input#currencyRadios2.form-check-input.cursor-pointer{:name => "currencyRadios", :type => "radio", :value => "option2"}/
+                      %label.form-check-label.cursor-pointer{:for => "currencyRadios2"}
+                        %span.medium-font
+                          CAD $
+                        Canadian Dollar
+                    .dropdown-item
+                      %input#currencyRadios3.form-check-input.cursor-pointer{:name => "currencyRadios", :type => "radio", :value => "option3"}/
+                      %label.form-check-label.cursor-pointer{:for => "currencyRadios3"}
+                        %span.medium-font
+                          EUR € 
+                        European Euro
+                    .dropdown-item
+                      %input#currencyRadios4.form-check-input.cursor-pointer{:name => "currencyRadios", :type => "radio", :value => "option4"}/
+                      %label.form-check-label.cursor-pointer{:for => "currencyRadios4"}
+                        %span.medium-font
+                          GBP £
+                        United Kingdom Pound Sterling
+                    .dropdown-item
+                      %input#currencyRadios5.form-check-input.cursor-pointer{:checked => "checked", :name => "currencyRadios", :type => "radio", :value => "option5"}/
+                      %label.form-check-label.cursor-pointer{:for => "currencyRadios5"}
+                        %span.medium-font
+                          USD $ 
+                        United States Dollar
+              %a.position-relative{:href=>"/", :style=>"right:32px;"}
                 %img{:alt => "", :src => "/images/logo-no-tag.svg", :width => "118",}
               %a.nav-link.one-line-height.mobile-menu-toggle{:href=>"#"}
                 %i.material-icons
@@ -156,6 +193,43 @@
             %a.nav-link.one-line-height{:href=>"/cart"}
               %i.material-icons-outlined
                 shopping_cart
+            .dropdown
+              %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                USD
+                %i.material-icons-outlined.micro-text
+                  expand_more
+              .dropdown-menu.p-2{"aria-labelledby" => "navbarDropdown"}
+                .dropdown-item
+                  %input#currencyRadios1.form-check-input.cursor-pointer{ :name => "currencyRadios", :type => "radio", :value => "option1"}/
+                  %label.form-check-label.cursor-pointer{:for => "currencyRadios1"}
+                    %span.medium-font
+                      AUS $
+                    Australlian Dollar
+                .dropdown-item 
+                  %input#currencyRadios2.form-check-input.cursor-pointer{:name => "currencyRadios", :type => "radio", :value => "option2"}/
+                  %label.form-check-label.cursor-pointer{:for => "currencyRadios2"}
+                    %span.medium-font
+                      CAD $
+                    Canadian Dollar
+                .dropdown-item
+                  %input#currencyRadios3.form-check-input.cursor-pointer{:name => "currencyRadios", :type => "radio", :value => "option3"}/
+                  %label.form-check-label.cursor-pointer{:for => "currencyRadios3"}
+                    %span.medium-font
+                      EUR € 
+                    European Euro
+                .dropdown-item
+                  %input#currencyRadios4.form-check-input.cursor-pointer{:name => "currencyRadios", :type => "radio", :value => "option4"}/
+                  %label.form-check-label.cursor-pointer{:for => "currencyRadios4"}
+                    %span.medium-font
+                      GBP £
+                    United Kingdom Pound Sterling
+                .dropdown-item
+                  %input#currencyRadios5.form-check-input.cursor-pointer{:checked => "checked", :name => "currencyRadios", :type => "radio", :value => "option5"}/
+                  %label.form-check-label.cursor-pointer{:for => "currencyRadios5"}
+                    %span.medium-font
+                      USD $ 
+                    United States Dollar
+                
             %a.nav-link{:href=>"/welcome/login"}
               Log in
   #primary-sub-header
