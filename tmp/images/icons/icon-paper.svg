@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-paper</title>
+    <g id="icon-paper" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-20" transform="translate(12.000000, 7.000000)">
+            <ellipse id="Oval" fill-opacity="0.171465253" fill="#00B6FF" cx="18.8597833" cy="22.7707388" rx="17.8469833" ry="17.7709388"></ellipse>
+            <g id="thin-0073_documents_files_paper_text_archive_copy" stroke="#265A6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <g id="Group">
+                    <polyline id="Shape" fill="#FFBC00" points="28.9586 -4.4408921e-16 28.9586 6.9828 36.0318 6.9828"></polyline>
+                    <path d="M36.0318,38.7544 C36.0318,39.5166 35.4058,40.1508 34.6322,40.1508 L7.3624,40.1508 C6.5904,40.1508 5.9704,39.5166 5.9704,38.7544 L5.9704,1.4062 C5.9704,0.6444 6.5904,-6.66133815e-16 7.3624,-6.66133815e-16 L28.9584,-6.66133815e-16 C29.3256,-6.66133815e-16 29.4962,0.156 29.7572,0.41 L35.6146,6.116 C35.8804,6.3748 36.0318,6.7356 36.0318,7.1046 L36.0318,38.7544 L36.0318,38.7544 Z" id="Shape"></path>
+                    <line x1="29.0128" y1="32.0002" x2="13.0128" y2="32.0002" id="Shape"></line>
+                    <line x1="29.0128" y1="26.0002" x2="13.0128" y2="26.0002" id="Shape"></line>
+                    <line x1="29.0128" y1="20" x2="13.0128" y2="20" id="Shape"></line>
+                    <line x1="23.0128" y1="14" x2="13.0128" y2="14" id="Shape"></line>
+                    <path d="M1.4516,5.9606 C0.6492,5.9606 3.01980663e-14,6.6098 3.01980663e-14,7.4106 L3.01980663e-14,44.5982 C3.01980663e-14,45.3998 0.6492,46.0498 1.4516,46.0498 L30.6412,46.0498 C31.442,46.0498 32.092,45.3998 32.092,44.5982" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

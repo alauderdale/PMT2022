@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-cert</title>
+    <g id="icon-cert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-22" transform="translate(7.000000, 12.000000)">
+            <ellipse id="Oval" fill-opacity="0.171465253" fill="#00B6FF" cx="22.8469833" cy="17.7709388" rx="17.8469833" ry="17.7709388"></ellipse>
+            <g id="Group-297" transform="translate(0.000000, 1.000000)" stroke="#265A6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <polygon id="Stroke-3517" points="0 34 46 34 46 0 0 0"></polygon>
+                <line x1="6" y1="10.0004" x2="20" y2="10.0004" id="Stroke-3518"></line>
+                <line x1="6" y1="18.0004" x2="20" y2="18.0004" id="Stroke-3519"></line>
+                <line x1="6" y1="22.0004" x2="20" y2="22.0004" id="Stroke-3520"></line>
+                <line x1="6" y1="26.0004" x2="14" y2="26.0004" id="Stroke-3521"></line>
+                <polyline id="Stroke-3522" points="29.5146 19.9858 27.5766 25.3118 29.8906 25.3498 31.6886 26.8098 33.4486 21.9758"></polyline>
+                <polyline id="Stroke-3523" points="34.1708 21.9976 35.9208 26.8096 37.7188 25.3496 40.0348 25.3116 38.2048 20.2816"></polyline>
+                <path d="M40,16.0004 C40,19.3144 37.314,22.0004 34,22.0004 C30.686,22.0004 28,19.3144 28,16.0004 C28,12.6864 30.686,10.0004 34,10.0004 C37.314,10.0004 40,12.6864 40,16.0004 Z" id="Stroke-3524" fill="#FFBC00"></path>
+            </g>
+        </g>
+    </g>
+</svg>

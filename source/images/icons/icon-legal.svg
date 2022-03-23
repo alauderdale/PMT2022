@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-legal</title>
+    <g id="icon-legal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-58" transform="translate(7.000000, 3.000000)">
+            <g id="Group-16" transform="translate(0.000000, 6.032800)" stroke="#265A6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <g id="Group">
+                    <polygon id="Rectangle-path" points="15.79 17.9366 19.7056 17.9366 19.7056 41.8948 15.79 41.8948"></polygon>
+                    <polygon id="Rectangle-path" points="5.789 17.9366 9.7046 17.9366 9.7046 41.8948 5.789 41.8948"></polygon>
+                    <rect id="Rectangle-path" x="25.791" y="17.9366" width="3.9156" height="23.9582"></rect>
+                    <polygon id="Rectangle-path" points="35.792 17.9366 39.7076 17.9366 39.7076 41.8948 35.792 41.8948"></polygon>
+                    <polygon id="Shape" fill="#FFBC00" points="2.88657986e-15 14.0672 22.7676 1.77635684e-15 45.4922 14.0672"></polygon>
+                    <line x1="45.4922" y1="45.9532" x2="2.88657986e-15" y2="45.9532" id="Shape"></line>
+                    <circle id="Oval" cx="22.7462" cy="8.0108" r="1.995"></circle>
+                </g>
+            </g>
+            <ellipse id="Oval" fill-opacity="0.171465253" fill="#00B6FF" cx="23.6225833" cy="17.7709388" rx="17.8469833" ry="17.7709388"></ellipse>
+        </g>
+    </g>
+</svg>

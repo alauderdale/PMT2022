@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-instant email</title>
+    <g id="icon-instant-email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-36" transform="translate(10.000000, 7.000000)">
+            <ellipse id="Oval" fill-opacity="0.171465253" fill="#00B6FF" cx="19.9579833" cy="25.7709388" rx="17.8469833" ry="17.7709388"></ellipse>
+            <g id="Group-483" stroke="#265A6E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M3.7802966,41.9823942 L18.4345134,31.3431529 C19.359265,30.6725873 20.5816148,30.6705916 21.5063664,31.3391614 L36.218505,41.9823942" id="Stroke-5513"></path>
+                <path d="M31.7191791,13.8647415 L39.1491486,19.1893515 C39.6904179,19.7262031 40,20.4706107 40,21.2509415 L40,43.1720494 C40,44.7327109 38.789634,46 37.2996455,46 L2.70035452,46 C1.2083687,46 0,44.7327109 0,43.1720494 L0,21.2489457 C0,20.4706107 0.305587457,19.7262031 0.846856743,19.1893515 L5.97593249,16.1159259" id="Stroke-5514"></path>
+                <line x1="27.6211115" y1="31.011662" x2="36.1895441" y2="24.0206168" id="Stroke-5515"></line>
+                <line x1="3.80965696" y1="24.0198185" x2="12.328157" y2="31.0148552" id="Stroke-5516"></line>
+                <polyline id="Stroke-5517" points="16.0391472 23.9487705 16.0391472 15.965847 6.05262895 5.98719261 6.05262895 9.97865436"></polyline>
+                <polyline id="Stroke-5518" points="24.0283617 23.9487705 24.0283617 11.9743852 32.0175763 3.99146174 28.022969 3.99146174"></polyline>
+                <line x1="6.05262895" y1="5.98719261" x2="10.0472362" y2="5.98719261" id="Stroke-5519"></line>
+                <line x1="32.0175763" y1="7.98292349" x2="32.0175763" y2="3.99146174" id="Stroke-5520"></line>
+                <polyline id="Stroke-5521" points="16.0391472 3.99146174 20.0337544 0 20.0337544 25.9445013"></polyline>
+                <line x1="24.0283617" y1="3.99146174" x2="20.0337544" y2="0" id="Stroke-5522"></line>
+            </g>
+        </g>
+    </g>
+</svg>
