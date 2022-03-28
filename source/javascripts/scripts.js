@@ -1,6 +1,7 @@
  $(document).ready(function(){
 
 
+
     $(window).scroll(function() {
       var scroll = $(window).scrollTop(); // how many pixels you've scrolled
       var os = $('#reached').offset().top; // pixels to the top of div1
@@ -71,6 +72,14 @@
 
     ///responsive tables!!!
     $('table').footable();
+
+    $('.read-more').readmore({
+      speed: 500,
+      collapsedHeight: 150,
+      heightMargin: 20,
+      moreLink: '<a href="#">More</a>',
+      lessLink: '<a href="#">Less</a>'
+    });
 
 
   });

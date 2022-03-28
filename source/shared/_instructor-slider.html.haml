@@ -17,12 +17,8 @@
             %img.max-width{:src=>"/images/pmi-badge-circle.png", :width=>"60"}
         %h6.light-text-color.mb-3
           (MBA, PMP)
-        .wrapper
-          .expandable-text-wrapper
-            %input.exp{:type => "checkbox", :id=>"exp#{i}"}
-            .expandable-text
-              %label.expand-button.medium-font{:for => "exp#{i}"}
-              =lorem.words(50)
+        .read-more
+          =lorem.words(50)
           
   .swiper-button-next
   .swiper-button-prev
