@@ -399,6 +399,59 @@ hr {
   white-space: nowrap !important;
   width: 100% !important; }
 
+.expandable-text-wrapper {
+  display: flex;
+  overflow: hidden; }
+
+.expandable-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* display: flex; */
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  position: relative; }
+
+.expandable-text::before {
+  content: '';
+  height: calc(100% - 24px);
+  float: right; }
+
+.expandable-text::after {
+  content: '';
+  width: 999vw;
+  height: 999vw;
+  position: absolute;
+  box-shadow: inset calc(100px - 999vw) calc(30px - 999vw) 0 0 #fff;
+  margin-left: -100px; }
+
+.expand-button {
+  float: right;
+  clear: both;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 0 8px;
+  line-height: 24px;
+  border-radius: 4px;
+  color: #138ABB;
+  cursor: pointer;
+  /* margin-top: -30px; */ }
+
+.expand-button::before {
+  content: 'More'; }
+
+.exp {
+  display: none; }
+
+.exp:checked + .expandable-text {
+  -webkit-line-clamp: 999; }
+
+.exp:checked + .expandable-text::after {
+  visibility: hidden; }
+
+.exp:checked + .expandable-text .expand-button::before {
+  content: 'Less'; }
+
 @media (max-width: 768px) {
   .text-center-sm {
     text-align: center !important; } }

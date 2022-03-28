@@ -1,7 +1,9 @@
 / Swiper
+- i = 1;
 .swiper.base-slider.instructor-slider
   .swiper-wrapper
     -10.times do
+      -i = i + 1
       .swiper-slide 
         .mb-2
           %img.max-width{:src=>"/images/tmp/instructor.png", :width=>"270"}
@@ -15,7 +17,12 @@
             %img.max-width{:src=>"/images/pmi-badge-circle.png", :width=>"60"}
         %h6.light-text-color.mb-3
           (MBA, PMP)
-        %p.body-small.light-text-color
-          =lorem.words(40)
+        .wrapper
+          .expandable-text-wrapper
+            %input.exp{:type => "checkbox", :id=>"exp#{i}"}
+            .expandable-text
+              %label.expand-button.medium-font{:for => "exp#{i}"}
+              =lorem.words(50)
+          
   .swiper-button-next
   .swiper-button-prev
