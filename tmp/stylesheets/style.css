@@ -912,6 +912,9 @@ td.flash-sale {
     @media (max-width: 992px) {
       .base-slider .card {
         min-height: auto; } }
+.instructor-slider .swiper-button-next, .instructor-slider .swiper-button-prev {
+  top: 200px; }
+
 .anchor {
   padding-top: 50px;
   margin-top: -50px; }
