@@ -1,4 +1,5 @@
 #primary-header{
+
 	#primary-pre-header{
 		background:white;
 		border-bottom:1px solid $light-gray-color;
@@ -13,41 +14,46 @@
 			}
 		}
 	}
-	#primary-sub-header{
-		background:#F6F9FA;
-		border-bottom: 3px solid $link-color;
-		.nav{
-			position:relative;
-			right:20px;
-			a.nav-link{
-				color:$text-color;
-				padding:16px 24px;
-			}
+}
 
 
+#primary-sub-header{
+	background:#F6F9FA;
+	border-bottom: 3px solid $link-color;
+		position: sticky;
+position: -webkit-sticky;
+top: 0;
+z-index: 9999;
+	.nav{
+		position:relative;
+		right:20px;
+		a.nav-link{
+			color:$text-color;
+			padding:16px 24px;
 		}
 
-		.dropdown:hover .nav-link {
-			color:white;
-			background:$link-color;
-		}
 
-		//dropdowns
-
-		//show on hover
-		.dropdown:hover .dropdown-menu {
-		    display: block;
-		    margin-top: 0px; // remove the gap so it doesn't close
-		 }
-
-		 .dropdown-menu{
-		 	border-top: 3px solid $link-color;
-		 	.dropdown-item{
-
-		 	}
-		 }
 	}
 
+	.dropdown:hover .nav-link {
+		color:white;
+		background:$link-color;
+	}
+
+	//dropdowns
+
+	//show on hover
+	.dropdown:hover .dropdown-menu {
+	    display: block;
+	    margin-top: 0px; // remove the gap so it doesn't close
+	 }
+
+	 .dropdown-menu{
+	 	border-top: 3px solid $link-color;
+	 	.dropdown-item{
+
+	 	}
+	 }
 }
 
 //primary mobile navbar
