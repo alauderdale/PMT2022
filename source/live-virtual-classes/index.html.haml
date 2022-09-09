@@ -16,14 +16,15 @@
 						.nav.page-nav.tabbed
 							%a.nav-link.active{:href=>"/live-virtual-classes"}
 								Overview
-							%a.nav-link{:href=>"/live-virtual-classes/schedule#schedule-and-pricing"}
-								Schedule and pricing
-							%a.nav-link{:href=>"/live-virtual-classes/included"}
+							%a.nav-link{:href=>"#included"}
 								Included with class
-							%a.nav-link{:href=>"/live-virtual-classes/guarantee"}
+							%a.nav-link{:href=>"#instructors"}
+								Instructors
+							%a.nav-link{:href=>"#guarantee"}
 								Guarantee
-							%a.nav-link{:href=>"/live-virtual-classes/testimonials"}
+							%a.nav-link{:href=>"#testimonials"}
 								Testimonials
+							
 						.action-container.d-none.d-md-block
 							.d-flex.align-items-center
 								%a.btn.btn-primary{:href=>"/live-virtual-classes/schedule#schedule-and-pricing"}
@@ -101,7 +102,7 @@
 							People, Process, and Business milestones that reflect soft skills, technical approaches, and organizational strategy of project management.
 					
 				
-
+#included.anchor
 %section.section-lg.pb-5.gradient-bg
 	.container
 		.row
@@ -117,7 +118,7 @@
 =partial"shared/quote-with-actions-2"
 
 
-
+.anchor#instructors
 %section.gradient-bg.section-lg
 	.container
 		.row
@@ -149,7 +150,7 @@
 			.col
 				=partial"/live-virtual-classes/curriculum-accordian"
 
-
+#guarantee.anchor
 %section.section-lg.pt-3
 	.container
 		.row
@@ -201,8 +202,7 @@
 								PMP certification reviews
 							%p.body-small
 								So Effective, We Guarantee You Will Pass the PMP Exam.
-						%h6
-							Trustpiolt badge
+						%img.max-width.mb-3.mb-md-0{:src=>"/images/students-love-us.png", :width=>"122"}
 		.row
 			.col
 				=partial"/shared/testimonial-slider"

@@ -47,12 +47,51 @@
 
 
 .instructor-slider{
-
-
-
 	.swiper-button-next, .swiper-button-prev{
 		top:200px;
 	}
+}
+
+
+.home-slider{
+
+
+	.swiper-button-next, .swiper-button-prev{
+		width:50px;
+		height:50px;
+		border-radius: 50px;
+		background: rgba(255,255,255,1);
+		// border: 2px solid rgba(255,255,255,.4);
+		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);
+		&:after{
+			font-family: 'Material Icons';
+			color:$link-color;
+			font-weight: normal;
+			font-style: normal;
+			letter-spacing: normal;
+			text-transform: none;
+			display: inline-block;
+			white-space: nowrap;
+			word-wrap: normal;
+			direction: ltr;
+			-webkit-font-feature-settings: 'liga';
+			-webkit-font-smoothing: antialiased;
+			font-size:20px;
+		}
+	}
+	.swiper-button-next{
+		right:15;
+		&:after{
+			content:"chevron_right";
+		}
+	}
+	.swiper-button-prev{
+		left:15;
+		&:after{
+			content:"chevron_left";
+		}
+	}
+
 
 
 }

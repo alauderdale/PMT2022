@@ -15,7 +15,82 @@
           Qty
 
     %tbody
-      -8.times do
+      -3.times do
+        %tr
+          %td.bold-font
+            %img.max-width.mb-2{:src => "/images/tmp/product-ticket.png", :width => "77"}
+            %br
+            PMP Practice Exams
+          %td{:style=>"width:30%;"}
+            Unlimited 90-day access to exceptionally realistic PMP practice exams; 1,000+ realistic exam questions with detailed explanations, including 21 condensed PMP mock exams; 10 Knowledge Area tests; personal performance reports, progress tracking, and more
+          %td.bold-font
+            $1,148 USD
+          %td.bold-font
+            $1,148 USD
+            %br
+            %span.success-text-color.text-uppercase.body-small.bold-font
+              38% Discount
+          %td.text-center
+            %a.btn.btn-terciary{:href=>"/cart"}
+              Register
+          %td{:style=>"width:10%;"}
+            %input.form-control{:type=>"text"}
+      //start expanded
+      %tr
+        %td.bold-font
+          %img.max-width.mb-2{:src => "/images/tmp/product-ticket.png", :width => "77"}
+          %br
+          PMP Practice Exams
+        %td{:style=>"width:30%;"}
+          Unlimited 90-day access to exceptionally realistic PMP practice exams; 1,000+ realistic exam questions with detailed explanations, including 21 condensed PMP mock exams; 10 Knowledge Area tests; personal performance reports, progress tracking, and more
+        %td.bold-font
+          $1,148 USD
+        %td.bold-font
+          $1,148 USD
+          %br
+          %span.success-text-color.text-uppercase.body-small.bold-font
+            38% Discount
+        %td.text-center
+          %a.btn.btn-terciary{:href=>"/cart"}
+            Register
+        %td{:style=>"width:10%;"}
+          %input.form-control{:type=>"text"}
+      %tr
+        %td{:colspan=>"6", :style=>"background:white;"}
+          %p
+            Enter students below to display the payment form.
+          .row
+            .col
+              %p.bold-font
+                Email
+            .col
+              %p.bold-font
+                First name
+            .col
+              %p.bold-font
+                Last name
+          -5.times do
+            %form
+              .row.mb-3
+                .col
+                  %input.form-control{:placeholder=>"john@doe.com"}
+                .col
+                  %input.form-control{:placeholder=>"John"}
+                .col
+                  %input.form-control{:placeholder=>"Doe"}
+          .row
+            .col
+              .d-flex.justify-content-end
+                %p
+                  %a{:href=>"#"}
+                    + Add student
+          .row.pt-2
+            .col
+              .d-flex.justify-content-end
+                %a.btn.btn-primary{:href=>"#"}
+                  Add to cart
+      //end expanded
+      -3.times do
         %tr
           %td.bold-font
             %img.max-width.mb-2{:src => "/images/tmp/product-ticket.png", :width => "77"}
