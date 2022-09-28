@@ -37,6 +37,9 @@ body {
   @media (max-width: 992px) {
     body {
       padding-top: 60px; } }
+.sticky-top {
+  top: 60px; }
+
 .flex {
   display: flex; }
 
@@ -265,60 +268,60 @@ img {
 .micro-text {
   font-size: 0.7rem; }
 
-h1 {
+h1, .h1 {
   font-size: 50px;
   line-height: 1.1em;
   font-weight: normal; }
   @media (max-width: 992px) {
-    h1 {
+    h1, .h1 {
       font-size: 44px; } }
   @media (max-width: 768px) {
-    h1 {
+    h1, .h1 {
       font-size: 34px; } }
-h2 {
+h2, .h2 {
   font-size: 40px;
   line-height: 1.28em;
   font-weight: normal; }
   @media (max-width: 992px) {
-    h2 {
+    h2, .h2 {
       font-size: 36px; } }
   @media (max-width: 992px) {
-    h2 {
+    h2, .h2 {
       font-size: 32px; } }
-h3 {
+h3, .h3 {
   font-size: 36px;
   line-height: 1.28em;
   font-weight: normal; }
   @media (max-width: 992px) {
-    h3 {
+    h3, .h3 {
       font-size: 32px; } }
   @media (max-width: 992px) {
-    h3 {
+    h3, .h3 {
       font-size: 28px; } }
-h4 {
+h4, .h4 {
   font-size: 32px;
   line-height: 1.28em;
   font-weight: normal; }
   @media (max-width: 992px) {
-    h4 {
+    h4, .h4 {
       font-size: 28px; } }
   @media (max-width: 768px) {
-    h4 {
+    h4, .h4 {
       font-size: 24px; } }
-h5 {
+h5, .h5 {
   font-size: 24px;
   line-height: 1.28em;
   font-weight: normal; }
   @media (max-width: 992px) {
-    h5 {
+    h5, .h5 {
       font-size: 18px; } }
-h6 {
+h6, .h6 {
   font-size: 12px;
   line-height: 1.28em;
   font-weight: normal; }
 
 @media (max-width: 992px) {
-  p {
+  p, .p {
     font-size: 14px;
     line-height: 1.28em; } }
 
@@ -935,7 +938,9 @@ td.flash-sale {
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
     font-size: 20px; }
-
+  @media (max-width: 768px) {
+    .home-slider .swiper-button-next, .home-slider .swiper-button-prev {
+      display: none; } }
 .home-slider .swiper-button-next {
   right: 15; }
   .home-slider .swiper-button-next:after {
@@ -945,6 +950,9 @@ td.flash-sale {
   left: 15; }
   .home-slider .swiper-button-prev:after {
     content: "chevron_left"; }
+
+.home-slider .swiper-pagination-bullet-active {
+  background: white; }
 
 .anchor {
   padding-top: 100px;
@@ -1336,7 +1344,7 @@ ul.default-list li {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 9999; }
+  z-index: 999; }
   #primary-sub-header .nav {
     position: relative;
     right: 20px; }
@@ -1405,6 +1413,9 @@ ul.default-list li {
 @media (max-width: 768px) {
   img.home-mobile-hero-image {
     width: 300px; } }
+
+.home-hero ul.info-list {
+  margin-left: 15px; }
 
 @keyframes menu-zoom {
   0% {
