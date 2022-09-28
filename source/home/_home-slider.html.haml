@@ -1,4 +1,4 @@
-.swiper.home-slider
+.swiper.home-slider.home-hero
   .swiper-wrapper
     -5.times do
       .swiper-slide
@@ -9,29 +9,30 @@
                 .content
                   %h1.bold-font.mb-4
                     Live PMP® Classes Taught Online by Veteran Instructors
-                  %p.body-small.mb-2
-                    %span.bold-font
-                      Attend a live instructor PMP 
-                    prep course from your personal computer
-                  %p.body-small.mb-2
-                    %span.bold-font
-                      Flexible times and dates 
-                    to meet busy work schedules
-                  %p.body-small.mb-2
-                    %span.bold-font
-                      35 Contact hours, 
-                    PDUs, all course materials, and software included in price
-                  %p.body-small.mb-5
-                    %span.bold-font
-                      Less than half the cost 
-                    of comparable classroom courses
+                  %ul.info-list
+                    %li.body-small.mb-3
+                      %span.bold-font
+                        Attend a live instructor PMP 
+                      prep course from your personal computer
+                    %li.body-small.mb-3
+                      %span.bold-font
+                        Flexible times and dates 
+                      to meet busy work schedules
+                    %li.body-small.mb-3
+                      %span.bold-font
+                        35 Contact hours, 
+                      PDUs, all course materials, and software included in price
+                    %li.body-small.mb-5
+                      %span.bold-font
+                        Less than half the cost 
+                      of comparable classroom courses
                   .text-center.text-md-left
+                    %a.btn-secondary.btn.mr-3{:href=>"/live-virtual-classes/"}
+                      Class overview
                     %a.btn-primary.btn{:href=>"/live-virtual-classes/schedule#schedule-and-pricing"}
                       Schedule and pricing
-                      %i.material-icons
-                        chevron_right
               .col-xl-6.col-lg-5
-                %img.max-width.d-block.d-lg-none.home-mobile-hero-image.margin-auto{:src=>"/images/home/home-banner-mobile.png", :width=>"518px"}
+                %img.max-width.d-block.d-md-none.home-mobile-hero-image.margin-auto.mb-3{:src=>"/images/home/home-banner-mobile.png", :width=>"518px"}
   .swiper-button-prev
   .swiper-button-next
   .swiper-pagination

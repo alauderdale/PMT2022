@@ -78,6 +78,9 @@
 			-webkit-font-smoothing: antialiased;
 			font-size:20px;
 		}
+		@include breakpoint(sm) {
+			display: none;
+		}
 	}
 	.swiper-button-next{
 		right:15;
@@ -91,6 +94,11 @@
 			content:"chevron_left";
 		}
 	}
+
+	.swiper-pagination-bullet-active{
+		background: white;
+	}
+
 
 
 
