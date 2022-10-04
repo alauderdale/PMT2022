@@ -19,7 +19,7 @@ html {
 
 body {
   font: 100%;
-  font-size: 16px;
+  font-size: 18px;
   color: #222325;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -331,7 +331,7 @@ h6, .h6 {
   font-weight: normal; }
 
 .body-small {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.28em;
   font-weight: normal; }
 
@@ -1347,7 +1347,8 @@ ul.default-list li {
   z-index: 999; }
   #primary-sub-header .nav {
     position: relative;
-    right: 20px; }
+    right: 20px;
+    font-size: 14px; }
     #primary-sub-header .nav a.nav-link {
       color: #222325;
       padding: 16px 24px; }
