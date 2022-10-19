@@ -1160,6 +1160,43 @@ td.flash-sale {
         width: 275px;
         margin: 0 auto;
         text-align: center; } }
+.buy-options .list-group-inner {
+  position: relative; }
+
+.buy-options .list-group-item {
+  user-select: none;
+  border-width: 2px;
+  margin-bottom: 10px; }
+
+.buy-options .list-group input[type="checkbox"] {
+  display: none; }
+  .buy-options .list-group input[type="checkbox"] + .list-group-item {
+    cursor: pointer; }
+    .buy-options .list-group input[type="checkbox"] + .list-group-item:before {
+      content: "";
+      margin-right: 1.3em; }
+  .buy-options .list-group input[type="checkbox"]:checked + .list-group-item {
+    background-color: #e7f3f8;
+    border-color: #138ABB; }
+    .buy-options .list-group input[type="checkbox"]:checked + .list-group-item:before {
+      color: inherit; }
+
+.buy-options .list-group input[type="radio"] {
+  position: absolute;
+  top: 23px;
+  left: 15px;
+  z-index: 99; }
+  .buy-options .list-group input[type="radio"] + .list-group-item {
+    cursor: pointer; }
+    .buy-options .list-group input[type="radio"] + .list-group-item:before {
+      content: "";
+      margin-right: 1.3em; }
+  .buy-options .list-group input[type="radio"]:checked + .list-group-item {
+    background-color: #e7f3f8;
+    border-color: #138ABB; }
+    .buy-options .list-group input[type="radio"]:checked + .list-group-item:before {
+      color: inherit; }
+
 .alert-success {
   border-color: #86C342;
   background-color: #f3f9ec; }
