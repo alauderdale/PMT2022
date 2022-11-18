@@ -1,7 +1,7 @@
 .swiper.home-slider.home-hero
-  - i = 1;
+  - i = 0;
   .swiper-wrapper
-    -5.times do
+    -6.times do
       -i = i + 1
       .swiper-slide
         %section.inverse-section.section-lg.banner{:style=>"background-image:url(/images/home/home-slide-#{i}.png);"}
