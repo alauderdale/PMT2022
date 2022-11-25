@@ -1444,14 +1444,6 @@ ul.default-list li {
   .primary-footer ul li a:hover {
     color: #138ABB !important; }
 
-@media (max-width: 992px) {
-  img.home-mobile-hero-image {
-    width: 400px; } }
-
-@media (max-width: 768px) {
-  img.home-mobile-hero-image {
-    width: 300px; } }
-
 .home-hero ul.info-list {
   margin-left: 15px; }
 
