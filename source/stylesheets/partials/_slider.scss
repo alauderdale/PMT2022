@@ -54,6 +54,19 @@
 
 
 .home-slider{
+	.banner{
+		min-height: 600px;
+		@include breakpoint(sm) {
+			min-height: auto;
+		}
+	}
+	 @include breakpoint(sm) {
+	 	.btn{
+	 		display: block;
+	 		width:100%;
+	 		margin-bottom:$baseline;
+	 	}
+  	}
 
 
 	.swiper-button-next, .swiper-button-prev{

@@ -4,7 +4,7 @@
     -6.times do
       -i = i + 1
       .swiper-slide
-        %section.inverse-section.section-lg.banner{:style=>"background-image:url(/images/home/home-slide-#{i}.png);"}
+        %section.inverse-section.section-lg.banner.align-items-center.d-flex{:style=>"background-image:url(/images/home/home-slide-#{i}.png);"}
           .container
             .row.align-items-center 
               .col-xl-6.col-lg-10
@@ -20,14 +20,14 @@
                       %span.bold-font
                         Flexible times and dates 
                       to meet busy work schedules
-                    %li.body-small.mb-3
-                      %span.bold-font
-                        35 Contact hours, 
-                      PDUs, all course materials, and software included in price
-                    %li.body-small.mb-5
-                      %span.bold-font
-                        Less than half the cost 
-                      of comparable classroom courses
+                    -# %li.body-small.mb-3
+                    -#   %span.bold-font
+                    -#     35 Contact hours, 
+                    -#   PDUs, all course materials, and software included in price
+                    -# %li.body-small.mb-5
+                    -#   %span.bold-font
+                    -#     Less than half the cost 
+                    -#   of comparable classroom courses
                   .text-center.text-md-left
                     %a.btn-secondary.btn.mr-3{:href=>"/live-virtual-classes/"}
                       Class overview

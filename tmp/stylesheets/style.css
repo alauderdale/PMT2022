@@ -918,6 +918,17 @@ td.flash-sale {
 .instructor-slider .swiper-button-next, .instructor-slider .swiper-button-prev {
   top: 200px; }
 
+.home-slider .banner {
+  min-height: 600px; }
+  @media (max-width: 768px) {
+    .home-slider .banner {
+      min-height: auto; } }
+@media (max-width: 768px) {
+  .home-slider .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px; } }
+
 .home-slider .swiper-button-next, .home-slider .swiper-button-prev {
   width: 50px;
   height: 50px;
