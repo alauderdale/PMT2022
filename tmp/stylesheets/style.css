@@ -922,7 +922,7 @@ td.flash-sale {
   min-height: 600px; }
   @media (max-width: 768px) {
     .home-slider .banner {
-      min-height: auto; } }
+      min-height: 920px; } }
 @media (max-width: 768px) {
   .home-slider .btn {
     display: block;

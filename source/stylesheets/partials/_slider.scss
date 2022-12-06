@@ -57,7 +57,7 @@
 	.banner{
 		min-height: 600px;
 		@include breakpoint(sm) {
-			min-height: auto;
+			min-height: 920px;
 		}
 	}
 	 @include breakpoint(sm) {
